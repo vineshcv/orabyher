@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Our Customers — real Orabyher jewellery moments, styled and celebrated." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Orabyher" />
+  <meta property="og:title" content="Our Customers | Orabyher" />
+  <meta property="og:description" content="Our Customers — real Orabyher jewellery moments, styled and celebrated." />
+  <meta property="og:image" content="https://shop.orabyher.workers.dev/og-image.jpg" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="800" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:alt" content="Orabyher logo" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Our Customers | Orabyher" />
+  <meta name="twitter:description" content="Our Customers — real Orabyher jewellery moments, styled and celebrated." />
+  <meta name="twitter:image" content="https://shop.orabyher.workers.dev/og-image.jpg" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <title>Our Customers | Orabyher</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#881337", accent: "#fbbf24", cream: "#fffbf0" },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            serif: ["Cormorant Garamond", "Georgia", "serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-cream">
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="page-loader-inner">
+      <img src="logo.png" alt="Orabyher" class="page-loader-logo" />
+      <div class="page-loader-ring"></div>
+      <p class="page-loader-text">Loading</p>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-50 site-header-dark">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="logo.png" alt="Orabyher" class="site-logo w-auto object-contain" />
+      </a>
+      <nav class="desktop-nav flex items-center">
+        <a href="index.html" class="nav-link nav-link-home" aria-label="Home">
+          <svg class="nav-home-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="customers.html" class="nav-link">Our Customers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="cart.html" class="icon-btn relative text-white/90 hover:text-accent" aria-label="Cart">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        <span data-cart-count class="cart-badge hidden">0</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="customers-hero relative overflow-hidden text-white">
+    <div class="customers-hero-bg" aria-hidden="true"></div>
+    <div class="container mx-auto px-4 relative z-10 py-16 md:py-22">
+      <span class="text-accent uppercase tracking-[0.4em] text-[10px] font-medium mb-2 block">Loved &amp; Worn</span>
+      <h1 class="text-4xl md:text-5xl font-light font-serif italic tracking-tight">Our Customers</h1>
+      <p class="text-white/65 mt-3 font-light max-w-xl">Real moments, real smiles — Orabyher jewellery styled by our community.</p>
+    </div>
+  </section>
+
+  <main class="container mx-auto px-4 py-12 md:py-16">
+    <div id="customers-empty" class="customers-empty">
+      <p class="customers-empty-title">Customer gallery coming soon</p>
+      <p class="customers-empty-text">Beautiful customer photos will appear here. Meanwhile, explore the shop.</p>
+      <a href="shop.html" class="fk-btn fk-btn-cart inline-flex mt-6">Shop Collection</a>
+    </div>
+    <div id="customers-grid" class="customers-grid"></div>
+  </main>
+
+  <div id="customer-lightbox" class="customer-lightbox" aria-hidden="true" role="dialog" aria-label="Customer photo">
+    <button type="button" id="customer-lightbox-close" class="customer-lightbox-close" aria-label="Close">×</button>
+    <button type="button" id="customer-lightbox-prev" class="customer-lightbox-nav prev" aria-label="Previous">‹</button>
+    <figure class="customer-lightbox-figure">
+      <img id="customer-lightbox-img" src="" alt="" />
+      <figcaption id="customer-lightbox-caption"></figcaption>
+    </figure>
+    <button type="button" id="customer-lightbox-next" class="customer-lightbox-nav next" aria-label="Next">›</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <a href="index.html" class="inline-block mb-5 footer-logo-link"><img src="logo.png" alt="Orabyher" class="footer-logo w-auto object-contain" /></a>
+          <p class="site-footer-muted">Orabyher — heritage jewellery crafted with timeless care.</p>
+        </div>
+        <div>
+          <span class="site-footer-label">Explore</span>
+                    <nav class="flex flex-col gap-3 mt-4">
+            <a href="index.html" class="site-footer-link">Home</a>
+            <a href="shop.html" class="site-footer-link">Shop</a>
+            <a href="customers.html" class="site-footer-link">Our Customers</a>
+            <a href="contact.html" class="site-footer-link">Contact</a>
+            <a href="cart.html" class="site-footer-link">Cart</a>
+          </nav>
+        </div>
+        <div>
+          <span class="site-footer-label">Contact</span>
+          <div class="flex flex-col gap-3 mt-4 site-footer-text">
+            <p>Menamkulam, Kazhakootam<br />Trivandrum 695301</p>
+            <a href="tel:+919447836797" class="site-footer-link">+91 94478 36797</a>
+            <a href="https://wa.me/919686516174" target="_blank" rel="noopener" class="site-footer-link">+91 96865 16174</a>
+            <a href="mailto:orabyher@gmail.com" class="site-footer-link">orabyher@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-bar">
+      <div class="container mx-auto px-4 py-5 flex flex-col md:flex-row justify-between items-center gap-3">
+        <p class="site-footer-copy">&copy; 2026 Orabyher. All rights reserved.</p>
+        <p class="site-footer-copy">Designed and developed by <a href="https://azoresinteractive.com" target="_blank" rel="noopener" class="site-footer-credit">Azores Interactive</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="cart.js"></script>
+  <script src="menu.js"></script>
+  <script src="share.js"></script>
+  <script src="ui.js"></script>
+  <script src="loader.js"></script>
+  <script src="customers-data.js"></script>
+  <script src="customers.js"></script>
+</body>
+</html>

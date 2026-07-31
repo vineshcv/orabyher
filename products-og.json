@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": "palakka-necklace-279",
+      "name": "Palakka Temple Necklace Set",
+      "price": 279,
+      "image": "product-palakka-necklace-279.jpg",
+      "description": "Traditional Palakka necklace set with antique gold finish, emerald-green centre stone, ruby accents, and matching earrings — a classic temple jewellery look for festive occasions."
+    },
+    {
+      "id": "palakka-necklace-259",
+      "name": "Palakka Green Pendant Necklace Set",
+      "price": 259,
+      "image": "product-palakka-necklace-259.jpg",
+      "description": "Elegant Palakka pendant necklace with sleek gold chain, green shield motif, and matching stud earrings — light traditional charm for daily festive wear."
+    },
+    {
+      "id": "simple-chain-199",
+      "name": "Simple Mango Motif Chain",
+      "price": 199,
+      "image": "product-simple-chain-199.jpg",
+      "description": "Minimal gold-tone chain with a refined mango motif pendant and emerald green inlay — simple, elegant heritage for everyday styling."
+    },
+    {
+      "id": "long-haram-399",
+      "name": "Long Green Temple Haram",
+      "price": 399,
+      "image": "product-long-haram-399.jpg",
+      "description": "Statement long haram with emerald green stones, ruby accents, and antique gold floral motifs — crafted for grand festive and bridal looks."
+    },
+    {
+      "id": "blue-hanging-earring-220",
+      "name": "Blue Hanging Thread Earrings",
+      "price": 220,
+      "image": "product-blue-hanging-earring-220.jpg",
+      "description": "Antique silver-tone square plaque earrings with navy blue silk thread drops and ghungroo accents — a soft ethnic hang for festive and daily wear."
+    },
+    {
+      "id": "blue-statement-earrings-269",
+      "name": "Blue Statement Fabric Earrings",
+      "price": 269,
+      "image": "product-blue-statement-earrings-269.jpg",
+      "description": "Indigo batik-print diamond fabric earrings with silver flower centre and ghungroo fringe — a bold handmade statement for festive looks."
+    },
+    {
+      "id": "lotus-invisible-chain-219",
+      "name": "Lotus Invisible Chain Set",
+      "price": 219,
+      "image": "product-lotus-invisible-chain-219.jpg",
+      "description": "Delicate invisible chain set with gold-tone lotus pendants and matching lotus stud earrings — a soft, barely-there festive look."
+    },
+    {
+      "id": "navaratna-bangles-359",
+      "name": "Navaratna Multicolor Bangle Set",
+      "price": 359,
+      "image": "product-navaratna-bangles-359.jpg",
+      "description": "Set of four gold-tone Navaratna-inspired bangles with multicolor stone accents — vibrant festive wear for traditional outfits."
+    },
+    {
+      "id": "pearl-adjustable-bangle-220",
+      "name": "Pearl Adjustable Cuff Bangle",
+      "price": 220,
+      "image": "product-pearl-adjustable-bangle-220.jpg",
+      "description": "Elegant open adjustable cuff bangle with pearl drops and pink stone accents — a soft traditional finish for everyday styling."
+    },
+    {
+      "id": "palaka-bangle-389",
+      "name": "Palaka Green & Pink Bangle Pair",
+      "price": 389,
+      "image": "product-palaka-bangle-389.jpg",
+      "description": "Ornate Palaka-style bangle pair with emerald green stones and pink kemp accents in rich gold-tone floral work."
+    }
+  ]
+}

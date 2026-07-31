@@ -1,0 +1,412 @@
+window.STORE = {
+  siteUrl: "https://shop.orabyher.workers.dev",
+  whatsapp: "919686516174",
+  categories: [
+    {
+      id: "necklace-haram",
+      name: "Necklace & Haram",
+      image: "category_icons-17700551431279.webp"
+    },
+    {
+      id: "bangles-bracelets",
+      name: "Bangles & Bracelets",
+      image: "category_icons-17700553911027.webp"
+    },
+    {
+      id: "earrings",
+      name: "Earrings",
+      image: "category_icons-17700554902769.webp"
+    },
+    {
+      id: "invisible-chains",
+      name: "Invisible Chains",
+      image: "category_icons-invisible-chains.jpg"
+    }
+  ],
+  products: [
+    {
+      id: "palakka-necklace-279",
+      name: "Palakka Temple Necklace Set",
+      price: 279,
+      mrp: 279,
+      categoryId: "necklace-haram",
+      rating: 4.8,
+      reviews: 0,
+      image: "product-palakka-necklace-279.jpg",
+      images: [
+        "product-palakka-necklace-279.jpg"
+      ],
+      description: "Traditional Palakka necklace set with antique gold finish, emerald-green centre stone, ruby accents, and matching earrings — a classic temple jewellery look for festive occasions.",
+      highlights: [
+        "Necklace with matching earrings",
+        "Palakka green centre stone",
+        "Antique gold temple finish",
+        "Ruby red border accents",
+        "Festive & bridal friendly"
+      ],
+      specs: {
+        Material: "Alloy with antique gold plating",
+        Occasion: "Festival / Wedding",
+        Colour: "Antique Gold / Green / Red",
+        Set: "Necklace + Earrings",
+        "Care Instructions": "Wipe with soft dry cloth"
+      },
+      sections: [
+        "trending",
+        "bestsellers",
+        "popular",
+        "new"
+      ],
+      inStock: true
+    },
+    {
+      id: "palakka-necklace-259",
+      name: "Palakka Green Pendant Necklace Set",
+      price: 259,
+      mrp: 259,
+      categoryId: "necklace-haram",
+      rating: 4.7,
+      reviews: 0,
+      image: "product-palakka-necklace-259.jpg",
+      images: [
+        "product-palakka-necklace-259.jpg"
+      ],
+      description: "Elegant Palakka pendant necklace with sleek gold chain, green shield motif, and matching stud earrings — light traditional charm for daily festive wear.",
+      highlights: [
+        "Matching earring set",
+        "Green Palakka pendant",
+        "Sleek gold chain",
+        "Lightweight comfort",
+        "Everyday festive wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Party / Festival",
+        Colour: "Gold / Green",
+        Set: "Necklace + Earrings",
+        "Care Instructions": "Keep away from water & perfume"
+      },
+      sections: [
+        "trending",
+        "popular",
+        "new"
+      ],
+      inStock: true
+    },
+    {
+      id: "simple-chain-199",
+      name: "Simple Mango Motif Chain",
+      price: 199,
+      mrp: 199,
+      categoryId: "necklace-haram",
+      rating: 4.6,
+      reviews: 0,
+      image: "product-simple-chain-199.jpg",
+      images: [
+        "product-simple-chain-199.jpg"
+      ],
+      description: "Minimal gold-tone chain with a refined mango motif pendant and emerald green inlay — simple, elegant heritage for everyday styling.",
+      highlights: [
+        "Minimal mango motif",
+        "Delicate gold chain",
+        "Green stone accent",
+        "Everyday elegance",
+        "Easy to layer"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Daily / Casual festive",
+        Colour: "Gold / Green",
+        "Care Instructions": "Store in dry pouch"
+      },
+      sections: [
+        "new",
+        "popular",
+        "trending"
+      ],
+      inStock: true
+    },
+    {
+      id: "long-haram-399",
+      name: "Long Green Temple Haram",
+      price: 399,
+      mrp: 399,
+      categoryId: "necklace-haram",
+      rating: 4.9,
+      reviews: 0,
+      image: "product-long-haram-399.jpg",
+      images: [
+        "product-long-haram-399.jpg"
+      ],
+      description: "Statement long haram with emerald green stones, ruby accents, and antique gold floral motifs — crafted for grand festive and bridal looks.",
+      highlights: [
+        "Long haram silhouette",
+        "Green & ruby stone work",
+        "Temple floral motifs",
+        "Bridal statement piece",
+        "Antique gold finish"
+      ],
+      specs: {
+        Material: "Alloy with antique gold plating",
+        Occasion: "Bridal / Ceremony",
+        Colour: "Antique Gold / Green / Red",
+        "Care Instructions": "Wipe gently after use"
+      },
+      sections: [
+        "bestsellers",
+        "trending",
+        "new",
+        "popular"
+      ],
+      inStock: true
+    },
+    {
+      id: "blue-hanging-earring-220",
+      name: "Blue Hanging Thread Earrings",
+      price: 220,
+      mrp: 220,
+      categoryId: "earrings",
+      rating: 4.6,
+      reviews: 0,
+      inStock: true,
+      image: "product-blue-hanging-earring-220.jpg",
+      images: [
+        "product-blue-hanging-earring-220.jpg"
+      ],
+      description: "Antique silver-tone square plaque earrings with navy blue silk thread drops and ghungroo accents — a soft ethnic hang for festive and daily wear.",
+      highlights: [
+        "Navy blue silk thread drops",
+        "Antique silver-tone finish",
+        "Embossed square plaque",
+        "Ghungroo bead accents",
+        "Lightweight ethnic hang"
+      ],
+      specs: {
+        Material: "Alloy / Silk thread",
+        Occasion: "Daily / Festival",
+        Colour: "Silver / Navy Blue",
+        "Care Instructions": "Keep thread dry; store separately"
+      },
+      sections: [
+        "new",
+        "popular",
+        "trending"
+      ]
+    },
+    {
+      id: "blue-statement-earrings-269",
+      name: "Blue Statement Fabric Earrings",
+      price: 269,
+      mrp: 269,
+      categoryId: "earrings",
+      rating: 4.7,
+      reviews: 0,
+      inStock: true,
+      image: "product-blue-statement-earrings-269.jpg",
+      images: [
+        "product-blue-statement-earrings-269.jpg"
+      ],
+      description: "Indigo batik-print diamond fabric earrings with silver flower centre and ghungroo fringe — a bold handmade statement for festive looks.",
+      highlights: [
+        "Indigo batik fabric",
+        "Layered diamond shape",
+        "Silver flower centre",
+        "Ghungroo fringe detail",
+        "Handmade statement pair"
+      ],
+      specs: {
+        Material: "Fabric / Alloy accents",
+        Occasion: "Festival / Party",
+        Colour: "Indigo / Silver",
+        "Care Instructions": "Keep dry; avoid crushing fringe"
+      },
+      sections: [
+        "bestsellers",
+        "new",
+        "popular",
+        "trending"
+      ]
+    },
+    {
+      id: "lotus-invisible-chain-219",
+      name: "Lotus Invisible Chain Set",
+      price: 219,
+      mrp: 219,
+      categoryId: "invisible-chains",
+      rating: 4.7,
+      reviews: 0,
+      inStock: true,
+      image: "product-lotus-invisible-chain-219.jpg",
+      images: [
+        "product-lotus-invisible-chain-219.jpg"
+      ],
+      description: "Delicate invisible chain set with gold-tone lotus pendants and matching lotus stud earrings — a soft, barely-there festive look.",
+      highlights: [
+        "Invisible chain with lotus pendants",
+        "Matching lotus stud earrings",
+        "Gold-tone finish",
+        "Lightweight everyday wear",
+        "Adjustable clasp chain"
+      ],
+      specs: {
+        Material: "Invisible cord with alloy accents",
+        Occasion: "Daily / Festival",
+        Colour: "Gold / Transparent",
+        "Care Instructions": "Keep dry; wipe gently"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "navaratna-bangles-359",
+      name: "Navaratna Multicolor Bangle Set",
+      price: 359,
+      mrp: 359,
+      categoryId: "bangles-bracelets",
+      rating: 4.7,
+      reviews: 0,
+      inStock: true,
+      image: "product-navaratna-bangles-359.jpg",
+      images: [
+        "product-navaratna-bangles-359.jpg"
+      ],
+      description: "Set of four gold-tone Navaratna-inspired bangles with multicolor stone accents — vibrant festive wear for traditional outfits.",
+      highlights: [
+        "Set of 4 bangles",
+        "Multicolor stone accents",
+        "Gold-tone finish",
+        "Festive traditional look",
+        "Comfortable everyday festive wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Party",
+        Colour: "Gold / Multicolor",
+        "Care Instructions": "Wipe with soft dry cloth"
+      },
+      sections: [
+        "trending",
+        "new",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "pearl-adjustable-bangle-220",
+      name: "Pearl Adjustable Cuff Bangle",
+      price: 220,
+      mrp: 220,
+      categoryId: "bangles-bracelets",
+      rating: 4.6,
+      reviews: 0,
+      inStock: false,
+      image: "product-pearl-adjustable-bangle-220.jpg",
+      images: [
+        "product-pearl-adjustable-bangle-220.jpg"
+      ],
+      description: "Elegant open adjustable cuff bangle with pearl drops and pink stone accents — a soft traditional finish for everyday styling.",
+      highlights: [
+        "Adjustable open cuff",
+        "Pearl drop accents",
+        "Pink stone detailing",
+        "Lightweight comfort",
+        "Currently out of stock"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Daily / Party",
+        Colour: "Gold / Pearl / Pink",
+        "Care Instructions": "Keep pearls dry"
+      },
+      sections: [
+        "new",
+        "popular"
+      ]
+    },
+    {
+      id: "palaka-bangle-389",
+      name: "Palaka Green & Pink Bangle Pair",
+      price: 389,
+      mrp: 389,
+      categoryId: "bangles-bracelets",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-palaka-bangle-389.jpg",
+      images: [
+        "product-palaka-bangle-389.jpg"
+      ],
+      description: "Ornate Palaka-style bangle pair with emerald green stones and pink kemp accents in rich gold-tone floral work.",
+      highlights: [
+        "Pair of bangles",
+        "Green Palaka stones",
+        "Pink kemp accents",
+        "Traditional floral work",
+        "Bridal & festive favourite"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Wedding / Festival",
+        Colour: "Gold / Green / Pink",
+        "Care Instructions": "Store separately to avoid scratches"
+      },
+      sections: [
+        "bestsellers",
+        "trending",
+        "new",
+        "popular"
+      ]
+    }
+  ]
+};
+
+
+window.getProductById = function (id) {
+  return STORE.products.find(function (p) {
+    return p.id === id;
+  });
+};
+
+window.getCategoryById = function (id) {
+  return STORE.categories.find(function (c) {
+    return c.id === id;
+  });
+};
+
+window.getProductsByCategory = function (categoryId) {
+  return STORE.products.filter(function (p) {
+    return p.categoryId === categoryId;
+  });
+};
+
+window.getProductsBySection = function (section) {
+  return STORE.products.filter(function (p) {
+    return p.sections && p.sections.indexOf(section) !== -1;
+  });
+};
+
+window.formatINR = function (amount) {
+  return (
+    "₹" +
+    Number(amount).toLocaleString("en-IN", {
+      maximumFractionDigits: 0,
+    })
+  );
+};
+
+window.isProductOutOfStock = function (product) {
+  if (!product) return false;
+  if (product.inStock === false) return true;
+  var name = String(product.name || "").toLowerCase();
+  var id = String(product.id || "").toLowerCase();
+  return (
+    name.indexOf("stock out") !== -1 ||
+    name.indexOf("sold out") !== -1 ||
+    id.indexOf("sold_out") !== -1 ||
+    id.indexOf("stock_out") !== -1
+  );
+};
