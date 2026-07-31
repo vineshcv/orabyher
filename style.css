@@ -1484,3 +1484,36 @@ html.lightbox-open {
   background: rgba(251, 191, 36, 0.25);
   color: #fbbf24;
 }
+
+/* Hero side labels — stacked letters, no rotate/writing-mode overlap */
+.hero-side-labels {
+  display: none;
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.75rem;
+  pointer-events: none;
+}
+
+@media (min-width: 1024px) {
+  .hero-side-labels {
+    display: flex;
+  }
+}
+
+.hero-side-labels span {
+  display: block;
+  width: 0.9em;
+  font-size: 10px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(251, 191, 36, 0.4);
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
