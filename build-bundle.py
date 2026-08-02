@@ -30,10 +30,12 @@ PAGES = [
 
 def wrap_page(code: str, pages: tuple[str, ...]) -> str:
     names = ", ".join(f'"{p}"' for p in pages)
+    # Cloudflare Workers often serves /product instead of /product.html
     return (
         "(function () {\n"
         "  var __p = (location.pathname.split('/').pop() || 'index.html').toLowerCase();\n"
         "  if (!__p || __p === '/') __p = 'index.html';\n"
+        "  if (__p.indexOf('.') === -1) __p += '.html';\n"
         f"  if ([{names}].indexOf(__p) === -1) return;\n"
         f"{code}\n"
         "})();\n"

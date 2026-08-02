@@ -1469,6 +1469,7 @@ window.INSTAGRAM = {
 (function () {
   var __p = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   if (!__p || __p === '/') __p = 'index.html';
+  if (__p.indexOf('.') === -1) __p += '.html';
   if (["index.html"].indexOf(__p) === -1) return;
 const slides = [
   {
@@ -1619,6 +1620,7 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
 (function () {
   var __p = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   if (!__p || __p === '/') __p = 'index.html';
+  if (__p.indexOf('.') === -1) __p += '.html';
   if (["shop.html"].indexOf(__p) === -1) return;
 (function () {
   var filterId = "all";
@@ -1696,6 +1698,7 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
 (function () {
   var __p = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   if (!__p || __p === '/') __p = 'index.html';
+  if (__p.indexOf('.') === -1) __p += '.html';
   if (["product.html"].indexOf(__p) === -1) return;
 (function () {
   function getQueryId() {
@@ -1980,6 +1983,7 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
 (function () {
   var __p = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   if (!__p || __p === '/') __p = 'index.html';
+  if (__p.indexOf('.') === -1) __p += '.html';
   if (["category.html"].indexOf(__p) === -1) return;
 (function () {
   var currentId = null;
@@ -2069,6 +2073,7 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
 (function () {
   var __p = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   if (!__p || __p === '/') __p = 'index.html';
+  if (__p.indexOf('.') === -1) __p += '.html';
   if (["cart.html"].indexOf(__p) === -1) return;
 (function () {
   function render() {
@@ -2189,6 +2194,7 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
 (function () {
   var __p = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   if (!__p || __p === '/') __p = 'index.html';
+  if (__p.indexOf('.') === -1) __p += '.html';
   if (["customers.html"].indexOf(__p) === -1) return;
 (function () {
   function render() {
@@ -2297,6 +2303,7 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
 (function () {
   var __p = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   if (!__p || __p === '/') __p = 'index.html';
+  if (__p.indexOf('.') === -1) __p += '.html';
   if (["instagram.html"].indexOf(__p) === -1) return;
 (function () {
   function render() {
