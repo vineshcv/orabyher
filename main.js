@@ -1,38 +1,56 @@
 const slides = [
   {
-    title: "20% off for Nagas Collections",
-    image: "banner_images-17700527002062.webp",
+    title: "White Pearl Jhumka",
+    image: "banner_images-white-pearl-jhumka.webp",
+    href: "product.html?id=white-pearl-jhumka-380",
   },
   {
-    title: "10% Off For Nagas Collections",
-    image: "banner_images-17700529163968.webp",
+    title: "Temple Jhumkas",
+    image: "banner_images-temple-jhumkas.webp",
+    href: "product.html?id=temple-jhumkas-380",
   },
   {
     title: "10% Off For Nagas Collections",
     image: "banner_images-17700529852896.webp",
+    href: "shop.html",
   },
   {
     title: "10% Off For Nagas Collections",
     image: "banner_images-17700532806776.webp",
+    href: "shop.html",
   },
 ];
 
 const titleEl = document.getElementById("hero-title");
+const heroCta = document.querySelector(".hero-section a.px-10");
 const slidesEl = document.getElementById("hero-slides");
 const slidesMobileEl = document.getElementById("hero-slides-mobile");
 
 function slideHtml(s, i, imgClass) {
+  // Only the first slide loads immediately; others hydrate on show()
+  var imgAttrs =
+    i === 0
+      ? 'src="' + s.image + '" fetchpriority="high"'
+      : 'data-src="' + s.image + '" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"';
   return (
     '<div class="hero-slide' +
     (i === 0 ? " active" : "") +
-    '"><img src="' +
-    s.image +
-    '" alt="' +
+    '"><img ' +
+    imgAttrs +
+    ' alt="' +
     s.title +
     '" class="' +
     imgClass +
-    '" /></div>'
+    '" decoding="async" /></div>'
   );
+}
+
+function hydrateSlideImages(slideEl) {
+  if (!slideEl) return;
+  var img = slideEl.querySelector("img[data-src]");
+  if (!img) return;
+  img.src = img.getAttribute("data-src");
+  img.removeAttribute("data-src");
 }
 
 if (slidesEl) {
@@ -69,9 +87,11 @@ function show(i) {
     el.classList.remove("active");
   });
   if (slidesEl && slidesEl.children[current]) {
+    hydrateSlideImages(slidesEl.children[current]);
     slidesEl.children[current].classList.add("active");
   }
   if (slidesMobileEl && slidesMobileEl.children[current]) {
+    hydrateSlideImages(slidesMobileEl.children[current]);
     slidesMobileEl.children[current].classList.add("active");
   }
   var t = splitTitle(slides[current].title);
@@ -81,6 +101,9 @@ function show(i) {
       (t.second
         ? '<span class="block mt-2 text-white/90">' + t.second + "</span>"
         : "");
+  }
+  if (heroCta) {
+    heroCta.setAttribute("href", slides[current].href || "shop.html");
   }
 }
 

@@ -161,6 +161,115 @@ window.STORE = {
       inStock: true
     },
     {
+      id: "white-pearl-jhumka-380",
+      name: "White Pearl Jhumka",
+      price: 380,
+      mrp: 380,
+      categoryId: "earrings",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-white-pearl-jhumka-380.jpg",
+      images: [
+        "product-white-pearl-jhumka-380.jpg",
+        "product-white-pearl-jhumka-380-2.jpg",
+        "product-white-pearl-jhumka-380-3.jpg"
+      ],
+      description: "Antique-finish temple jhumkas with Lakshmi motif tops, ornate filigree bells, and a fringe of white pearls — classic festive earrings with rich heritage charm.",
+      highlights: [
+        "Lakshmi motif temple tops",
+        "Ornate filigree jhumka bells",
+        "White pearl fringe drops",
+        "Antique gold finish",
+        "Festive & bridal friendly"
+      ],
+      specs: {
+        Material: "Alloy with antique gold plating / Pearls",
+        Occasion: "Festival / Wedding",
+        Colour: "Antique Gold / White Pearl",
+        Set: "Pair of earrings",
+        "Care Instructions": "Wipe with soft dry cloth; keep pearls dry"
+      },
+      sections: [
+        "new",
+        "bestsellers",
+        "popular",
+        "trending"
+      ]
+    },
+    {
+      id: "temple-jhumkas-380",
+      name: "Temple Jhumkas",
+      price: 380,
+      mrp: 380,
+      categoryId: "earrings",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-temple-jhumkas-380.jpg",
+      images: [
+        "product-temple-jhumkas-380.jpg",
+        "product-temple-jhumkas-380-2.jpg",
+        "product-temple-jhumkas-380-3.jpg"
+      ],
+      description: "Antique-finish temple jhumkas with Lakshmi motif studs and arched bells, red and green stone accents, and a pearl fringe — rich festive earrings for traditional looks.",
+      highlights: [
+        "Lakshmi temple motif studs",
+        "Arched jhumka with deity detail",
+        "Red & green stone accents",
+        "White pearl fringe",
+        "Antique gold festive finish"
+      ],
+      specs: {
+        Material: "Alloy with antique gold plating / Stones / Pearls",
+        Occasion: "Festival / Wedding",
+        Colour: "Antique Gold / Red / Green / Pearl",
+        Set: "Pair of earrings",
+        "Care Instructions": "Wipe with soft dry cloth; keep pearls dry"
+      },
+      sections: [
+        "new",
+        "bestsellers",
+        "popular",
+        "trending"
+      ]
+    },
+    {
+      id: "green-stud-earring-199",
+      name: "Green Stud Earing",
+      price: 199,
+      mrp: 199,
+      categoryId: "earrings",
+      rating: 4.6,
+      reviews: 0,
+      inStock: true,
+      image: "product-green-stud-earring-199.jpg",
+      images: [
+        "product-green-stud-earring-199.jpg",
+        "product-green-stud-earring-199-2.jpg"
+      ],
+      description: "Antique-finish temple earrings with Lakshmi motif medallions, emerald green bead accents, layered deity detail, and a classic jhumka drop with beaded fringe.",
+      highlights: [
+        "Lakshmi motif temple medallions",
+        "Emerald green bead accents",
+        "Layered deity cluster detail",
+        "Classic jhumka drop",
+        "Antique gold festive finish"
+      ],
+      specs: {
+        Material: "Alloy with antique gold plating / Green beads",
+        Occasion: "Festival / Party",
+        Colour: "Antique Gold / Green",
+        Set: "Pair of earrings",
+        "Care Instructions": "Wipe with soft dry cloth"
+      },
+      sections: [
+        "new",
+        "popular",
+        "trending"
+      ]
+    },
+    {
       id: "blue-hanging-earring-220",
       name: "Blue Hanging Thread Earrings",
       price: 220,

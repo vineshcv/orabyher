@@ -43,7 +43,7 @@
       product.image +
       '" alt="' +
       product.name +
-      '" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110' +
+      '" loading="lazy" decoding="async" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110' +
       (oos ? " opacity-80" : "") +
       '" />' +
       (oos
@@ -157,7 +157,7 @@
           cat.image +
           '" alt="' +
           cat.name +
-          '" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />' +
+          '" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />' +
           '<div class="absolute bottom-0 left-0 p-6 z-20">' +
           '<h3 class="text-white text-xl font-bold mb-1 translate-y-2 group-hover:translate-y-0 transition-transform">' +
           cat.name +
