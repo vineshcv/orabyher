@@ -34,10 +34,13 @@ export async function onRequest(context) {
     );
   }
 
-  // Product-specific OG for product.html?id=...
+  // Product-specific OG for /product?id=... (Cloudflare may strip .html)
+  const path = requestUrl.pathname.replace(/\/$/, "") || "/";
   const isProduct =
-    requestUrl.pathname.endsWith("/product.html") ||
-    requestUrl.pathname.endsWith("product.html");
+    path === "/product" ||
+    path.endsWith("/product") ||
+    path.endsWith("/product.html") ||
+    path.endsWith("product.html");
   const productId = requestUrl.searchParams.get("id");
 
   if (isProduct && productId) {

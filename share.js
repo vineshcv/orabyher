@@ -138,23 +138,57 @@
       ? product.name + " — " + formatINR(product.price)
       : title;
 
-    if (canNativeShare()) {
-      navigator
-        .share({ title: title, text: text, url: url })
+    // Ensure page meta uses this product image (for in-app browsers / previews)
+    if (product) setProductOg(product);
+
+    function fallbackCopy() {
+      copyText(url)
+        .then(function () {
+          if (window.Cart && Cart.showToast) Cart.showToast("Link copied");
+          else alert("Link copied");
+        })
         .catch(function () {
-          /* user cancelled */
+          if (window.Cart && Cart.showToast) Cart.showToast("Could not copy link");
+          else prompt("Copy this link:", url);
+        });
+    }
+
+    if (!canNativeShare()) {
+      fallbackCopy();
+      return;
+    }
+
+    // Prefer sharing with the product image when the OS supports file shares
+    if (product && product.image && navigator.canShare) {
+      fetch(absoluteUrl(product.image))
+        .then(function (res) {
+          return res.blob();
+        })
+        .then(function (blob) {
+          var ext = (blob.type || "").indexOf("png") !== -1 ? "png" : "jpg";
+          var file = new File(
+            [blob],
+            (product.id || "product") + "." + ext,
+            { type: blob.type || "image/jpeg" }
+          );
+          var withFiles = { title: title, text: text, url: url, files: [file] };
+          if (navigator.canShare(withFiles)) {
+            return navigator.share(withFiles);
+          }
+          return navigator.share({ title: title, text: text, url: url });
+        })
+        .catch(function () {
+          navigator
+            .share({ title: title, text: text, url: url })
+            .catch(function () {});
         });
       return;
     }
 
-    copyText(url)
-      .then(function () {
-        if (window.Cart && Cart.showToast) Cart.showToast("Link copied");
-        else alert("Link copied");
-      })
+    navigator
+      .share({ title: title, text: text, url: url })
       .catch(function () {
-        if (window.Cart && Cart.showToast) Cart.showToast("Could not copy link");
-        else prompt("Copy this link:", url);
+        /* user cancelled */
       });
   }
 

@@ -13,3 +13,5 @@ node_modules/
 README*
 build-bundle.py
 apply-og.js
+worker.js
+functions/
