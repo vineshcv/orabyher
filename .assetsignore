@@ -1,0 +1,23 @@
+# Keep Workers asset upload under the 25 MiB / file-count limits.
+# node_modules is installed during CI but must never be published as assets.
+node_modules/
+.git/
+.wrangler/
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+package-lock.json
+.DS_Store
+.editorconfig
+.gitignore
+.assetsignore
+.env
+.env.*
+README*
+tailwind.input.css
+tailwind.config.js
+build.sh
+build-bundle.py
+build-css.py
+apply-og.js
