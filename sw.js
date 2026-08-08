@@ -62,13 +62,26 @@ self.addEventListener("fetch", function (event) {
 
   if (!isSameOrigin(url)) return;
 
-  // Critical: do NOT intercept HTML / JS / CSS / JSON / SW / manifest.
-  // Browser + Worker Cache-Control handle freshness.
+  // HTML navigations: pass through network (no cache) so PWA stays installable
+  // without serving stale pages.
+  var isNav =
+    request.mode === "navigate" ||
+    url.pathname === "/" ||
+    /\.html$/i.test(url.pathname) ||
+    !url.pathname.split("/").pop().includes(".");
+  if (isNav) {
+    event.respondWith(
+      fetch(request).catch(function () {
+        return caches.match("./index.html");
+      })
+    );
+    return;
+  }
+
+  // Never cache JS/CSS/JSON/manifest/SW — always let browser fetch fresh
   if (
     url.pathname.endsWith("/sw.js") ||
-    /\.(?:html|js|css|webmanifest|json)$/i.test(url.pathname) ||
-    url.pathname === "/" ||
-    !url.pathname.split("/").pop().includes(".")
+    /\.(?:js|css|webmanifest|json)$/i.test(url.pathname)
   ) {
     return;
   }
