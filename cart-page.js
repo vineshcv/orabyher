@@ -3,7 +3,12 @@
     var items = Cart.getCart();
     var root = document.getElementById("cart-items");
     document.getElementById("summary-count").textContent = String(Cart.getCartCount());
-    document.getElementById("summary-total").textContent = formatINR(Cart.cartTotal());
+    var hasContact = items.some(function (i) {
+      return i.contactForPricing || i.price == null;
+    });
+    document.getElementById("summary-total").innerHTML = hasContact
+      ? '<span class="small">Contact for pricing</span>'
+      : formatINR(Cart.cartTotal());
 
     if (!items.length) {
       root.innerHTML =
@@ -16,6 +21,13 @@
 
     root.innerHTML = items
       .map(function (item) {
+        var contactPrice = !!(item.contactForPricing || item.price == null);
+        var priceHtml = contactPrice
+          ? '<span class="small">Contact for pricing</span>'
+          : formatINR(item.price);
+        var lineTotalHtml = contactPrice
+          ? '<span class="small">Contact for pricing</span>'
+          : formatINR(item.price * item.qty);
         return (
           '<div class="bg-white rounded-2xl border border-slate-100 p-4 flex gap-4 items-center">' +
           '<a href="product.html?id=' +
@@ -34,7 +46,7 @@
           item.name +
           "</a>" +
           '<div class="text-lg font-bold mt-1">' +
-          formatINR(item.price) +
+          priceHtml +
           "</div>" +
           '<div class="flex items-center gap-3 mt-3">' +
           '<div class="inline-flex items-center border border-slate-200 rounded-lg overflow-hidden">' +
@@ -59,7 +71,7 @@
           "</div>" +
           "</div>" +
           '<div class="text-right font-semibold text-slate-900 shrink-0">' +
-          formatINR(item.price * item.qty) +
+          lineTotalHtml +
           "</div>" +
           "</div>"
         );

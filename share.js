@@ -80,7 +80,12 @@
     var title = product.name + " | Orabyher";
     var desc =
       product.description ||
-      product.name + " — " + formatINR(product.price) + " | Orabyher";
+      product.name +
+        " — " +
+        (window.formatProductPrice
+          ? formatProductPrice(product)
+          : formatINR(product.price)) +
+        " | Orabyher";
     var image = absoluteUrl(product.image || "logo.png");
     var url = productUrl(product.id);
 
@@ -135,7 +140,11 @@
     var url = product ? productUrl(product.id) : window.location.href;
     var title = product ? product.name + " | Orabyher" : document.title;
     var text = product
-      ? product.name + " — " + formatINR(product.price)
+      ? product.name +
+        " — " +
+        (window.formatProductPrice
+          ? formatProductPrice(product)
+          : formatINR(product.price))
       : title;
 
     // Ensure page meta uses this product image (for in-app browsers / previews)

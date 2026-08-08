@@ -21,6 +21,16 @@ window.STORE = {
       id: "invisible-chains",
       name: "Invisible Chains",
       image: "category_icons-invisible-chains.jpg"
+    },
+    {
+      id: "saree",
+      name: "Saree",
+      image: "category_icons-saree.jpg"
+    },
+    {
+      id: "set-mundu",
+      name: "Set Mundu",
+      image: "category_icons-set-mundu.jpg"
     }
   ],
   products: [
@@ -469,6 +479,430 @@ window.STORE = {
         "new",
         "popular"
       ]
+    },
+    {
+      id: "blue-gold-check-saree-1299",
+      name: "Blue Gold Border Checkered Saree",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-blue-gold-check-saree-1299.jpg",
+      images: [
+        "product-blue-gold-check-saree-1299.jpg"
+      ],
+      description: "Cream checkered saree with a fine gold grid weave and a rich royal-blue border framed by shimmering gold zari stripes — a soft festive look for Onam, temple, and celebratory wear.",
+      highlights: [
+        "Cream body with gold check weave",
+        "Royal blue & gold zari border",
+        "Lightweight festive drape",
+        "Temple & Onam ready",
+        "Elegant traditional finish"
+      ],
+      specs: {
+        Material: "Cotton / Silk-cotton blend",
+        Occasion: "Festival / Temple / Party",
+        Colour: "Cream / Royal Blue / Gold",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "orange-black-check-saree-1299",
+      name: "Orange Black Border Checkered Saree",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-orange-black-check-saree-1299.jpg",
+      images: [
+        "product-orange-black-check-saree-1299.jpg"
+      ],
+      description: "Cream checkered saree with a fine gold grid and a bold orange-black border finished with a bright gold stripe — vibrant festive wear with classic heritage charm.",
+      highlights: [
+        "Cream body with gold check weave",
+        "Orange, black & gold border",
+        "Bold festive contrast",
+        "Lightweight traditional drape",
+        "Party & celebration ready"
+      ],
+      specs: {
+        Material: "Cotton / Silk-cotton blend",
+        Occasion: "Festival / Party / Celebration",
+        Colour: "Cream / Orange / Black / Gold",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "lotus-cotton-saree-handloom",
+      name: "Lotus Cotton Saree (Handloom)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-lotus-cotton-saree.jpg",
+      images: [
+        "product-lotus-cotton-saree.jpg",
+        "product-lotus-cotton-saree-2.jpg",
+        "product-lotus-cotton-saree-3.jpg",
+        "product-lotus-cotton-saree-4.jpg"
+      ],
+      description: "Handloom cotton saree in soft cream with deep plum lotus motifs and a shimmering gold zari border — finished with purple and gold tassels for a graceful festive drape.",
+      highlights: [
+        "Pure handloom cotton weave",
+        "Cream body with plum lotus motifs",
+        "Gold zari & purple border",
+        "Purple & gold hand-tied tassels",
+        "Temple & festive ready"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Festival / Temple / Celebration",
+        Colour: "Cream / Plum / Gold",
+        Weave: "Handloom",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "green-striped-kasavu-sari-handloom",
+      name: "Green Striped Kasavu Sari (Handloom)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-green-striped-kasavu-sari.jpg",
+      images: [
+        "product-green-striped-kasavu-sari.jpg",
+        "product-green-striped-kasavu-sari-2.jpg",
+        "product-green-striped-kasavu-sari-3.jpg"
+      ],
+      description: "Handloom cotton kasavu sari in cream with olive-green and gold zari stripes, finished with green and champagne knotted tassels — comes with blouse piece for Onam and festive wear.",
+      highlights: [
+        "Pure handloom cotton kasavu",
+        "Olive green & gold striped border",
+        "Cream body with fine stripe weave",
+        "Green & gold hand-tied tassels",
+        "Includes blouse piece"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Olive Green / Gold",
+        Weave: "Handloom Kasavu",
+        Includes: "Blouse piece",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "golden-flower-kasavu-saree-handloom",
+      name: "Golden Flower Embroidery Kasavu Saree (Handloom Cotton)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-golden-flower-kasavu-saree.jpg",
+      images: [
+        "product-golden-flower-kasavu-saree.jpg",
+        "product-golden-flower-kasavu-saree-2.jpg",
+        "product-golden-flower-kasavu-saree-3.jpg",
+        "product-golden-flower-kasavu-saree-4.jpg"
+      ],
+      description: "Handloom cotton kasavu saree in cream with a wide gold zari border and scattered golden flower embroidery outlined in black — includes blouse piece for Onam and festive occasions.",
+      highlights: [
+        "Handloom cotton kasavu weave",
+        "Wide shimmering gold zari border",
+        "Golden flower embroidery with black outline",
+        "Classic cream festive body",
+        "Includes blouse piece"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Gold / Black",
+        Weave: "Handloom Kasavu",
+        Embellishment: "Floral embroidery",
+        Includes: "Blouse piece",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "orange-black-kasavu-saree-handloom",
+      name: "Orange Black Combination Kasavu Cotton Saree (Handloom Cotton)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-orange-black-kasavu-saree.jpg",
+      images: [
+        "product-orange-black-kasavu-saree.jpg",
+        "product-orange-black-kasavu-saree-2.jpg",
+        "product-orange-black-kasavu-saree-3.jpg",
+        "product-orange-black-kasavu-saree-4.jpg"
+      ],
+      description: "Handloom cotton kasavu saree in cream with a fine gold check weave and a bold orange-black border framed by a wide shimmering gold zari band — vibrant festive wear for Onam and celebrations.",
+      highlights: [
+        "Handloom cotton kasavu weave",
+        "Cream body with fine gold check",
+        "Bold orange & black border stripes",
+        "Wide gold zari kasavu band",
+        "Onam & festive ready"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Celebration",
+        Colour: "Cream / Orange / Black / Gold",
+        Weave: "Handloom Kasavu",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "blue-checks-temple-saree-handloom",
+      name: "Blue Checks Temple Design Saree (Handloom Cotton)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-blue-checks-temple-saree.jpg",
+      images: [
+        "product-blue-checks-temple-saree.jpg",
+        "product-blue-checks-temple-saree-2.jpg",
+        "product-blue-checks-temple-saree-3.jpg",
+        "product-blue-checks-temple-saree-4.jpg"
+      ],
+      description: "Handloom cotton saree in cream with a fine gold check weave, royal-blue temple motifs, and a rich blue-and-gold zari border — classic festive drape with blouse piece included.",
+      highlights: [
+        "Handloom cotton with gold checks",
+        "Royal blue temple border motif",
+        "Blue & gold zari stripe border",
+        "Cream festive body",
+        "Includes blouse piece"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Royal Blue / Gold",
+        Weave: "Handloom",
+        Includes: "Blouse piece",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "green-black-kasavu-saree-handloom",
+      name: "Stripped Green Black Combination Kasavu Saree (Handloom Cotton)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-green-black-kasavu-saree.jpg",
+      images: [
+        "product-green-black-kasavu-saree.jpg",
+        "product-green-black-kasavu-saree-2.jpg",
+        "product-green-black-kasavu-saree-3.jpg",
+        "product-green-black-kasavu-saree-4.jpg"
+      ],
+      description: "Handloom cotton kasavu saree in cream with fine gold stripe weave and a bold green-black-gold border, finished with olive and black tassels — a modern festive take on classic Kerala kasavu.",
+      highlights: [
+        "Handloom cotton kasavu weave",
+        "Cream body with fine gold stripes",
+        "Olive green, black & gold border",
+        "Green & black hand-tied tassels",
+        "Onam & festive ready"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Celebration",
+        Colour: "Cream / Olive Green / Black / Gold",
+        Weave: "Handloom Kasavu",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "pink-golden-kasavu-saree-handloom",
+      name: "Pink Golden Design Kasavu Saree (Handloom Cotton)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-pink-golden-kasavu-saree.jpg",
+      images: [
+        "product-pink-golden-kasavu-saree.jpg",
+        "product-pink-golden-kasavu-saree-2.jpg",
+        "product-pink-golden-kasavu-saree-3.jpg",
+        "product-pink-golden-kasavu-saree-4.jpg"
+      ],
+      description: "Handloom cotton kasavu saree in cream with rich gold zari temple borders, pink leaf motifs on a gold band, and ornate golden floral medallions — a festive Kerala classic for Onam and celebrations.",
+      highlights: [
+        "Handloom cotton kasavu weave",
+        "Pink leaf motifs on gold border",
+        "Gold temple & geometric zari bands",
+        "Golden floral medallion motifs",
+        "Onam & festive ready"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Pink / Gold",
+        Weave: "Handloom Kasavu",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "cotton-combination-saree",
+      name: "Cotton Combination Saree",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-cotton-combination-saree.jpg",
+      images: [
+        "product-cotton-combination-saree.jpg",
+        "product-cotton-combination-saree-2.jpg",
+        "product-cotton-combination-saree-3.jpg"
+      ],
+      description: "Cream handloom cotton combination saree richly worked with shimmering gold floral motifs, medallions, and zari borders — a festive cream-and-gold drape for Onam and celebrations.",
+      highlights: [
+        "Handloom cotton combination weave",
+        "Dense gold floral motifs",
+        "Golden medallions & zari borders",
+        "Classic cream & gold palette",
+        "Onam & festive ready"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Celebration",
+        Colour: "Cream / Gold",
+        Weave: "Handloom",
+        Embellishment: "Gold floral zari work",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "blue-flower-golden-kasavu-set-mundu",
+      name: "Blue Flower with Golden Kasavu (2.8mtr)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "set-mundu",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-blue-flower-golden-kasavu-set-mundu.jpg",
+      images: [
+        "product-blue-flower-golden-kasavu-set-mundu.jpg",
+        "product-blue-flower-golden-kasavu-set-mundu-2.jpg",
+        "product-blue-flower-golden-kasavu-set-mundu-3.jpg"
+      ],
+      description: "Cream Kerala set mundu with a wide golden kasavu border and deep blue flower motifs with black leaf accents — a 2.8 metre festive set for Onam and traditional occasions.",
+      highlights: [
+        "Kerala set mundu (2.8 mtr)",
+        "Wide golden kasavu border",
+        "Blue flower motif on gold band",
+        "Cream traditional body",
+        "Onam & temple ready"
+      ],
+      specs: {
+        Material: "Cotton / Handloom blend",
+        Length: "2.8 metre",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Gold / Blue",
+        Type: "Set Mundu",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
     }
   ]
 };
@@ -505,6 +939,22 @@ window.formatINR = function (amount) {
       maximumFractionDigits: 0,
     })
   );
+};
+
+window.isContactForPricing = function (product) {
+  return !!(product && product.contactForPricing);
+};
+
+window.formatProductPrice = function (product) {
+  if (window.isContactForPricing(product)) return "Contact for pricing";
+  return formatINR(product && product.price);
+};
+
+window.formatProductPriceHtml = function (product) {
+  if (window.isContactForPricing(product)) {
+    return '<span class="small">Contact for pricing</span>';
+  }
+  return formatINR(product && product.price);
 };
 
 window.isProductOutOfStock = function (product) {

@@ -26,6 +26,16 @@ window.STORE = {
       id: "invisible-chains",
       name: "Invisible Chains",
       image: "category_icons-invisible-chains.jpg"
+    },
+    {
+      id: "saree",
+      name: "Saree",
+      image: "category_icons-saree.jpg"
+    },
+    {
+      id: "set-mundu",
+      name: "Set Mundu",
+      image: "category_icons-set-mundu.jpg"
     }
   ],
   products: [
@@ -474,6 +484,430 @@ window.STORE = {
         "new",
         "popular"
       ]
+    },
+    {
+      id: "blue-gold-check-saree-1299",
+      name: "Blue Gold Border Checkered Saree",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-blue-gold-check-saree-1299.jpg",
+      images: [
+        "product-blue-gold-check-saree-1299.jpg"
+      ],
+      description: "Cream checkered saree with a fine gold grid weave and a rich royal-blue border framed by shimmering gold zari stripes — a soft festive look for Onam, temple, and celebratory wear.",
+      highlights: [
+        "Cream body with gold check weave",
+        "Royal blue & gold zari border",
+        "Lightweight festive drape",
+        "Temple & Onam ready",
+        "Elegant traditional finish"
+      ],
+      specs: {
+        Material: "Cotton / Silk-cotton blend",
+        Occasion: "Festival / Temple / Party",
+        Colour: "Cream / Royal Blue / Gold",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "orange-black-check-saree-1299",
+      name: "Orange Black Border Checkered Saree",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-orange-black-check-saree-1299.jpg",
+      images: [
+        "product-orange-black-check-saree-1299.jpg"
+      ],
+      description: "Cream checkered saree with a fine gold grid and a bold orange-black border finished with a bright gold stripe — vibrant festive wear with classic heritage charm.",
+      highlights: [
+        "Cream body with gold check weave",
+        "Orange, black & gold border",
+        "Bold festive contrast",
+        "Lightweight traditional drape",
+        "Party & celebration ready"
+      ],
+      specs: {
+        Material: "Cotton / Silk-cotton blend",
+        Occasion: "Festival / Party / Celebration",
+        Colour: "Cream / Orange / Black / Gold",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "lotus-cotton-saree-handloom",
+      name: "Lotus Cotton Saree (Handloom)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-lotus-cotton-saree.jpg",
+      images: [
+        "product-lotus-cotton-saree.jpg",
+        "product-lotus-cotton-saree-2.jpg",
+        "product-lotus-cotton-saree-3.jpg",
+        "product-lotus-cotton-saree-4.jpg"
+      ],
+      description: "Handloom cotton saree in soft cream with deep plum lotus motifs and a shimmering gold zari border — finished with purple and gold tassels for a graceful festive drape.",
+      highlights: [
+        "Pure handloom cotton weave",
+        "Cream body with plum lotus motifs",
+        "Gold zari & purple border",
+        "Purple & gold hand-tied tassels",
+        "Temple & festive ready"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Festival / Temple / Celebration",
+        Colour: "Cream / Plum / Gold",
+        Weave: "Handloom",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "green-striped-kasavu-sari-handloom",
+      name: "Green Striped Kasavu Sari (Handloom)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-green-striped-kasavu-sari.jpg",
+      images: [
+        "product-green-striped-kasavu-sari.jpg",
+        "product-green-striped-kasavu-sari-2.jpg",
+        "product-green-striped-kasavu-sari-3.jpg"
+      ],
+      description: "Handloom cotton kasavu sari in cream with olive-green and gold zari stripes, finished with green and champagne knotted tassels — comes with blouse piece for Onam and festive wear.",
+      highlights: [
+        "Pure handloom cotton kasavu",
+        "Olive green & gold striped border",
+        "Cream body with fine stripe weave",
+        "Green & gold hand-tied tassels",
+        "Includes blouse piece"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Olive Green / Gold",
+        Weave: "Handloom Kasavu",
+        Includes: "Blouse piece",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "golden-flower-kasavu-saree-handloom",
+      name: "Golden Flower Embroidery Kasavu Saree (Handloom Cotton)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-golden-flower-kasavu-saree.jpg",
+      images: [
+        "product-golden-flower-kasavu-saree.jpg",
+        "product-golden-flower-kasavu-saree-2.jpg",
+        "product-golden-flower-kasavu-saree-3.jpg",
+        "product-golden-flower-kasavu-saree-4.jpg"
+      ],
+      description: "Handloom cotton kasavu saree in cream with a wide gold zari border and scattered golden flower embroidery outlined in black — includes blouse piece for Onam and festive occasions.",
+      highlights: [
+        "Handloom cotton kasavu weave",
+        "Wide shimmering gold zari border",
+        "Golden flower embroidery with black outline",
+        "Classic cream festive body",
+        "Includes blouse piece"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Gold / Black",
+        Weave: "Handloom Kasavu",
+        Embellishment: "Floral embroidery",
+        Includes: "Blouse piece",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "orange-black-kasavu-saree-handloom",
+      name: "Orange Black Combination Kasavu Cotton Saree (Handloom Cotton)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-orange-black-kasavu-saree.jpg",
+      images: [
+        "product-orange-black-kasavu-saree.jpg",
+        "product-orange-black-kasavu-saree-2.jpg",
+        "product-orange-black-kasavu-saree-3.jpg",
+        "product-orange-black-kasavu-saree-4.jpg"
+      ],
+      description: "Handloom cotton kasavu saree in cream with a fine gold check weave and a bold orange-black border framed by a wide shimmering gold zari band — vibrant festive wear for Onam and celebrations.",
+      highlights: [
+        "Handloom cotton kasavu weave",
+        "Cream body with fine gold check",
+        "Bold orange & black border stripes",
+        "Wide gold zari kasavu band",
+        "Onam & festive ready"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Celebration",
+        Colour: "Cream / Orange / Black / Gold",
+        Weave: "Handloom Kasavu",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "blue-checks-temple-saree-handloom",
+      name: "Blue Checks Temple Design Saree (Handloom Cotton)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-blue-checks-temple-saree.jpg",
+      images: [
+        "product-blue-checks-temple-saree.jpg",
+        "product-blue-checks-temple-saree-2.jpg",
+        "product-blue-checks-temple-saree-3.jpg",
+        "product-blue-checks-temple-saree-4.jpg"
+      ],
+      description: "Handloom cotton saree in cream with a fine gold check weave, royal-blue temple motifs, and a rich blue-and-gold zari border — classic festive drape with blouse piece included.",
+      highlights: [
+        "Handloom cotton with gold checks",
+        "Royal blue temple border motif",
+        "Blue & gold zari stripe border",
+        "Cream festive body",
+        "Includes blouse piece"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Royal Blue / Gold",
+        Weave: "Handloom",
+        Includes: "Blouse piece",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "green-black-kasavu-saree-handloom",
+      name: "Stripped Green Black Combination Kasavu Saree (Handloom Cotton)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-green-black-kasavu-saree.jpg",
+      images: [
+        "product-green-black-kasavu-saree.jpg",
+        "product-green-black-kasavu-saree-2.jpg",
+        "product-green-black-kasavu-saree-3.jpg",
+        "product-green-black-kasavu-saree-4.jpg"
+      ],
+      description: "Handloom cotton kasavu saree in cream with fine gold stripe weave and a bold green-black-gold border, finished with olive and black tassels — a modern festive take on classic Kerala kasavu.",
+      highlights: [
+        "Handloom cotton kasavu weave",
+        "Cream body with fine gold stripes",
+        "Olive green, black & gold border",
+        "Green & black hand-tied tassels",
+        "Onam & festive ready"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Celebration",
+        Colour: "Cream / Olive Green / Black / Gold",
+        Weave: "Handloom Kasavu",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "pink-golden-kasavu-saree-handloom",
+      name: "Pink Golden Design Kasavu Saree (Handloom Cotton)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-pink-golden-kasavu-saree.jpg",
+      images: [
+        "product-pink-golden-kasavu-saree.jpg",
+        "product-pink-golden-kasavu-saree-2.jpg",
+        "product-pink-golden-kasavu-saree-3.jpg",
+        "product-pink-golden-kasavu-saree-4.jpg"
+      ],
+      description: "Handloom cotton kasavu saree in cream with rich gold zari temple borders, pink leaf motifs on a gold band, and ornate golden floral medallions — a festive Kerala classic for Onam and celebrations.",
+      highlights: [
+        "Handloom cotton kasavu weave",
+        "Pink leaf motifs on gold border",
+        "Gold temple & geometric zari bands",
+        "Golden floral medallion motifs",
+        "Onam & festive ready"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Pink / Gold",
+        Weave: "Handloom Kasavu",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "cotton-combination-saree",
+      name: "Cotton Combination Saree",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-cotton-combination-saree.jpg",
+      images: [
+        "product-cotton-combination-saree.jpg",
+        "product-cotton-combination-saree-2.jpg",
+        "product-cotton-combination-saree-3.jpg"
+      ],
+      description: "Cream handloom cotton combination saree richly worked with shimmering gold floral motifs, medallions, and zari borders — a festive cream-and-gold drape for Onam and celebrations.",
+      highlights: [
+        "Handloom cotton combination weave",
+        "Dense gold floral motifs",
+        "Golden medallions & zari borders",
+        "Classic cream & gold palette",
+        "Onam & festive ready"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Celebration",
+        Colour: "Cream / Gold",
+        Weave: "Handloom",
+        Embellishment: "Gold floral zari work",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "blue-flower-golden-kasavu-set-mundu",
+      name: "Blue Flower with Golden Kasavu (2.8mtr)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "set-mundu",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-blue-flower-golden-kasavu-set-mundu.jpg",
+      images: [
+        "product-blue-flower-golden-kasavu-set-mundu.jpg",
+        "product-blue-flower-golden-kasavu-set-mundu-2.jpg",
+        "product-blue-flower-golden-kasavu-set-mundu-3.jpg"
+      ],
+      description: "Cream Kerala set mundu with a wide golden kasavu border and deep blue flower motifs with black leaf accents — a 2.8 metre festive set for Onam and traditional occasions.",
+      highlights: [
+        "Kerala set mundu (2.8 mtr)",
+        "Wide golden kasavu border",
+        "Blue flower motif on gold band",
+        "Cream traditional body",
+        "Onam & temple ready"
+      ],
+      specs: {
+        Material: "Cotton / Handloom blend",
+        Length: "2.8 metre",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Gold / Blue",
+        Type: "Set Mundu",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
     }
   ]
 };
@@ -510,6 +944,22 @@ window.formatINR = function (amount) {
       maximumFractionDigits: 0,
     })
   );
+};
+
+window.isContactForPricing = function (product) {
+  return !!(product && product.contactForPricing);
+};
+
+window.formatProductPrice = function (product) {
+  if (window.isContactForPricing(product)) return "Contact for pricing";
+  return formatINR(product && product.price);
+};
+
+window.formatProductPriceHtml = function (product) {
+  if (window.isContactForPricing(product)) {
+    return '<span class="small">Contact for pricing</span>';
+  }
+  return formatINR(product && product.price);
 };
 
 window.isProductOutOfStock = function (product) {
@@ -582,6 +1032,7 @@ window.isProductOutOfStock = function (product) {
         name: product.name,
         price: product.price,
         image: product.image,
+        contactForPricing: !!product.contactForPricing,
         qty: qty,
       });
     }
@@ -616,7 +1067,8 @@ window.isProductOutOfStock = function (product) {
 
   function cartTotal() {
     return readCart().reduce(function (sum, i) {
-      return sum + i.price * i.qty;
+      if (i.contactForPricing || i.price == null) return sum;
+      return sum + Number(i.price) * i.qty;
     }, 0);
   }
 
@@ -627,14 +1079,22 @@ window.isProductOutOfStock = function (product) {
       window.location.pathname.replace(/[^/]*$/, "") +
       "product.html?id=" +
       product.id;
-    return [
+    var contactPrice = window.isContactForPricing
+      ? isContactForPricing(product)
+      : !!product.contactForPricing;
+    var lines = [
       "Hello! I am interested in this product:",
       "",
       "*" + product.name + "*",
-      "Price: *" + formatINR(product.price) + "*",
-      "Qty: " + qty,
-      "Link: " + pageUrl,
-    ].join("\n");
+    ];
+    if (contactPrice) {
+      lines.push("Please share the *pricing* for this item.");
+    } else {
+      lines.push("Price: *" + formatINR(product.price) + "*");
+      lines.push("Qty: " + qty);
+    }
+    lines.push("Link: " + pageUrl);
+    return lines.join("\n");
   }
 
   function openWhatsAppForProduct(productId, qty) {
@@ -654,7 +1114,11 @@ window.isProductOutOfStock = function (product) {
       "Hello! Please *NOTIFY* me when this product is back in stock:",
       "",
       "*" + product.name + "*",
-      "Price: *" + formatINR(product.price) + "*",
+      "Price: *" +
+        (window.formatProductPrice
+          ? formatProductPrice(product)
+          : formatINR(product.price)) +
+        "*",
       "Status: Out of stock",
       "Link: " + pageUrl,
     ].join("\n");
@@ -675,19 +1139,25 @@ window.isProductOutOfStock = function (product) {
     }
     var lines = ["Hello! I would like to order the following items:", ""];
     items.forEach(function (item, idx) {
-      lines.push(
-        idx +
-          1 +
-          ". " +
-          item.name +
-          " x " +
-          item.qty +
-          " = " +
-          formatINR(item.price * item.qty)
-      );
+      var line =
+        idx + 1 + ". " + item.name + " x " + item.qty + " = ";
+      if (item.contactForPricing || item.price == null) {
+        line += "Contact for pricing";
+      } else {
+        line += formatINR(item.price * item.qty);
+      }
+      lines.push(line);
     });
     lines.push("");
-    lines.push("Total: " + formatINR(cartTotal()));
+    var hasContact = items.some(function (i) {
+      return i.contactForPricing || i.price == null;
+    });
+    lines.push(
+      "Total: " +
+        (hasContact
+          ? formatINR(cartTotal()) + " (+ items pending pricing)"
+          : formatINR(cartTotal()))
+    );
     lines.push("");
     lines.push("Please share payment & delivery details.");
     var text = encodeURIComponent(lines.join("\n"));
@@ -1021,7 +1491,12 @@ window.isProductOutOfStock = function (product) {
     var title = product.name + " | Orabyher";
     var desc =
       product.description ||
-      product.name + " — " + formatINR(product.price) + " | Orabyher";
+      product.name +
+        " — " +
+        (window.formatProductPrice
+          ? formatProductPrice(product)
+          : formatINR(product.price)) +
+        " | Orabyher";
     var image = absoluteUrl(product.image || "logo.png");
     var url = productUrl(product.id);
 
@@ -1076,7 +1551,11 @@ window.isProductOutOfStock = function (product) {
     var url = product ? productUrl(product.id) : window.location.href;
     var title = product ? product.name + " | Orabyher" : document.title;
     var text = product
-      ? product.name + " — " + formatINR(product.price)
+      ? product.name +
+        " — " +
+        (window.formatProductPrice
+          ? formatProductPrice(product)
+          : formatINR(product.price))
       : title;
 
     // Ensure page meta uses this product image (for in-app browsers / previews)
@@ -1188,42 +1667,34 @@ window.isProductOutOfStock = function (product) {
     var oos = window.isProductOutOfStock
       ? isProductOutOfStock(product)
       : product.inStock === false;
+    var contactPrice = window.isContactForPricing
+      ? isContactForPricing(product)
+      : !!product.contactForPricing;
     var actionBtn = oos
       ? '<button type="button" data-notify="' +
         product.id +
-        '" class="notify-icon-btn" aria-label="Notify me" title="Notify me">' +
+        '" class="notify-icon-btn product-card-action" aria-label="Notify me" title="Notify me">' +
         notifySvg() +
         "</button>"
       : '<button type="button" data-whatsapp="' +
         product.id +
-        '" class="wa-icon-btn-sm" aria-label="WhatsApp">' +
-        whatsappSvg() +
-        "</button>";
-    var overlayAction = oos
-      ? '<button type="button" data-notify="' +
-        product.id +
-        '" class="notify-icon-btn" aria-label="Notify me" title="Notify me">' +
-        notifySvg() +
-        "</button>"
-      : '<button type="button" data-whatsapp="' +
-        product.id +
-        '" class="wa-icon-btn" aria-label="WhatsApp" title="WhatsApp">' +
+        '" class="wa-icon-btn-sm product-card-action" aria-label="WhatsApp">' +
         whatsappSvg() +
         "</button>";
     var cartBtn = oos
       ? '<span class="oos-pill">Out of stock</span>'
       : '<button type="button" data-add-cart="' +
         product.id +
-        '" class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-700 hover:bg-primary hover:text-white transition-all" aria-label="Add to cart">' +
+        '" class="product-card-cart product-card-action" aria-label="Add to cart">' +
         cartSvg() +
         "</button>";
 
     return (
-      '<div class="group block h-full">' +
+      '<div class="group block h-full product-card">' +
       '<div class="relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full border border-slate-100 flex flex-col">' +
       '<a href="product.html?id=' +
       product.id +
-      '" class="relative aspect-square overflow-hidden bg-slate-50 block">' +
+      '" class="product-card-media relative aspect-square overflow-hidden bg-slate-50 block">' +
       '<img src="' +
       product.image +
       '" alt="' +
@@ -1234,35 +1705,33 @@ window.isProductOutOfStock = function (product) {
       (oos
         ? '<span class="absolute left-3 top-3 bg-stone-800 text-white text-[10px] font-semibold px-2 py-1 rounded uppercase tracking-wider">Sold out</span>'
         : "") +
-      '<div class="absolute right-3 top-3 flex flex-col gap-2 sm:opacity-0 sm:group-hover:opacity-100 sm:translate-x-4 sm:group-hover:translate-x-0 transition-all duration-300">' +
+      '<div class="absolute right-2 top-2 flex flex-col gap-2 sm:opacity-0 sm:group-hover:opacity-100 sm:translate-x-4 sm:group-hover:translate-x-0 transition-all duration-300">' +
       '<button type="button" data-share="' +
       product.id +
-      '" class="share-icon-btn" aria-label="Share" title="Share">' +
+      '" class="share-icon-btn product-card-share" aria-label="Share" title="Share">' +
       shareSvg() +
       "</button>" +
-      overlayAction +
       "</div>" +
       "</a>" +
-      '<div class="p-4 flex-grow flex flex-col">' +
+      '<div class="product-card-body flex-grow flex flex-col">' +
       '<a href="product.html?id=' +
       product.id +
-      '">' +
-      '<h3 class="text-slate-800 font-semibold text-sm mb-1 leading-snug line-clamp-2 group-hover:text-primary transition-colors">' +
+      '" class="product-card-title-link">' +
+      '<h3 class="product-card-title text-slate-800 font-semibold leading-snug line-clamp-2 group-hover:text-primary transition-colors">' +
       product.name +
       "</h3>" +
       "</a>" +
-      '<div class="mt-auto pt-3 flex items-center justify-between gap-2">' +
-      '<div class="flex flex-col">' +
-      '<span class="text-lg font-bold text-slate-900">' +
-      formatINR(product.price) +
-      "</span>" +
+      '<div class="product-card-footer mt-auto flex items-center justify-between">' +
+      '<div class="product-card-price min-w-0">' +
+      (contactPrice
+        ? window.formatProductPriceHtml
+          ? formatProductPriceHtml(product)
+          : '<span class="small">Contact for pricing</span>'
+        : '<span class="product-card-amount">' +
+          formatINR(product.price) +
+          "</span>") +
       "</div>" +
-      '<div class="flex items-center gap-2">' +
-      '<button type="button" data-share="' +
-      product.id +
-      '" class="share-icon-btn" aria-label="Share" title="Share">' +
-      shareSvg() +
-      "</button>" +
+      '<div class="product-card-actions flex items-center shrink-0">' +
       actionBtn +
       cartBtn +
       "</div>" +
@@ -1336,18 +1805,18 @@ window.isProductOutOfStock = function (product) {
         return (
           '<a href="category.html?id=' +
           cat.id +
-          '" class="group relative h-64 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">' +
+          '" class="category-card group relative h-64 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">' +
           '<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors z-10"></div>' +
           '<img src="' +
           cat.image +
           '" alt="' +
           cat.name +
           '" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />' +
-          '<div class="absolute bottom-0 left-0 p-6 z-20">' +
+          '<div class="category-card-label absolute bottom-0 left-0 p-6 z-20">' +
           '<h3 class="text-white text-xl font-bold mb-1 translate-y-2 group-hover:translate-y-0 transition-transform">' +
           cat.name +
           "</h3>" +
-          '<span class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Explore</span>' +
+          '<span class="category-card-explore text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Explore</span>' +
           "</div></a>"
         );
       })
@@ -1499,6 +1968,39 @@ window.INSTAGRAM = {
   ],
 };
 
+/* ==== pwa.js ==== */
+(function () {
+  // iOS Safari standalone (Add to Home Screen)
+  if (window.navigator.standalone === true) {
+    document.documentElement.classList.add("ios-standalone");
+  }
+
+  if (!("serviceWorker" in navigator)) return;
+
+  window.addEventListener("load", function () {
+    var swUrl = "sw.js";
+    navigator.serviceWorker
+      .register(swUrl)
+      .then(function (reg) {
+        if (reg.waiting) {
+          reg.waiting.postMessage({ type: "SKIP_WAITING" });
+        }
+        reg.addEventListener("updatefound", function () {
+          var worker = reg.installing;
+          if (!worker) return;
+          worker.addEventListener("statechange", function () {
+            if (worker.state === "installed" && navigator.serviceWorker.controller) {
+              // New version ready; activate on next visit via skipWaiting in install.
+            }
+          });
+        });
+      })
+      .catch(function () {
+        // Registration can fail on file:// or restricted hosts — ignore.
+      });
+  });
+})();
+
 /* ==== main.js (index.html) ==== */
 (function () {
   var __p = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
@@ -1529,7 +2031,6 @@ const slides = [
 ];
 
 const titleEl = document.getElementById("hero-title");
-const heroCta = document.querySelector(".hero-section a.px-10");
 const slidesEl = document.getElementById("hero-slides");
 const slidesMobileEl = document.getElementById("hero-slides-mobile");
 
@@ -1609,9 +2110,6 @@ function show(i) {
         ? '<span class="block mt-2 text-white/90">' + t.second + "</span>"
         : "");
   }
-  if (heroCta) {
-    heroCta.setAttribute("href", slides[current].href || "shop.html");
-  }
 }
 
 show(0);
@@ -1633,20 +2131,127 @@ setInterval(function () {
 }, 4000);
 
 var header = document.getElementById("site-header");
+var categoryBar = document.getElementById("category-sticky-bar");
+var categorySentinel = document.querySelector(".category-pin-sentinel");
 
-window.addEventListener("scroll", function () {
+function syncHeaderHeight() {
   if (!header) return;
-  var scrolled = window.scrollY > 50;
-  header.classList.toggle("absolute", !scrolled);
-  header.classList.toggle("fixed", scrolled);
-  header.classList.toggle("is-scrolled", scrolled);
-});
+  var h = Math.ceil(header.getBoundingClientRect().height);
+  if (h > 0) {
+    document.documentElement.style.setProperty("--site-header-height", h + "px");
+  }
+  return h || 72;
+}
+
+function updatePinnedCategory() {
+  if (!categoryBar || !categorySentinel) return;
+
+  // Desktop keeps the normal grid — no pin
+  if (window.innerWidth >= 768) {
+    categoryBar.classList.remove("is-fixed");
+    categorySentinel.style.height = "0px";
+    return;
+  }
+
+  var headerH = syncHeaderHeight();
+  var sentinelTop = categorySentinel.getBoundingClientRect().top;
+  var shouldFix = sentinelTop <= headerH;
+
+  if (shouldFix) {
+    if (!categoryBar.classList.contains("is-fixed")) {
+      categorySentinel.style.height = categoryBar.offsetHeight + "px";
+      categoryBar.classList.add("is-fixed");
+    }
+    categoryBar.style.top = headerH + "px";
+  } else {
+    categoryBar.classList.remove("is-fixed");
+    categoryBar.style.top = "";
+    categorySentinel.style.height = "0px";
+  }
+}
+
+function onScrollOrResize() {
+  if (header) {
+    var scrolled = window.scrollY > 50;
+    header.classList.toggle("absolute", !scrolled);
+    header.classList.toggle("fixed", scrolled);
+    header.classList.toggle("is-scrolled", scrolled);
+  }
+  syncHeaderHeight();
+  updatePinnedCategory();
+}
+
+window.addEventListener("scroll", onScrollOrResize, { passive: true });
+window.addEventListener("resize", onScrollOrResize);
+onScrollOrResize();
 
 UI.renderCategoryGrid("#category-grid");
-UI.renderGrid("#trending-grid", getProductsBySection("trending").slice(0, 4));
-UI.renderGrid("#bestsellers-grid", getProductsBySection("bestsellers").slice(0, 4));
-UI.renderGrid("#new-grid", getProductsBySection("new").slice(0, 4));
-UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
+
+function renderHomeCategorySections() {
+  var root = document.getElementById("home-category-sections");
+  if (!root || !window.STORE) return;
+
+  var alts = ["bg-cream", "bg-white"];
+  root.innerHTML = STORE.categories
+    .map(function (cat, idx) {
+      var products = getProductsByCategory(cat.id);
+      var gridId = "cat-grid-" + cat.id;
+      var sectionId = "cat-" + cat.id;
+      var bg = alts[idx % 2];
+      var body =
+        products.length > 0
+          ? '<div id="' +
+            gridId +
+            '" class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6"></div>'
+          : '<p class="text-stone-500 text-sm py-4">Products coming soon.</p>';
+
+      return (
+        '<section id="' +
+        sectionId +
+        '" class="home-cat-section py-10 ' +
+        bg +
+        ' relative overflow-hidden">' +
+        (bg === "bg-cream"
+          ? '<div class="absolute inset-0 opacity-[0.03] pointer-events-none pattern-bg"></div>'
+          : "") +
+        '<div class="container mx-auto px-4 relative z-10">' +
+        '<div class="home-cat-head flex items-center justify-between">' +
+        '<div class="home-cat-head-text min-w-0">' +
+        '<span class="home-cat-eyebrow text-accent uppercase tracking-[0.4em] text-[10px] font-medium mb-2 block">Collection</span>' +
+        '<h2 class="home-cat-title text-2xl md:text-4xl font-light text-primary font-serif italic tracking-tight">' +
+        cat.name +
+        "</h2>" +
+        "</div>" +
+        '<a href="category.html?id=' +
+        cat.id +
+        '" class="home-cat-viewall text-primary font-medium text-xs uppercase tracking-[0.2em] hover:text-accent transition-colors shrink-0">View all</a>' +
+        "</div>" +
+        body +
+        "</div></section>"
+      );
+    })
+    .join("");
+
+  STORE.categories.forEach(function (cat) {
+    var products = getProductsByCategory(cat.id);
+    if (products.length) {
+      UI.renderGrid("#cat-grid-" + cat.id, products);
+    }
+  });
+
+  // Sticky category chips jump to in-page sections
+  document.querySelectorAll("#category-grid .category-card").forEach(function (a) {
+    var href = a.getAttribute("href") || "";
+    var match = href.match(/[?&]id=([^&]+)/);
+    if (!match) return;
+    a.setAttribute("href", "#cat-" + match[1]);
+  });
+}
+
+renderHomeCategorySections();
+
+// Re-measure after category cards render
+requestAnimationFrame(updatePinnedCategory);
 
 })();
 
@@ -1659,15 +2264,26 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
 (function () {
   var filterId = "all";
 
+  function sortPrice(a, b, dir) {
+    var ap =
+      a.contactForPricing || a.price == null ? null : Number(a.price);
+    var bp =
+      b.contactForPricing || b.price == null ? null : Number(b.price);
+    if (ap == null && bp == null) return 0;
+    if (ap == null) return 1;
+    if (bp == null) return -1;
+    return dir * (ap - bp);
+  }
+
   function sortProducts(list, mode) {
     var items = list.slice();
     if (mode === "price-asc") {
       items.sort(function (a, b) {
-        return a.price - b.price;
+        return sortPrice(a, b, 1);
       });
     } else if (mode === "price-desc") {
       items.sort(function (a, b) {
-        return b.price - a.price;
+        return sortPrice(a, b, -1);
       });
     } else if (mode === "rating") {
       items.sort(function (a, b) {
@@ -1758,6 +2374,9 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
     var oos = window.isProductOutOfStock
       ? isProductOutOfStock(product)
       : product.inStock === false;
+    var contactPrice = window.isContactForPricing
+      ? isContactForPricing(product)
+      : !!product.contactForPricing;
     var primaryAction = oos
       ? '<button type="button" id="btn-notify" class="fk-btn fk-btn-notify fk-btn-icon">' +
         UI.notifySvg("w-5 h-5") +
@@ -1790,7 +2409,9 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
       "</div>" +
       '<div class="zoom-result" id="zoom-result"></div>' +
       "</div>" +
-      '<div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">' +
+      '<div class="mt-4 grid grid-cols-1 ' +
+      (oos ? "sm:grid-cols-2" : "sm:grid-cols-3") +
+      ' gap-3">' +
       cartAction +
       primaryAction +
       '<button type="button" id="btn-share" class="fk-btn fk-btn-share fk-btn-icon" data-share="' +
@@ -1827,14 +2448,20 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
       "<span>Share</span></button>" +
       "</div>" +
       '<div class="flex items-end gap-3 mb-2">' +
-      '<span class="text-3xl font-bold text-slate-900">' +
-      formatINR(product.price) +
-      "</span>" +
+      (contactPrice
+        ? window.formatProductPriceHtml
+          ? formatProductPriceHtml(product)
+          : '<span class="small">Contact for pricing</span>'
+        : '<span class="text-3xl font-bold text-slate-900">' +
+          formatINR(product.price) +
+          "</span>") +
       (oos
         ? '<span class="oos-status-badge">Out of stock</span>'
         : "") +
       "</div>" +
-      '<p class="text-xs text-stone-500 mb-6">Inclusive of all taxes · Prices in INR</p>' +
+      (contactPrice
+        ? '<p class="text-xs text-stone-500 mb-6">Message us on WhatsApp for current pricing and availability.</p>'
+        : '<p class="text-xs text-stone-500 mb-6">Inclusive of all taxes · Prices in INR</p>') +
       (oos
         ? ""
         : '<div class="mb-6">' +
@@ -2046,15 +2673,26 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
       .join("");
   }
 
+  function sortPrice(a, b, dir) {
+    var ap =
+      a.contactForPricing || a.price == null ? null : Number(a.price);
+    var bp =
+      b.contactForPricing || b.price == null ? null : Number(b.price);
+    if (ap == null && bp == null) return 0;
+    if (ap == null) return 1;
+    if (bp == null) return -1;
+    return dir * (ap - bp);
+  }
+
   function sortProducts(list, mode) {
     var items = list.slice();
     if (mode === "price-asc") {
       items.sort(function (a, b) {
-        return a.price - b.price;
+        return sortPrice(a, b, 1);
       });
     } else if (mode === "price-desc") {
       items.sort(function (a, b) {
-        return b.price - a.price;
+        return sortPrice(a, b, -1);
       });
     } else if (mode === "rating") {
       items.sort(function (a, b) {
@@ -2114,7 +2752,12 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
     var items = Cart.getCart();
     var root = document.getElementById("cart-items");
     document.getElementById("summary-count").textContent = String(Cart.getCartCount());
-    document.getElementById("summary-total").textContent = formatINR(Cart.cartTotal());
+    var hasContact = items.some(function (i) {
+      return i.contactForPricing || i.price == null;
+    });
+    document.getElementById("summary-total").innerHTML = hasContact
+      ? '<span class="small">Contact for pricing</span>'
+      : formatINR(Cart.cartTotal());
 
     if (!items.length) {
       root.innerHTML =
@@ -2127,6 +2770,13 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
 
     root.innerHTML = items
       .map(function (item) {
+        var contactPrice = !!(item.contactForPricing || item.price == null);
+        var priceHtml = contactPrice
+          ? '<span class="small">Contact for pricing</span>'
+          : formatINR(item.price);
+        var lineTotalHtml = contactPrice
+          ? '<span class="small">Contact for pricing</span>'
+          : formatINR(item.price * item.qty);
         return (
           '<div class="bg-white rounded-2xl border border-slate-100 p-4 flex gap-4 items-center">' +
           '<a href="product.html?id=' +
@@ -2145,7 +2795,7 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
           item.name +
           "</a>" +
           '<div class="text-lg font-bold mt-1">' +
-          formatINR(item.price) +
+          priceHtml +
           "</div>" +
           '<div class="flex items-center gap-3 mt-3">' +
           '<div class="inline-flex items-center border border-slate-200 rounded-lg overflow-hidden">' +
@@ -2170,7 +2820,7 @@ UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
           "</div>" +
           "</div>" +
           '<div class="text-right font-semibold text-slate-900 shrink-0">' +
-          formatINR(item.price * item.qty) +
+          lineTotalHtml +
           "</div>" +
           "</div>"
         );

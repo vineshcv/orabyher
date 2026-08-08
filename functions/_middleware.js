@@ -55,7 +55,12 @@ export async function onRequest(context) {
           const title = product.name + " | Orabyher";
           const desc =
             product.description ||
-            product.name + " — ₹" + product.price + " | Orabyher";
+            product.name +
+              " — " +
+              (product.contactForPricing
+                ? "Contact for pricing"
+                : "₹" + product.price) +
+              " | Orabyher";
           const image = origin + "/" + String(product.image || "og-image.jpg").replace(/^\//, "");
           html = upsertMeta(html, "property", "og:type", "product");
           html = upsertMeta(html, "property", "og:title", title);

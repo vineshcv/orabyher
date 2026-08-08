@@ -57,7 +57,12 @@ export default {
             const title = product.name + " | Orabyher";
             const desc =
               product.description ||
-              product.name + " — ₹" + product.price + " | Orabyher";
+              product.name +
+                " — " +
+                (product.contactForPricing
+                  ? "Contact for pricing"
+                  : "₹" + product.price) +
+                " | Orabyher";
             const image =
               origin +
               "/" +

@@ -14,6 +14,7 @@ CORE = [
     "loader.js",
     "customers-data.js",
     "instagram-data.js",
+    "pwa.js",
 ]
 
 # page filename → script

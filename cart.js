@@ -54,6 +54,7 @@
         name: product.name,
         price: product.price,
         image: product.image,
+        contactForPricing: !!product.contactForPricing,
         qty: qty,
       });
     }
@@ -88,7 +89,8 @@
 
   function cartTotal() {
     return readCart().reduce(function (sum, i) {
-      return sum + i.price * i.qty;
+      if (i.contactForPricing || i.price == null) return sum;
+      return sum + Number(i.price) * i.qty;
     }, 0);
   }
 
@@ -99,14 +101,22 @@
       window.location.pathname.replace(/[^/]*$/, "") +
       "product.html?id=" +
       product.id;
-    return [
+    var contactPrice = window.isContactForPricing
+      ? isContactForPricing(product)
+      : !!product.contactForPricing;
+    var lines = [
       "Hello! I am interested in this product:",
       "",
       "*" + product.name + "*",
-      "Price: *" + formatINR(product.price) + "*",
-      "Qty: " + qty,
-      "Link: " + pageUrl,
-    ].join("\n");
+    ];
+    if (contactPrice) {
+      lines.push("Please share the *pricing* for this item.");
+    } else {
+      lines.push("Price: *" + formatINR(product.price) + "*");
+      lines.push("Qty: " + qty);
+    }
+    lines.push("Link: " + pageUrl);
+    return lines.join("\n");
   }
 
   function openWhatsAppForProduct(productId, qty) {
@@ -126,7 +136,11 @@
       "Hello! Please *NOTIFY* me when this product is back in stock:",
       "",
       "*" + product.name + "*",
-      "Price: *" + formatINR(product.price) + "*",
+      "Price: *" +
+        (window.formatProductPrice
+          ? formatProductPrice(product)
+          : formatINR(product.price)) +
+        "*",
       "Status: Out of stock",
       "Link: " + pageUrl,
     ].join("\n");
@@ -147,19 +161,25 @@
     }
     var lines = ["Hello! I would like to order the following items:", ""];
     items.forEach(function (item, idx) {
-      lines.push(
-        idx +
-          1 +
-          ". " +
-          item.name +
-          " x " +
-          item.qty +
-          " = " +
-          formatINR(item.price * item.qty)
-      );
+      var line =
+        idx + 1 + ". " + item.name + " x " + item.qty + " = ";
+      if (item.contactForPricing || item.price == null) {
+        line += "Contact for pricing";
+      } else {
+        line += formatINR(item.price * item.qty);
+      }
+      lines.push(line);
     });
     lines.push("");
-    lines.push("Total: " + formatINR(cartTotal()));
+    var hasContact = items.some(function (i) {
+      return i.contactForPricing || i.price == null;
+    });
+    lines.push(
+      "Total: " +
+        (hasContact
+          ? formatINR(cartTotal()) + " (+ items pending pricing)"
+          : formatINR(cartTotal()))
+    );
     lines.push("");
     lines.push("Please share payment & delivery details.");
     var text = encodeURIComponent(lines.join("\n"));

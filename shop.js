@@ -1,15 +1,26 @@
 (function () {
   var filterId = "all";
 
+  function sortPrice(a, b, dir) {
+    var ap =
+      a.contactForPricing || a.price == null ? null : Number(a.price);
+    var bp =
+      b.contactForPricing || b.price == null ? null : Number(b.price);
+    if (ap == null && bp == null) return 0;
+    if (ap == null) return 1;
+    if (bp == null) return -1;
+    return dir * (ap - bp);
+  }
+
   function sortProducts(list, mode) {
     var items = list.slice();
     if (mode === "price-asc") {
       items.sort(function (a, b) {
-        return a.price - b.price;
+        return sortPrice(a, b, 1);
       });
     } else if (mode === "price-desc") {
       items.sort(function (a, b) {
-        return b.price - a.price;
+        return sortPrice(a, b, -1);
       });
     } else if (mode === "rating") {
       items.sort(function (a, b) {

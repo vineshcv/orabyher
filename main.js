@@ -22,7 +22,6 @@ const slides = [
 ];
 
 const titleEl = document.getElementById("hero-title");
-const heroCta = document.querySelector(".hero-section a.px-10");
 const slidesEl = document.getElementById("hero-slides");
 const slidesMobileEl = document.getElementById("hero-slides-mobile");
 
@@ -102,9 +101,6 @@ function show(i) {
         ? '<span class="block mt-2 text-white/90">' + t.second + "</span>"
         : "");
   }
-  if (heroCta) {
-    heroCta.setAttribute("href", slides[current].href || "shop.html");
-  }
 }
 
 show(0);
@@ -126,17 +122,124 @@ setInterval(function () {
 }, 4000);
 
 var header = document.getElementById("site-header");
+var categoryBar = document.getElementById("category-sticky-bar");
+var categorySentinel = document.querySelector(".category-pin-sentinel");
 
-window.addEventListener("scroll", function () {
+function syncHeaderHeight() {
   if (!header) return;
-  var scrolled = window.scrollY > 50;
-  header.classList.toggle("absolute", !scrolled);
-  header.classList.toggle("fixed", scrolled);
-  header.classList.toggle("is-scrolled", scrolled);
-});
+  var h = Math.ceil(header.getBoundingClientRect().height);
+  if (h > 0) {
+    document.documentElement.style.setProperty("--site-header-height", h + "px");
+  }
+  return h || 72;
+}
+
+function updatePinnedCategory() {
+  if (!categoryBar || !categorySentinel) return;
+
+  // Desktop keeps the normal grid — no pin
+  if (window.innerWidth >= 768) {
+    categoryBar.classList.remove("is-fixed");
+    categorySentinel.style.height = "0px";
+    return;
+  }
+
+  var headerH = syncHeaderHeight();
+  var sentinelTop = categorySentinel.getBoundingClientRect().top;
+  var shouldFix = sentinelTop <= headerH;
+
+  if (shouldFix) {
+    if (!categoryBar.classList.contains("is-fixed")) {
+      categorySentinel.style.height = categoryBar.offsetHeight + "px";
+      categoryBar.classList.add("is-fixed");
+    }
+    categoryBar.style.top = headerH + "px";
+  } else {
+    categoryBar.classList.remove("is-fixed");
+    categoryBar.style.top = "";
+    categorySentinel.style.height = "0px";
+  }
+}
+
+function onScrollOrResize() {
+  if (header) {
+    var scrolled = window.scrollY > 50;
+    header.classList.toggle("absolute", !scrolled);
+    header.classList.toggle("fixed", scrolled);
+    header.classList.toggle("is-scrolled", scrolled);
+  }
+  syncHeaderHeight();
+  updatePinnedCategory();
+}
+
+window.addEventListener("scroll", onScrollOrResize, { passive: true });
+window.addEventListener("resize", onScrollOrResize);
+onScrollOrResize();
 
 UI.renderCategoryGrid("#category-grid");
-UI.renderGrid("#trending-grid", getProductsBySection("trending").slice(0, 4));
-UI.renderGrid("#bestsellers-grid", getProductsBySection("bestsellers").slice(0, 4));
-UI.renderGrid("#new-grid", getProductsBySection("new").slice(0, 4));
-UI.renderGrid("#popular-grid", getProductsBySection("popular").slice(0, 8));
+
+function renderHomeCategorySections() {
+  var root = document.getElementById("home-category-sections");
+  if (!root || !window.STORE) return;
+
+  var alts = ["bg-cream", "bg-white"];
+  root.innerHTML = STORE.categories
+    .map(function (cat, idx) {
+      var products = getProductsByCategory(cat.id);
+      var gridId = "cat-grid-" + cat.id;
+      var sectionId = "cat-" + cat.id;
+      var bg = alts[idx % 2];
+      var body =
+        products.length > 0
+          ? '<div id="' +
+            gridId +
+            '" class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6"></div>'
+          : '<p class="text-stone-500 text-sm py-4">Products coming soon.</p>';
+
+      return (
+        '<section id="' +
+        sectionId +
+        '" class="home-cat-section py-10 ' +
+        bg +
+        ' relative overflow-hidden">' +
+        (bg === "bg-cream"
+          ? '<div class="absolute inset-0 opacity-[0.03] pointer-events-none pattern-bg"></div>'
+          : "") +
+        '<div class="container mx-auto px-4 relative z-10">' +
+        '<div class="home-cat-head flex items-center justify-between">' +
+        '<div class="home-cat-head-text min-w-0">' +
+        '<span class="home-cat-eyebrow text-accent uppercase tracking-[0.4em] text-[10px] font-medium mb-2 block">Collection</span>' +
+        '<h2 class="home-cat-title text-2xl md:text-4xl font-light text-primary font-serif italic tracking-tight">' +
+        cat.name +
+        "</h2>" +
+        "</div>" +
+        '<a href="category.html?id=' +
+        cat.id +
+        '" class="home-cat-viewall text-primary font-medium text-xs uppercase tracking-[0.2em] hover:text-accent transition-colors shrink-0">View all</a>' +
+        "</div>" +
+        body +
+        "</div></section>"
+      );
+    })
+    .join("");
+
+  STORE.categories.forEach(function (cat) {
+    var products = getProductsByCategory(cat.id);
+    if (products.length) {
+      UI.renderGrid("#cat-grid-" + cat.id, products);
+    }
+  });
+
+  // Sticky category chips jump to in-page sections
+  document.querySelectorAll("#category-grid .category-card").forEach(function (a) {
+    var href = a.getAttribute("href") || "";
+    var match = href.match(/[?&]id=([^&]+)/);
+    if (!match) return;
+    a.setAttribute("href", "#cat-" + match[1]);
+  });
+}
+
+renderHomeCategorySections();
+
+// Re-measure after category cards render
+requestAnimationFrame(updatePinnedCategory);

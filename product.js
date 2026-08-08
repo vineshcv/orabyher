@@ -22,6 +22,9 @@
     var oos = window.isProductOutOfStock
       ? isProductOutOfStock(product)
       : product.inStock === false;
+    var contactPrice = window.isContactForPricing
+      ? isContactForPricing(product)
+      : !!product.contactForPricing;
     var primaryAction = oos
       ? '<button type="button" id="btn-notify" class="fk-btn fk-btn-notify fk-btn-icon">' +
         UI.notifySvg("w-5 h-5") +
@@ -54,7 +57,9 @@
       "</div>" +
       '<div class="zoom-result" id="zoom-result"></div>' +
       "</div>" +
-      '<div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">' +
+      '<div class="mt-4 grid grid-cols-1 ' +
+      (oos ? "sm:grid-cols-2" : "sm:grid-cols-3") +
+      ' gap-3">' +
       cartAction +
       primaryAction +
       '<button type="button" id="btn-share" class="fk-btn fk-btn-share fk-btn-icon" data-share="' +
@@ -91,14 +96,20 @@
       "<span>Share</span></button>" +
       "</div>" +
       '<div class="flex items-end gap-3 mb-2">' +
-      '<span class="text-3xl font-bold text-slate-900">' +
-      formatINR(product.price) +
-      "</span>" +
+      (contactPrice
+        ? window.formatProductPriceHtml
+          ? formatProductPriceHtml(product)
+          : '<span class="small">Contact for pricing</span>'
+        : '<span class="text-3xl font-bold text-slate-900">' +
+          formatINR(product.price) +
+          "</span>") +
       (oos
         ? '<span class="oos-status-badge">Out of stock</span>'
         : "") +
       "</div>" +
-      '<p class="text-xs text-stone-500 mb-6">Inclusive of all taxes · Prices in INR</p>' +
+      (contactPrice
+        ? '<p class="text-xs text-stone-500 mb-6">Message us on WhatsApp for current pricing and availability.</p>'
+        : '<p class="text-xs text-stone-500 mb-6">Inclusive of all taxes · Prices in INR</p>') +
       (oos
         ? ""
         : '<div class="mb-6">' +

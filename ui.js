@@ -3,42 +3,34 @@
     var oos = window.isProductOutOfStock
       ? isProductOutOfStock(product)
       : product.inStock === false;
+    var contactPrice = window.isContactForPricing
+      ? isContactForPricing(product)
+      : !!product.contactForPricing;
     var actionBtn = oos
       ? '<button type="button" data-notify="' +
         product.id +
-        '" class="notify-icon-btn" aria-label="Notify me" title="Notify me">' +
+        '" class="notify-icon-btn product-card-action" aria-label="Notify me" title="Notify me">' +
         notifySvg() +
         "</button>"
       : '<button type="button" data-whatsapp="' +
         product.id +
-        '" class="wa-icon-btn-sm" aria-label="WhatsApp">' +
-        whatsappSvg() +
-        "</button>";
-    var overlayAction = oos
-      ? '<button type="button" data-notify="' +
-        product.id +
-        '" class="notify-icon-btn" aria-label="Notify me" title="Notify me">' +
-        notifySvg() +
-        "</button>"
-      : '<button type="button" data-whatsapp="' +
-        product.id +
-        '" class="wa-icon-btn" aria-label="WhatsApp" title="WhatsApp">' +
+        '" class="wa-icon-btn-sm product-card-action" aria-label="WhatsApp">' +
         whatsappSvg() +
         "</button>";
     var cartBtn = oos
       ? '<span class="oos-pill">Out of stock</span>'
       : '<button type="button" data-add-cart="' +
         product.id +
-        '" class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-700 hover:bg-primary hover:text-white transition-all" aria-label="Add to cart">' +
+        '" class="product-card-cart product-card-action" aria-label="Add to cart">' +
         cartSvg() +
         "</button>";
 
     return (
-      '<div class="group block h-full">' +
+      '<div class="group block h-full product-card">' +
       '<div class="relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full border border-slate-100 flex flex-col">' +
       '<a href="product.html?id=' +
       product.id +
-      '" class="relative aspect-square overflow-hidden bg-slate-50 block">' +
+      '" class="product-card-media relative aspect-square overflow-hidden bg-slate-50 block">' +
       '<img src="' +
       product.image +
       '" alt="' +
@@ -49,35 +41,33 @@
       (oos
         ? '<span class="absolute left-3 top-3 bg-stone-800 text-white text-[10px] font-semibold px-2 py-1 rounded uppercase tracking-wider">Sold out</span>'
         : "") +
-      '<div class="absolute right-3 top-3 flex flex-col gap-2 sm:opacity-0 sm:group-hover:opacity-100 sm:translate-x-4 sm:group-hover:translate-x-0 transition-all duration-300">' +
+      '<div class="absolute right-2 top-2 flex flex-col gap-2 sm:opacity-0 sm:group-hover:opacity-100 sm:translate-x-4 sm:group-hover:translate-x-0 transition-all duration-300">' +
       '<button type="button" data-share="' +
       product.id +
-      '" class="share-icon-btn" aria-label="Share" title="Share">' +
+      '" class="share-icon-btn product-card-share" aria-label="Share" title="Share">' +
       shareSvg() +
       "</button>" +
-      overlayAction +
       "</div>" +
       "</a>" +
-      '<div class="p-4 flex-grow flex flex-col">' +
+      '<div class="product-card-body flex-grow flex flex-col">' +
       '<a href="product.html?id=' +
       product.id +
-      '">' +
-      '<h3 class="text-slate-800 font-semibold text-sm mb-1 leading-snug line-clamp-2 group-hover:text-primary transition-colors">' +
+      '" class="product-card-title-link">' +
+      '<h3 class="product-card-title text-slate-800 font-semibold leading-snug line-clamp-2 group-hover:text-primary transition-colors">' +
       product.name +
       "</h3>" +
       "</a>" +
-      '<div class="mt-auto pt-3 flex items-center justify-between gap-2">' +
-      '<div class="flex flex-col">' +
-      '<span class="text-lg font-bold text-slate-900">' +
-      formatINR(product.price) +
-      "</span>" +
+      '<div class="product-card-footer mt-auto flex items-center justify-between">' +
+      '<div class="product-card-price min-w-0">' +
+      (contactPrice
+        ? window.formatProductPriceHtml
+          ? formatProductPriceHtml(product)
+          : '<span class="small">Contact for pricing</span>'
+        : '<span class="product-card-amount">' +
+          formatINR(product.price) +
+          "</span>") +
       "</div>" +
-      '<div class="flex items-center gap-2">' +
-      '<button type="button" data-share="' +
-      product.id +
-      '" class="share-icon-btn" aria-label="Share" title="Share">' +
-      shareSvg() +
-      "</button>" +
+      '<div class="product-card-actions flex items-center shrink-0">' +
       actionBtn +
       cartBtn +
       "</div>" +
@@ -151,18 +141,18 @@
         return (
           '<a href="category.html?id=' +
           cat.id +
-          '" class="group relative h-64 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">' +
+          '" class="category-card group relative h-64 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">' +
           '<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors z-10"></div>' +
           '<img src="' +
           cat.image +
           '" alt="' +
           cat.name +
           '" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />' +
-          '<div class="absolute bottom-0 left-0 p-6 z-20">' +
+          '<div class="category-card-label absolute bottom-0 left-0 p-6 z-20">' +
           '<h3 class="text-white text-xl font-bold mb-1 translate-y-2 group-hover:translate-y-0 transition-transform">' +
           cat.name +
           "</h3>" +
-          '<span class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Explore</span>' +
+          '<span class="category-card-explore text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Explore</span>' +
           "</div></a>"
         );
       })

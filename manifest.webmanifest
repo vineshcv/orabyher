@@ -1,0 +1,40 @@
+{
+  "name": "Orabyher",
+  "short_name": "Orabyher",
+  "description": "Heritage jewellery and handloom sarees — shop temple jewellery, haarams, earrings and festive sarees.",
+  "id": "/",
+  "start_url": "https://shop.orabyher.workers.dev/",
+  "scope": "https://shop.orabyher.workers.dev/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fffbf0",
+  "theme_color": "#881337",
+  "lang": "en",
+  "categories": ["shopping", "lifestyle"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
