@@ -164,9 +164,44 @@
     {
       "id": "blue-flower-golden-kasavu-set-mundu",
       "name": "Blue Flower with Golden Kasavu (2.8mtr)",
-      "contactForPricing": true,
       "image": "product-blue-flower-golden-kasavu-set-mundu.jpg",
-      "description": "Cream Kerala set mundu with a wide golden kasavu border and deep blue flower motifs with black leaf accents — a 2.8 metre festive set for Onam and traditional occasions."
+      "description": "Cream Kerala set mundu with a wide golden kasavu border and deep blue flower motifs with black leaf accents — a 2.8 metre festive set for Onam and traditional occasions.",
+      "price": 875
+    },
+    {
+      "id": "set-mundu-handloom-cotton",
+      "name": "Set Mundu Handloom Cotton",
+      "image": "product-set-mundu-handloom-cotton.jpg",
+      "description": "Cream handloom cotton set mundu with alternating green and purple peacock feather motifs and a bold green-purple striped border — a classic Kerala two-piece for Onam and traditional occasions.",
+      "price": 690
+    },
+    {
+      "id": "set-mundu-handloom-cotton-2-8m",
+      "name": "Set Mundu Handloom Cotton (2.8mtr)",
+      "image": "product-set-mundu-handloom-cotton-2-8m.jpg",
+      "description": "Cream handloom cotton set mundu (2.8 metre extra length) with a black and lime green striped border and grey band of black fan floral motifs — a classic Kerala single set for Onam and traditional occasions.",
+      "price": 770
+    },
+    {
+      "id": "set-mundu-handloom-cotton-orange-green",
+      "name": "Set Mundu Handloom Cotton (Orange Green Kasavu)",
+      "image": "product-set-mundu-handloom-cotton-orange-green.jpg",
+      "description": "Cream handloom cotton set mundu with a bold orange, forest green, and golden kasavu striped border and a fine multi-colour secondary line — a classic Kerala two-piece for Onam and traditional occasions.",
+      "price": 640
+    },
+    {
+      "id": "set-mundu-handloom-cotton-maroon-blouse",
+      "name": "Set Mundu Handloom Cotton with Blouse Piece",
+      "image": "product-set-mundu-handloom-cotton-maroon-blouse.jpg",
+      "description": "Cream handloom cotton set mundu (2.8 metre) with a wide maroon floral block-print border, maroon tassels, and a matching maroon floral blouse piece — a special-quality Kerala single set for Onam and traditional occasions.",
+      "price": 720
+    },
+    {
+      "id": "set-mundu-handloom-cotton-green-blouse",
+      "name": "Set Mundu Handloom Cotton with Blouse (Green Gold)",
+      "image": "product-set-mundu-handloom-cotton-green-blouse.jpg",
+      "description": "Cream handloom cotton set mundu (2.8 metre) with a dark green border of golden teardrop motifs, black geometric accents, and a matching dark green gold-print blouse piece — a special-quality Kerala single set for Onam and traditional occasions.",
+      "price": 840
     }
   ]
 }

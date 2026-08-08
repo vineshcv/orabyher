@@ -863,9 +863,8 @@ window.STORE = {
     {
       id: "blue-flower-golden-kasavu-set-mundu",
       name: "Blue Flower with Golden Kasavu (2.8mtr)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 875,
+      mrp: 875,
       categoryId: "set-mundu",
       rating: 4.9,
       reviews: 0,
@@ -898,69 +897,197 @@ window.STORE = {
         "popular",
         "bestsellers"
       ]
+    },
+    {
+      id: "set-mundu-handloom-cotton",
+      name: "Set Mundu Handloom Cotton",
+      price: 690,
+      mrp: 690,
+      categoryId: "set-mundu",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-set-mundu-handloom-cotton.jpg",
+      images: [
+        "product-set-mundu-handloom-cotton.jpg",
+        "product-set-mundu-handloom-cotton-2.jpg",
+        "product-set-mundu-handloom-cotton-3.jpg"
+      ],
+      description: "Cream handloom cotton set mundu with alternating green and purple peacock feather motifs and a bold green-purple striped border — a classic Kerala two-piece for Onam and traditional occasions.",
+      highlights: [
+        "Handloom cotton set mundu",
+        "Peacock feather motif border",
+        "Green & purple striped kara",
+        "Cream traditional body",
+        "Onam & temple ready"
+      ],
+      specs: {
+        Material: "Handloom Cotton",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Green / Purple",
+        Type: "Set Mundu",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "set-mundu-handloom-cotton-2-8m",
+      name: "Set Mundu Handloom Cotton (2.8mtr)",
+      price: 770,
+      mrp: 770,
+      categoryId: "set-mundu",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-set-mundu-handloom-cotton-2-8m.jpg",
+      images: [
+        "product-set-mundu-handloom-cotton-2-8m.jpg",
+        "product-set-mundu-handloom-cotton-2-8m-2.jpg",
+        "product-set-mundu-handloom-cotton-2-8m-3.jpg",
+        "product-set-mundu-handloom-cotton-2-8m-4.jpg"
+      ],
+      description: "Cream handloom cotton set mundu (2.8 metre extra length) with a black and lime green striped border and grey band of black fan floral motifs — a classic Kerala single set for Onam and traditional occasions.",
+      highlights: [
+        "Handloom cotton set mundu (2.8 mtr)",
+        "Extra length single set",
+        "Black & lime green striped border",
+        "Fan floral motif on grey band",
+        "Onam & temple ready"
+      ],
+      specs: {
+        Material: "Handloom Cotton",
+        Length: "2.8 metre",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Black / Green / Grey",
+        Type: "Set Mundu",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "set-mundu-handloom-cotton-orange-green",
+      name: "Set Mundu Handloom Cotton (Orange Green Kasavu)",
+      price: 640,
+      mrp: 640,
+      categoryId: "set-mundu",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-set-mundu-handloom-cotton-orange-green.jpg",
+      images: [
+        "product-set-mundu-handloom-cotton-orange-green.jpg",
+        "product-set-mundu-handloom-cotton-orange-green-2.jpg",
+        "product-set-mundu-handloom-cotton-orange-green-3.jpg",
+        "product-set-mundu-handloom-cotton-orange-green-4.jpg"
+      ],
+      description: "Cream handloom cotton set mundu with a bold orange, forest green, and golden kasavu striped border and a fine multi-colour secondary line — a classic Kerala two-piece for Onam and traditional occasions.",
+      highlights: [
+        "Handloom cotton set mundu",
+        "Orange, green & gold kasavu border",
+        "Fine secondary stripe detail",
+        "Cream traditional body",
+        "Onam & temple ready"
+      ],
+      specs: {
+        Material: "Handloom Cotton",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Orange / Green / Gold",
+        Type: "Set Mundu",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "set-mundu-handloom-cotton-maroon-blouse",
+      name: "Set Mundu Handloom Cotton with Blouse Piece",
+      price: 720,
+      mrp: 720,
+      categoryId: "set-mundu",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-set-mundu-handloom-cotton-maroon-blouse.jpg",
+      images: [
+        "product-set-mundu-handloom-cotton-maroon-blouse.jpg",
+        "product-set-mundu-handloom-cotton-maroon-blouse-2.jpg",
+        "product-set-mundu-handloom-cotton-maroon-blouse-3.jpg",
+        "product-set-mundu-handloom-cotton-maroon-blouse-4.jpg"
+      ],
+      description: "Cream handloom cotton set mundu (2.8 metre) with a wide maroon floral block-print border, maroon tassels, and a matching maroon floral blouse piece — a special-quality Kerala single set for Onam and traditional occasions.",
+      highlights: [
+        "Handloom cotton set mundu (2.8 mtr)",
+        "Includes matching blouse piece",
+        "Maroon floral block-print border",
+        "Decorative maroon tassels",
+        "Onam & temple ready"
+      ],
+      specs: {
+        Material: "Handloom Cotton",
+        Length: "2.8 metre",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Maroon",
+        Type: "Set Mundu with Blouse Piece",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "set-mundu-handloom-cotton-green-blouse",
+      name: "Set Mundu Handloom Cotton with Blouse (Green Gold)",
+      price: 840,
+      mrp: 840,
+      categoryId: "set-mundu",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-set-mundu-handloom-cotton-green-blouse.jpg",
+      images: [
+        "product-set-mundu-handloom-cotton-green-blouse.jpg",
+        "product-set-mundu-handloom-cotton-green-blouse-2.jpg",
+        "product-set-mundu-handloom-cotton-green-blouse-3.jpg"
+      ],
+      description: "Cream handloom cotton set mundu (2.8 metre) with a dark green border of golden teardrop motifs, black geometric accents, and a matching dark green gold-print blouse piece — a special-quality Kerala single set for Onam and traditional occasions.",
+      highlights: [
+        "Handloom cotton set mundu (2.8 mtr)",
+        "Includes matching blouse piece",
+        "Dark green border with gold teardrop motifs",
+        "Extra length single set",
+        "Onam & temple ready"
+      ],
+      specs: {
+        Material: "Handloom Cotton",
+        Length: "2.8 metre",
+        Occasion: "Onam / Festival / Temple",
+        Colour: "Cream / Dark Green / Gold",
+        Type: "Set Mundu with Blouse Piece",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
     }
   ]
-};
-
-
-window.getProductById = function (id) {
-  return STORE.products.find(function (p) {
-    return p.id === id;
-  });
-};
-
-window.getCategoryById = function (id) {
-  return STORE.categories.find(function (c) {
-    return c.id === id;
-  });
-};
-
-window.getProductsByCategory = function (categoryId) {
-  return STORE.products.filter(function (p) {
-    return p.categoryId === categoryId;
-  });
-};
-
-window.getProductsBySection = function (section) {
-  return STORE.products.filter(function (p) {
-    return p.sections && p.sections.indexOf(section) !== -1;
-  });
-};
-
-window.formatINR = function (amount) {
-  return (
-    "₹" +
-    Number(amount).toLocaleString("en-IN", {
-      maximumFractionDigits: 0,
-    })
-  );
-};
-
-window.isContactForPricing = function (product) {
-  return !!(product && product.contactForPricing);
-};
-
-window.formatProductPrice = function (product) {
-  if (window.isContactForPricing(product)) return "Contact for pricing";
-  return formatINR(product && product.price);
-};
-
-window.formatProductPriceHtml = function (product) {
-  if (window.isContactForPricing(product)) {
-    return '<span class="small">Contact for pricing</span>';
-  }
-  return formatINR(product && product.price);
-};
-
-window.isProductOutOfStock = function (product) {
-  if (!product) return false;
-  if (product.inStock === false) return true;
-  var name = String(product.name || "").toLowerCase();
-  var id = String(product.id || "").toLowerCase();
-  return (
-    name.indexOf("stock out") !== -1 ||
-    name.indexOf("sold out") !== -1 ||
-    id.indexOf("sold_out") !== -1 ||
-    id.indexOf("stock_out") !== -1
-  );
 };
