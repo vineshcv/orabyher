@@ -481,46 +481,10 @@ window.STORE = {
       ]
     },
     {
-      id: "blue-gold-check-saree-1299",
-      name: "Blue Gold Border Checkered Saree",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
-      categoryId: "saree",
-      rating: 4.8,
-      reviews: 0,
-      inStock: true,
-      image: "product-blue-gold-check-saree-1299.jpg",
-      images: [
-        "product-blue-gold-check-saree-1299.jpg"
-      ],
-      description: "Cream checkered saree with a fine gold grid weave and a rich royal-blue border framed by shimmering gold zari stripes — a soft festive look for Onam, temple, and celebratory wear.",
-      highlights: [
-        "Cream body with gold check weave",
-        "Royal blue & gold zari border",
-        "Lightweight festive drape",
-        "Temple & Onam ready",
-        "Elegant traditional finish"
-      ],
-      specs: {
-        Material: "Cotton / Silk-cotton blend",
-        Occasion: "Festival / Temple / Party",
-        Colour: "Cream / Royal Blue / Gold",
-        "Care Instructions": "Dry clean preferred; store folded"
-      },
-      sections: [
-        "new",
-        "trending",
-        "popular",
-        "bestsellers"
-      ]
-    },
-    {
       id: "orange-black-check-saree-1299",
       name: "Orange Black Border Checkered Saree",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 960,
+      mrp: 960,
       categoryId: "saree",
       rating: 4.8,
       reviews: 0,
@@ -553,9 +517,8 @@ window.STORE = {
     {
       id: "lotus-cotton-saree-handloom",
       name: "Lotus Cotton Saree (Handloom)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 870,
+      mrp: 870,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -592,9 +555,8 @@ window.STORE = {
     {
       id: "green-striped-kasavu-sari-handloom",
       name: "Green Striped Kasavu Sari (Handloom)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 879,
+      mrp: 879,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -631,9 +593,8 @@ window.STORE = {
     {
       id: "golden-flower-kasavu-saree-handloom",
       name: "Golden Flower Embroidery Kasavu Saree (Handloom Cotton)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 1100,
+      mrp: 1100,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -672,9 +633,8 @@ window.STORE = {
     {
       id: "orange-black-kasavu-saree-handloom",
       name: "Orange Black Combination Kasavu Cotton Saree (Handloom Cotton)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 960,
+      mrp: 960,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -711,9 +671,8 @@ window.STORE = {
     {
       id: "blue-checks-temple-saree-handloom",
       name: "Blue Checks Temple Design Saree (Handloom Cotton)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 1150,
+      mrp: 1150,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -751,9 +710,8 @@ window.STORE = {
     {
       id: "green-black-kasavu-saree-handloom",
       name: "Stripped Green Black Combination Kasavu Saree (Handloom Cotton)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 980,
+      mrp: 980,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -790,9 +748,8 @@ window.STORE = {
     {
       id: "pink-golden-kasavu-saree-handloom",
       name: "Pink Golden Design Kasavu Saree (Handloom Cotton)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 1299,
+      mrp: 1299,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -829,9 +786,8 @@ window.STORE = {
     {
       id: "cotton-combination-saree",
       name: "Cotton Combination Saree",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 830,
+      mrp: 830,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -856,6 +812,46 @@ window.STORE = {
         Colour: "Cream / Gold",
         Weave: "Handloom",
         Embellishment: "Gold floral zari work",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "peacock-embroidery-saree-handloom",
+      name: "Peacock Embroidery Saree (Handloom Cotton)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-peacock-embroidery-saree.jpg",
+      images: [
+        "product-peacock-embroidery-saree.jpg",
+        "product-peacock-embroidery-saree-2.jpg",
+        "product-peacock-embroidery-saree-3.jpg",
+        "product-peacock-embroidery-saree-4.jpg"
+      ],
+      description: "Cream handloom cotton saree with striking peacock embroidery in gold and magenta, black vine accents, and a bold black-and-gold border — a festive statement drape for Onam and celebrations.",
+      highlights: [
+        "Handloom cotton weave",
+        "Gold & magenta peacock embroidery",
+        "Black floral vine accents",
+        "Black & gold border detail",
+        "Onam & festive ready"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Celebration",
+        Colour: "Cream / Gold / Magenta / Black",
+        Weave: "Handloom",
+        Embellishment: "Peacock embroidery",
         "Care Instructions": "Dry clean preferred; store folded"
       },
       sections: [

@@ -486,46 +486,10 @@ window.STORE = {
       ]
     },
     {
-      id: "blue-gold-check-saree-1299",
-      name: "Blue Gold Border Checkered Saree",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
-      categoryId: "saree",
-      rating: 4.8,
-      reviews: 0,
-      inStock: true,
-      image: "product-blue-gold-check-saree-1299.jpg",
-      images: [
-        "product-blue-gold-check-saree-1299.jpg"
-      ],
-      description: "Cream checkered saree with a fine gold grid weave and a rich royal-blue border framed by shimmering gold zari stripes — a soft festive look for Onam, temple, and celebratory wear.",
-      highlights: [
-        "Cream body with gold check weave",
-        "Royal blue & gold zari border",
-        "Lightweight festive drape",
-        "Temple & Onam ready",
-        "Elegant traditional finish"
-      ],
-      specs: {
-        Material: "Cotton / Silk-cotton blend",
-        Occasion: "Festival / Temple / Party",
-        Colour: "Cream / Royal Blue / Gold",
-        "Care Instructions": "Dry clean preferred; store folded"
-      },
-      sections: [
-        "new",
-        "trending",
-        "popular",
-        "bestsellers"
-      ]
-    },
-    {
       id: "orange-black-check-saree-1299",
       name: "Orange Black Border Checkered Saree",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 960,
+      mrp: 960,
       categoryId: "saree",
       rating: 4.8,
       reviews: 0,
@@ -558,9 +522,8 @@ window.STORE = {
     {
       id: "lotus-cotton-saree-handloom",
       name: "Lotus Cotton Saree (Handloom)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 870,
+      mrp: 870,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -597,9 +560,8 @@ window.STORE = {
     {
       id: "green-striped-kasavu-sari-handloom",
       name: "Green Striped Kasavu Sari (Handloom)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 879,
+      mrp: 879,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -636,9 +598,8 @@ window.STORE = {
     {
       id: "golden-flower-kasavu-saree-handloom",
       name: "Golden Flower Embroidery Kasavu Saree (Handloom Cotton)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 1100,
+      mrp: 1100,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -677,9 +638,8 @@ window.STORE = {
     {
       id: "orange-black-kasavu-saree-handloom",
       name: "Orange Black Combination Kasavu Cotton Saree (Handloom Cotton)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 960,
+      mrp: 960,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -716,9 +676,8 @@ window.STORE = {
     {
       id: "blue-checks-temple-saree-handloom",
       name: "Blue Checks Temple Design Saree (Handloom Cotton)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 1150,
+      mrp: 1150,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -756,9 +715,8 @@ window.STORE = {
     {
       id: "green-black-kasavu-saree-handloom",
       name: "Stripped Green Black Combination Kasavu Saree (Handloom Cotton)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 980,
+      mrp: 980,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -795,9 +753,8 @@ window.STORE = {
     {
       id: "pink-golden-kasavu-saree-handloom",
       name: "Pink Golden Design Kasavu Saree (Handloom Cotton)",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 1299,
+      mrp: 1299,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -834,9 +791,8 @@ window.STORE = {
     {
       id: "cotton-combination-saree",
       name: "Cotton Combination Saree",
-      contactForPricing: true,
-      price: null,
-      mrp: null,
+      price: 830,
+      mrp: 830,
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
@@ -861,6 +817,46 @@ window.STORE = {
         Colour: "Cream / Gold",
         Weave: "Handloom",
         Embellishment: "Gold floral zari work",
+        "Care Instructions": "Dry clean preferred; store folded"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "peacock-embroidery-saree-handloom",
+      name: "Peacock Embroidery Saree (Handloom Cotton)",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "saree",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-peacock-embroidery-saree.jpg",
+      images: [
+        "product-peacock-embroidery-saree.jpg",
+        "product-peacock-embroidery-saree-2.jpg",
+        "product-peacock-embroidery-saree-3.jpg",
+        "product-peacock-embroidery-saree-4.jpg"
+      ],
+      description: "Cream handloom cotton saree with striking peacock embroidery in gold and magenta, black vine accents, and a bold black-and-gold border — a festive statement drape for Onam and celebrations.",
+      highlights: [
+        "Handloom cotton weave",
+        "Gold & magenta peacock embroidery",
+        "Black floral vine accents",
+        "Black & gold border detail",
+        "Onam & festive ready"
+      ],
+      specs: {
+        Material: "Handloom cotton",
+        Occasion: "Onam / Festival / Celebration",
+        Colour: "Cream / Gold / Magenta / Black",
+        Weave: "Handloom",
+        Embellishment: "Peacock embroidery",
         "Care Instructions": "Dry clean preferred; store folded"
       },
       sections: [
@@ -1689,33 +1685,91 @@ window.isProductOutOfStock = function (product) {
         cartSvg() +
         "</button>";
 
+    var images =
+      product.images && product.images.length
+        ? product.images.slice(0, 6)
+        : [product.image];
+    var productUrl = "product.html?id=" + product.id;
+    var mediaHtml;
+
+    if (images.length > 1) {
+      mediaHtml =
+        '<div class="product-card-media relative aspect-square overflow-hidden bg-slate-50">' +
+        '<div class="card-carousel" data-card-carousel data-href="' +
+        productUrl +
+        '">' +
+        images
+          .map(function (src, i) {
+            return (
+              '<div class="card-carousel-slide">' +
+              '<img src="' +
+              src +
+              '" alt="' +
+              product.name +
+              '" loading="' +
+              (i === 0 ? "lazy" : "lazy") +
+              '" decoding="async" class="' +
+              (oos ? "opacity-80" : "") +
+              '" />' +
+              "</div>"
+            );
+          })
+          .join("") +
+        "</div>" +
+        '<div class="card-carousel-dots" aria-hidden="true">' +
+        images
+          .map(function (_src, i) {
+            return (
+              '<span class="card-carousel-dot' +
+              (i === 0 ? " active" : "") +
+              '"></span>'
+            );
+          })
+          .join("") +
+        "</div>" +
+        (oos
+          ? '<span class="absolute left-3 top-3 z-20 bg-stone-800 text-white text-[10px] font-semibold px-2 py-1 rounded uppercase tracking-wider">Sold out</span>'
+          : "") +
+        '<div class="absolute right-2 top-2 z-20 flex flex-col gap-2">' +
+        '<button type="button" data-share="' +
+        product.id +
+        '" class="share-icon-btn product-card-share" aria-label="Share" title="Share">' +
+        shareSvg() +
+        "</button>" +
+        "</div>" +
+        "</div>";
+    } else {
+      mediaHtml =
+        '<a href="' +
+        productUrl +
+        '" class="product-card-media relative aspect-square overflow-hidden bg-slate-50 block">' +
+        '<img src="' +
+        images[0] +
+        '" alt="' +
+        product.name +
+        '" loading="lazy" decoding="async" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110' +
+        (oos ? " opacity-80" : "") +
+        '" />' +
+        (oos
+          ? '<span class="absolute left-3 top-3 bg-stone-800 text-white text-[10px] font-semibold px-2 py-1 rounded uppercase tracking-wider">Sold out</span>'
+          : "") +
+        '<div class="absolute right-2 top-2 flex flex-col gap-2 sm:opacity-0 sm:group-hover:opacity-100 sm:translate-x-4 sm:group-hover:translate-x-0 transition-all duration-300">' +
+        '<button type="button" data-share="' +
+        product.id +
+        '" class="share-icon-btn product-card-share" aria-label="Share" title="Share">' +
+        shareSvg() +
+        "</button>" +
+        "</div>" +
+        "</a>";
+    }
+
     return (
       '<div class="group block h-full product-card">' +
       '<div class="relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full border border-slate-100 flex flex-col">' +
-      '<a href="product.html?id=' +
-      product.id +
-      '" class="product-card-media relative aspect-square overflow-hidden bg-slate-50 block">' +
-      '<img src="' +
-      product.image +
-      '" alt="' +
-      product.name +
-      '" loading="lazy" decoding="async" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110' +
-      (oos ? " opacity-80" : "") +
-      '" />' +
-      (oos
-        ? '<span class="absolute left-3 top-3 bg-stone-800 text-white text-[10px] font-semibold px-2 py-1 rounded uppercase tracking-wider">Sold out</span>'
-        : "") +
-      '<div class="absolute right-2 top-2 flex flex-col gap-2 sm:opacity-0 sm:group-hover:opacity-100 sm:translate-x-4 sm:group-hover:translate-x-0 transition-all duration-300">' +
-      '<button type="button" data-share="' +
-      product.id +
-      '" class="share-icon-btn product-card-share" aria-label="Share" title="Share">' +
-      shareSvg() +
-      "</button>" +
-      "</div>" +
-      "</a>" +
+      mediaHtml +
       '<div class="product-card-body flex-grow flex flex-col">' +
-      '<a href="product.html?id=' +
-      product.id +
+      '<a href="' +
+      productUrl +
       '" class="product-card-title-link">' +
       '<h3 class="product-card-title text-slate-800 font-semibold leading-snug line-clamp-2 group-hover:text-primary transition-colors">' +
       product.name +
@@ -1740,6 +1794,73 @@ window.isProductOutOfStock = function (product) {
       "</div>" +
       "</div>"
     );
+  }
+
+  function bindCardCarousels(root) {
+    var scope = root || document;
+    scope.querySelectorAll("[data-card-carousel]").forEach(function (carousel) {
+      if (carousel.getAttribute("data-bound") === "1") return;
+      carousel.setAttribute("data-bound", "1");
+
+      var dots = carousel.parentElement
+        ? carousel.parentElement.querySelectorAll(".card-carousel-dot")
+        : [];
+      var startX = 0;
+      var startY = 0;
+      var moved = false;
+
+      function syncDots() {
+        var width = carousel.clientWidth || 1;
+        var idx = Math.round(carousel.scrollLeft / width);
+        dots.forEach(function (dot, i) {
+          dot.classList.toggle("active", i === idx);
+        });
+      }
+
+      carousel.addEventListener(
+        "scroll",
+        function () {
+          window.requestAnimationFrame(syncDots);
+        },
+        { passive: true }
+      );
+
+      carousel.addEventListener(
+        "touchstart",
+        function (e) {
+          var t = e.changedTouches[0];
+          startX = t.clientX;
+          startY = t.clientY;
+          moved = false;
+        },
+        { passive: true }
+      );
+
+      carousel.addEventListener(
+        "touchmove",
+        function (e) {
+          var t = e.changedTouches[0];
+          if (
+            Math.abs(t.clientX - startX) > 8 ||
+            Math.abs(t.clientY - startY) > 8
+          ) {
+            moved = true;
+          }
+        },
+        { passive: true }
+      );
+
+      carousel.addEventListener("click", function (e) {
+        if (e.target.closest("[data-share]")) return;
+        if (moved) {
+          e.preventDefault();
+          e.stopPropagation();
+          return;
+        }
+        var href = carousel.getAttribute("data-href");
+        if (href) window.location.href = href;
+      });
+    });
   }
 
   function whatsappSvg(cls) {
@@ -1795,6 +1916,7 @@ window.isProductOutOfStock = function (product) {
       return;
     }
     el.innerHTML = products.map(productCard).join("");
+    bindCardCarousels(el);
   }
 
   function renderCategoryGrid(selector) {
@@ -1827,6 +1949,7 @@ window.isProductOutOfStock = function (product) {
     productCard: productCard,
     renderGrid: renderGrid,
     renderCategoryGrid: renderCategoryGrid,
+    bindCardCarousels: bindCardCarousels,
     whatsappSvg: whatsappSvg,
     notifySvg: notifySvg,
     shareSvg: shareSvg,
@@ -2392,11 +2515,58 @@ requestAnimationFrame(updatePinnedCategory);
         UI.cartSvg("w-5 h-5") +
         "<span>Add to Cart</span></button>";
 
+    var carouselSlides = images
+      .map(function (src, i) {
+        return (
+          '<div class="product-carousel-slide" data-index="' +
+          i +
+          '">' +
+          '<img src="' +
+          src +
+          '" alt="' +
+          product.name +
+          (images.length > 1 ? " — image " + (i + 1) : "") +
+          '" loading="' +
+          (i === 0 ? "eager" : "lazy") +
+          '" decoding="async" />' +
+          "</div>"
+        );
+      })
+      .join("");
+
+    var carouselDots =
+      images.length > 1
+        ? '<div class="product-carousel-dots" id="carousel-dots">' +
+          images
+            .map(function (_src, i) {
+              return (
+                '<button type="button" class="product-carousel-dot' +
+                (i === 0 ? " active" : "") +
+                '" data-index="' +
+                i +
+                '" aria-label="Go to image ' +
+                (i + 1) +
+                '"></button>'
+              );
+            })
+            .join("") +
+          "</div>"
+        : "";
+
     root.innerHTML =
       '<div class="grid grid-cols-1 lg:grid-cols-12 gap-0">' +
-      '<div class="lg:col-span-5 p-4 md:p-6 border-b lg:border-b-0 lg:border-r border-slate-100">' +
-      '<div class="flex gap-3">' +
-      '<div class="hidden sm:flex flex-col gap-2 w-16 shrink-0" id="thumb-list"></div>' +
+      '<div class="lg:col-span-5 p-3 sm:p-4 md:p-6 border-b lg:border-b-0 lg:border-r border-slate-100">' +
+      // Mobile carousel
+      '<div class="product-carousel-wrap sm:hidden">' +
+      '<div class="product-carousel" id="product-carousel" tabindex="0">' +
+      carouselSlides +
+      "</div>" +
+      carouselDots +
+      '<div class="product-thumbs-row" id="thumb-list-mobile"></div>' +
+      "</div>" +
+      // Desktop thumbs + zoom
+      '<div class="hidden sm:flex gap-3">' +
+      '<div class="flex flex-col gap-2 w-16 shrink-0" id="thumb-list"></div>' +
       '<div class="flex-1">' +
       '<div class="zoom-stage">' +
       '<div class="zoom-wrap" id="zoom-wrap">' +
@@ -2409,6 +2579,8 @@ requestAnimationFrame(updatePinnedCategory);
       "</div>" +
       '<div class="zoom-result" id="zoom-result"></div>' +
       "</div>" +
+      "</div>" +
+      "</div>" +
       '<div class="mt-4 grid grid-cols-1 ' +
       (oos ? "sm:grid-cols-2" : "sm:grid-cols-3") +
       ' gap-3">' +
@@ -2419,8 +2591,6 @@ requestAnimationFrame(updatePinnedCategory);
       '">' +
       UI.shareSvg("w-5 h-5") +
       "<span>Share</span></button>" +
-      "</div>" +
-      "</div>" +
       "</div>" +
       "</div>" +
       '<div class="lg:col-span-7 p-5 md:p-8">' +
@@ -2514,22 +2684,31 @@ requestAnimationFrame(updatePinnedCategory);
       "</div>" +
       "</div>";
 
-    var thumbList = document.getElementById("thumb-list");
-    thumbList.innerHTML = images
-      .map(function (src, i) {
-        return (
-          '<button type="button" class="thumb-btn' +
-          (i === 0 ? " active" : "") +
-          '" data-src="' +
-          src +
-          '"><img src="' +
-          src +
-          '" alt="" /></button>'
-        );
-      })
-      .join("");
+    function thumbHtml(src, i) {
+      return (
+        '<button type="button" class="thumb-btn' +
+        (i === 0 ? " active" : "") +
+        '" data-src="' +
+        src +
+        '" data-index="' +
+        i +
+        '"><img src="' +
+        src +
+        '" alt="" /></button>'
+      );
+    }
 
-    setupGallery(images[0]);
+    var thumbList = document.getElementById("thumb-list");
+    if (thumbList) {
+      thumbList.innerHTML = images.map(thumbHtml).join("");
+    }
+    var thumbListMobile = document.getElementById("thumb-list-mobile");
+    if (thumbListMobile) {
+      thumbListMobile.innerHTML =
+        images.length > 1 ? images.map(thumbHtml).join("") : "";
+    }
+
+    setupGallery(images);
     setupActions(product);
 
     var similar = getProductsByCategory(product.categoryId)
@@ -2541,62 +2720,135 @@ requestAnimationFrame(updatePinnedCategory);
     UI.renderGrid("#similar-grid", similar);
   }
 
-  function setupGallery(initialSrc) {
+  function setupGallery(images) {
+    images = images || [];
     var mainImage = document.getElementById("main-image");
     var wrap = document.getElementById("zoom-wrap");
     var lens = document.getElementById("zoom-lens");
     var result = document.getElementById("zoom-result");
+    var carousel = document.getElementById("product-carousel");
+    var currentIndex = 0;
 
-    function setImage(src) {
-      mainImage.src = src;
-      result.style.backgroundImage = "url('" + src + "')";
+    function setActiveThumbs(index) {
+      document.querySelectorAll(".thumb-btn").forEach(function (b) {
+        var i = parseInt(b.getAttribute("data-index"), 10);
+        b.classList.toggle("active", i === index);
+      });
+      document.querySelectorAll(".product-carousel-dot").forEach(function (d) {
+        var i = parseInt(d.getAttribute("data-index"), 10);
+        d.classList.toggle("active", i === index);
+      });
     }
 
-    setImage(initialSrc);
+    function setDesktopImage(src) {
+      if (!mainImage) return;
+      mainImage.src = src;
+      if (result) result.style.backgroundImage = "url('" + src + "')";
+    }
+
+    function goToIndex(index, smooth) {
+      if (!images.length) return;
+      currentIndex = Math.max(0, Math.min(images.length - 1, index));
+      setActiveThumbs(currentIndex);
+      setDesktopImage(images[currentIndex]);
+
+      if (carousel) {
+        var slide = carousel.children[currentIndex];
+        if (slide) {
+          carousel.scrollTo({
+            left: slide.offsetLeft,
+            behavior: smooth === false ? "auto" : "smooth",
+          });
+        }
+      }
+
+      // Keep active mobile thumb in view
+      var activeMobile = document.querySelector(
+        "#thumb-list-mobile .thumb-btn.active"
+      );
+      if (activeMobile && activeMobile.scrollIntoView) {
+        activeMobile.scrollIntoView({
+          behavior: "smooth",
+          inline: "center",
+          block: "nearest",
+        });
+      }
+    }
+
+    goToIndex(0, false);
 
     document.querySelectorAll(".thumb-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        document.querySelectorAll(".thumb-btn").forEach(function (b) {
-          b.classList.remove("active");
-        });
-        btn.classList.add("active");
-        setImage(btn.getAttribute("data-src"));
+        var index = parseInt(btn.getAttribute("data-index"), 10);
+        if (isNaN(index)) {
+          var src = btn.getAttribute("data-src");
+          index = images.indexOf(src);
+        }
+        goToIndex(index);
       });
     });
 
-    function moveLens(e) {
-      var rect = wrap.getBoundingClientRect();
-      var x = e.clientX - rect.left;
-      var y = e.clientY - rect.top;
-      var lensW = lens.offsetWidth / 2;
-      var lensH = lens.offsetHeight / 2;
+    document.querySelectorAll(".product-carousel-dot").forEach(function (dot) {
+      dot.addEventListener("click", function () {
+        goToIndex(parseInt(dot.getAttribute("data-index"), 10));
+      });
+    });
 
-      if (x < lensW) x = lensW;
-      if (x > rect.width - lensW) x = rect.width - lensW;
-      if (y < lensH) y = lensH;
-      if (y > rect.height - lensH) y = rect.height - lensH;
-
-      lens.style.left = x - lensW + "px";
-      lens.style.top = y - lensH + "px";
-
-      var fx = (x / rect.width) * 100;
-      var fy = (y / rect.height) * 100;
-      result.style.backgroundPosition = fx + "% " + fy + "%";
+    if (carousel) {
+      var scrollTimer;
+      carousel.addEventListener(
+        "scroll",
+        function () {
+          clearTimeout(scrollTimer);
+          scrollTimer = setTimeout(function () {
+            var width = carousel.clientWidth || 1;
+            var idx = Math.round(carousel.scrollLeft / width);
+            if (idx !== currentIndex) {
+              currentIndex = Math.max(0, Math.min(images.length - 1, idx));
+              setActiveThumbs(currentIndex);
+              setDesktopImage(images[currentIndex]);
+            }
+          }, 60);
+        },
+        { passive: true }
+      );
     }
 
-    wrap.addEventListener("mouseenter", function () {
-      if (window.innerWidth < 1024) return;
-      lens.classList.add("show");
-      result.classList.add("show");
-    });
-    wrap.addEventListener("mouseleave", function () {
-      lens.classList.remove("show");
-      result.classList.remove("show");
-    });
-    wrap.addEventListener("mousemove", function (e) {
-      if (window.innerWidth < 1024) return;
-      moveLens(e);
-    });
+    if (wrap && lens && result) {
+      function moveLens(e) {
+        var rect = wrap.getBoundingClientRect();
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+        var lensW = lens.offsetWidth / 2;
+        var lensH = lens.offsetHeight / 2;
+
+        if (x < lensW) x = lensW;
+        if (x > rect.width - lensW) x = rect.width - lensW;
+        if (y < lensH) y = lensH;
+        if (y > rect.height - lensH) y = rect.height - lensH;
+
+        lens.style.left = x - lensW + "px";
+        lens.style.top = y - lensH + "px";
+
+        var fx = (x / rect.width) * 100;
+        var fy = (y / rect.height) * 100;
+        result.style.backgroundPosition = fx + "% " + fy + "%";
+      }
+
+      wrap.addEventListener("mouseenter", function () {
+        if (window.innerWidth < 1024) return;
+        lens.classList.add("show");
+        result.classList.add("show");
+      });
+      wrap.addEventListener("mouseleave", function () {
+        lens.classList.remove("show");
+        result.classList.remove("show");
+      });
+      wrap.addEventListener("mousemove", function (e) {
+        if (window.innerWidth < 1024) return;
+        moveLens(e);
+      });
+    }
   }
 
   function setupActions(product) {

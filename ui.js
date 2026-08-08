@@ -25,33 +25,91 @@
         cartSvg() +
         "</button>";
 
+    var images =
+      product.images && product.images.length
+        ? product.images.slice(0, 6)
+        : [product.image];
+    var productUrl = "product.html?id=" + product.id;
+    var mediaHtml;
+
+    if (images.length > 1) {
+      mediaHtml =
+        '<div class="product-card-media relative aspect-square overflow-hidden bg-slate-50">' +
+        '<div class="card-carousel" data-card-carousel data-href="' +
+        productUrl +
+        '">' +
+        images
+          .map(function (src, i) {
+            return (
+              '<div class="card-carousel-slide">' +
+              '<img src="' +
+              src +
+              '" alt="' +
+              product.name +
+              '" loading="' +
+              (i === 0 ? "lazy" : "lazy") +
+              '" decoding="async" class="' +
+              (oos ? "opacity-80" : "") +
+              '" />' +
+              "</div>"
+            );
+          })
+          .join("") +
+        "</div>" +
+        '<div class="card-carousel-dots" aria-hidden="true">' +
+        images
+          .map(function (_src, i) {
+            return (
+              '<span class="card-carousel-dot' +
+              (i === 0 ? " active" : "") +
+              '"></span>'
+            );
+          })
+          .join("") +
+        "</div>" +
+        (oos
+          ? '<span class="absolute left-3 top-3 z-20 bg-stone-800 text-white text-[10px] font-semibold px-2 py-1 rounded uppercase tracking-wider">Sold out</span>'
+          : "") +
+        '<div class="absolute right-2 top-2 z-20 flex flex-col gap-2">' +
+        '<button type="button" data-share="' +
+        product.id +
+        '" class="share-icon-btn product-card-share" aria-label="Share" title="Share">' +
+        shareSvg() +
+        "</button>" +
+        "</div>" +
+        "</div>";
+    } else {
+      mediaHtml =
+        '<a href="' +
+        productUrl +
+        '" class="product-card-media relative aspect-square overflow-hidden bg-slate-50 block">' +
+        '<img src="' +
+        images[0] +
+        '" alt="' +
+        product.name +
+        '" loading="lazy" decoding="async" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110' +
+        (oos ? " opacity-80" : "") +
+        '" />' +
+        (oos
+          ? '<span class="absolute left-3 top-3 bg-stone-800 text-white text-[10px] font-semibold px-2 py-1 rounded uppercase tracking-wider">Sold out</span>'
+          : "") +
+        '<div class="absolute right-2 top-2 flex flex-col gap-2 sm:opacity-0 sm:group-hover:opacity-100 sm:translate-x-4 sm:group-hover:translate-x-0 transition-all duration-300">' +
+        '<button type="button" data-share="' +
+        product.id +
+        '" class="share-icon-btn product-card-share" aria-label="Share" title="Share">' +
+        shareSvg() +
+        "</button>" +
+        "</div>" +
+        "</a>";
+    }
+
     return (
       '<div class="group block h-full product-card">' +
       '<div class="relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full border border-slate-100 flex flex-col">' +
-      '<a href="product.html?id=' +
-      product.id +
-      '" class="product-card-media relative aspect-square overflow-hidden bg-slate-50 block">' +
-      '<img src="' +
-      product.image +
-      '" alt="' +
-      product.name +
-      '" loading="lazy" decoding="async" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110' +
-      (oos ? " opacity-80" : "") +
-      '" />' +
-      (oos
-        ? '<span class="absolute left-3 top-3 bg-stone-800 text-white text-[10px] font-semibold px-2 py-1 rounded uppercase tracking-wider">Sold out</span>'
-        : "") +
-      '<div class="absolute right-2 top-2 flex flex-col gap-2 sm:opacity-0 sm:group-hover:opacity-100 sm:translate-x-4 sm:group-hover:translate-x-0 transition-all duration-300">' +
-      '<button type="button" data-share="' +
-      product.id +
-      '" class="share-icon-btn product-card-share" aria-label="Share" title="Share">' +
-      shareSvg() +
-      "</button>" +
-      "</div>" +
-      "</a>" +
+      mediaHtml +
       '<div class="product-card-body flex-grow flex flex-col">' +
-      '<a href="product.html?id=' +
-      product.id +
+      '<a href="' +
+      productUrl +
       '" class="product-card-title-link">' +
       '<h3 class="product-card-title text-slate-800 font-semibold leading-snug line-clamp-2 group-hover:text-primary transition-colors">' +
       product.name +
@@ -76,6 +134,73 @@
       "</div>" +
       "</div>"
     );
+  }
+
+  function bindCardCarousels(root) {
+    var scope = root || document;
+    scope.querySelectorAll("[data-card-carousel]").forEach(function (carousel) {
+      if (carousel.getAttribute("data-bound") === "1") return;
+      carousel.setAttribute("data-bound", "1");
+
+      var dots = carousel.parentElement
+        ? carousel.parentElement.querySelectorAll(".card-carousel-dot")
+        : [];
+      var startX = 0;
+      var startY = 0;
+      var moved = false;
+
+      function syncDots() {
+        var width = carousel.clientWidth || 1;
+        var idx = Math.round(carousel.scrollLeft / width);
+        dots.forEach(function (dot, i) {
+          dot.classList.toggle("active", i === idx);
+        });
+      }
+
+      carousel.addEventListener(
+        "scroll",
+        function () {
+          window.requestAnimationFrame(syncDots);
+        },
+        { passive: true }
+      );
+
+      carousel.addEventListener(
+        "touchstart",
+        function (e) {
+          var t = e.changedTouches[0];
+          startX = t.clientX;
+          startY = t.clientY;
+          moved = false;
+        },
+        { passive: true }
+      );
+
+      carousel.addEventListener(
+        "touchmove",
+        function (e) {
+          var t = e.changedTouches[0];
+          if (
+            Math.abs(t.clientX - startX) > 8 ||
+            Math.abs(t.clientY - startY) > 8
+          ) {
+            moved = true;
+          }
+        },
+        { passive: true }
+      );
+
+      carousel.addEventListener("click", function (e) {
+        if (e.target.closest("[data-share]")) return;
+        if (moved) {
+          e.preventDefault();
+          e.stopPropagation();
+          return;
+        }
+        var href = carousel.getAttribute("data-href");
+        if (href) window.location.href = href;
+      });
+    });
   }
 
   function whatsappSvg(cls) {
@@ -131,6 +256,7 @@
       return;
     }
     el.innerHTML = products.map(productCard).join("");
+    bindCardCarousels(el);
   }
 
   function renderCategoryGrid(selector) {
@@ -163,6 +289,7 @@
     productCard: productCard,
     renderGrid: renderGrid,
     renderCategoryGrid: renderCategoryGrid,
+    bindCardCarousels: bindCardCarousels,
     whatsappSvg: whatsappSvg,
     notifySvg: notifySvg,
     shareSvg: shareSvg,

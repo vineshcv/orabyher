@@ -284,6 +284,62 @@ body {
   }
 }
 
+/* Product card image carousel */
+.card-carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.card-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card-carousel-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.card-carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.card-carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  pointer-events: none;
+}
+
+.card-carousel-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.15);
+}
+
+.card-carousel-dot.active {
+  width: 14px;
+  background: #881337;
+}
+
 /* Product card spacing + compact actions */
 .product-card-body {
   padding: 12px 12px 12px;
@@ -649,17 +705,98 @@ span.small {
   padding: 0;
   background: #fff;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .thumb-btn img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .thumb-btn.active {
   border-color: #881337;
   box-shadow: 0 0 0 1px #881337;
+}
+
+/* Mobile product image carousel */
+.product-carousel-wrap {
+  width: 100%;
+}
+
+.product-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  aspect-ratio: 1;
+}
+
+.product-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.product-carousel-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.product-carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.product-carousel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  border: none;
+  padding: 0;
+  background: #d6d3d1;
+  cursor: pointer;
+  transition: width 0.2s ease, background 0.2s ease;
+}
+
+.product-carousel-dot.active {
+  width: 18px;
+  background: #881337;
+}
+
+.product-thumbs-row {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  margin-top: 10px;
+  padding-bottom: 2px;
+}
+
+.product-thumbs-row::-webkit-scrollbar {
+  display: none;
+}
+
+.product-thumbs-row .thumb-btn {
+  width: 56px;
+  height: 56px;
 }
 
 /* Toast */
