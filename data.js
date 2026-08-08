@@ -1091,3 +1091,66 @@ window.STORE = {
     }
   ]
 };
+
+
+window.getProductById = function (id) {
+  return STORE.products.find(function (p) {
+    return p.id === id;
+  });
+};
+
+window.getCategoryById = function (id) {
+  return STORE.categories.find(function (c) {
+    return c.id === id;
+  });
+};
+
+window.getProductsByCategory = function (categoryId) {
+  return STORE.products.filter(function (p) {
+    return p.categoryId === categoryId;
+  });
+};
+
+window.getProductsBySection = function (section) {
+  return STORE.products.filter(function (p) {
+    return p.sections && p.sections.indexOf(section) !== -1;
+  });
+};
+
+window.formatINR = function (amount) {
+  return (
+    "₹" +
+    Number(amount).toLocaleString("en-IN", {
+      maximumFractionDigits: 0,
+    })
+  );
+};
+
+window.isContactForPricing = function (product) {
+  return !!(product && product.contactForPricing);
+};
+
+window.formatProductPrice = function (product) {
+  if (window.isContactForPricing(product)) return "Contact for pricing";
+  return formatINR(product && product.price);
+};
+
+window.formatProductPriceHtml = function (product) {
+  if (window.isContactForPricing(product)) {
+    return '<span class="small">Contact for pricing</span>';
+  }
+  return formatINR(product && product.price);
+};
+
+window.isProductOutOfStock = function (product) {
+  if (!product) return false;
+  if (product.inStock === false) return true;
+  var name = String(product.name || "").toLowerCase();
+  var id = String(product.id || "").toLowerCase();
+  return (
+    name.indexOf("stock out") !== -1 ||
+    name.indexOf("sold out") !== -1 ||
+    id.indexOf("sold_out") !== -1 ||
+    id.indexOf("stock_out") !== -1
+  );
+};
