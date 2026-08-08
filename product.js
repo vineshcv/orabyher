@@ -25,6 +25,9 @@
     var contactPrice = window.isContactForPricing
       ? isContactForPricing(product)
       : !!product.contactForPricing;
+    var premium = window.isPremiumProduct
+      ? isPremiumProduct(product)
+      : !!product.premium;
     var primaryAction = oos
       ? '<button type="button" id="btn-notify" class="fk-btn fk-btn-notify fk-btn-icon">' +
         UI.notifySvg("w-5 h-5") +
@@ -150,6 +153,9 @@
         : '<span class="text-3xl font-bold text-slate-900">' +
           formatINR(product.price) +
           "</span>") +
+      (premium
+        ? '<span class="premium-status-badge">Premium</span>'
+        : "") +
       (oos
         ? '<span class="oos-status-badge">Sold out</span>'
         : "") +

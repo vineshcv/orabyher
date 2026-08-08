@@ -6,6 +6,16 @@
     var contactPrice = window.isContactForPricing
       ? isContactForPricing(product)
       : !!product.contactForPricing;
+    var premium = window.isPremiumProduct
+      ? isPremiumProduct(product)
+      : !!product.premium;
+    var badgeStack =
+      (premium
+        ? '<span class="product-badge product-badge-premium">Premium</span>'
+        : "") +
+      (oos
+        ? '<span class="product-badge product-badge-soldout">Sold out</span>'
+        : "");
     var actionBtn = oos
       ? '<button type="button" data-notify="' +
         product.id +
@@ -67,8 +77,10 @@
           })
           .join("") +
         "</div>" +
-        (oos
-          ? '<span class="absolute left-3 top-3 z-20 bg-stone-800 text-white text-[10px] font-semibold px-2 py-1 rounded uppercase tracking-wider">Sold out</span>'
+        (badgeStack
+          ? '<div class="absolute left-3 top-3 z-20 flex flex-col gap-1">' +
+            badgeStack +
+            "</div>"
           : "") +
         '<div class="absolute right-2 top-2 z-20 flex flex-col gap-2">' +
         '<button type="button" data-share="' +
@@ -90,8 +102,10 @@
         '" loading="lazy" decoding="async" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110' +
         (oos ? " opacity-80" : "") +
         '" />' +
-        (oos
-          ? '<span class="absolute left-3 top-3 bg-stone-800 text-white text-[10px] font-semibold px-2 py-1 rounded uppercase tracking-wider">Sold out</span>'
+        (badgeStack
+          ? '<div class="absolute left-3 top-3 z-20 flex flex-col gap-1">' +
+            badgeStack +
+            "</div>"
           : "") +
         '<div class="absolute right-2 top-2 flex flex-col gap-2 sm:opacity-0 sm:group-hover:opacity-100 sm:translate-x-4 sm:group-hover:translate-x-0 transition-all duration-300">' +
         '<button type="button" data-share="' +

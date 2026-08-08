@@ -36,9 +36,662 @@ window.STORE = {
       id: "set-mundu",
       name: "Set Mundu",
       image: "category_icons-set-mundu.jpg"
+    },
+    {
+      id: "hair-accessories",
+      name: "Hair Accessories",
+      image: "category_icons-hair-accessories.jpg"
     }
   ],
   products: [
+    {
+      id: "premium-hair-clip-349",
+      name: "Premium Hair Clip",
+      price: 349,
+      mrp: 349,
+      premium: true,
+      categoryId: "hair-accessories",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-premium-hair-clip-349.jpg",
+      images: [
+        "product-premium-hair-clip-349.jpg",
+        "product-premium-hair-clip-349-2.jpg"
+      ],
+      description: "Premium antique gold-tone hair clip with a domed medallion set with a green centre stone and red stone halo, finished with layered dangling bead chains — a statement festive hair accessory.",
+      highlights: [
+        "Premium hair clip / billa",
+        "Green & red stone accents",
+        "Layered dangling chains",
+        "Antique gold-tone finish",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold / Red / Green",
+        Type: "Hair Clip",
+        "Care Instructions": "Keep dry; wipe gently; store flat"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "premium-lekshmi-mid-chain-520",
+      name: "Premium Lekshmi Mid Chain",
+      price: 520,
+      mrp: 520,
+      premium: true,
+      categoryId: "necklace-haram",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-premium-lekshmi-mid-chain-520.jpg",
+      images: [
+        "product-premium-lekshmi-mid-chain-520.jpg",
+        "product-premium-lekshmi-mid-chain-520-2.jpg",
+        "product-premium-lekshmi-mid-chain-520-3.jpg"
+      ],
+      description: "Premium antique gold-tone Lekshmi mid chain with a peacock-flanked temple pendant, green and pearl hangings, textured bead chain, and matching jhumka earrings — a statement festive set.",
+      highlights: [
+        "Premium Lekshmi mid chain set",
+        "Temple pendant with peacock accents",
+        "Green & pearl hangings",
+        "Matching jhumka earrings",
+        "Festive & wedding wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Antique Gold / Green / Pearl / Red",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "antique-mango-chain-350",
+      name: "Antique Mango Chain",
+      price: 350,
+      mrp: 350,
+      categoryId: "necklace-haram",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-antique-mango-chain-350.jpg",
+      images: [
+        "product-antique-mango-chain-350.jpg",
+        "product-antique-mango-chain-350-2.jpg"
+      ],
+      description: "Antique gold-tone mango mala with peacock-embossed mango pendants, red stone accents, and Lekshmi motifs — a classic temple necklace for festive wear.",
+      highlights: [
+        "Antique mango mala / manga malai",
+        "Peacock motif mango pendants",
+        "Red stone accents",
+        "Lekshmi centre motifs",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Antique Gold / Red",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "palakka-necklace-390",
+      name: "Palakka Necklace",
+      price: 390,
+      mrp: 390,
+      categoryId: "necklace-haram",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-palakka-necklace-390.jpg",
+      images: [
+        "product-palakka-necklace-390.jpg",
+        "product-palakka-necklace-390-2.jpg",
+        "product-palakka-necklace-390-3.jpg"
+      ],
+      description: "Classic gold-tone Palakka necklace with emerald-green teardrop stones and matching stud earrings with pearl hangings — a traditional Kerala-style festive set.",
+      highlights: [
+        "Traditional Palakka necklace",
+        "Emerald-green teardrop stones",
+        "Matching earrings with pearl drops",
+        "Gold-tone finish",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold / Green / Pearl",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "lekshmi-pearl-hangings-necklace-375",
+      name: "Lekshmi Pearl Hangings Necklace",
+      price: 375,
+      mrp: 375,
+      categoryId: "necklace-haram",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-lekshmi-pearl-hangings-necklace-375.jpg",
+      images: [
+        "product-lekshmi-pearl-hangings-necklace-375.jpg",
+        "product-lekshmi-pearl-hangings-necklace-375-2.jpg",
+        "product-lekshmi-pearl-hangings-necklace-375-3.jpg"
+      ],
+      description: "Gold-tone Lekshmi temple necklace with repeating deity motifs, pearl hangings along the edge, and matching stud earrings — a classic festive set.",
+      highlights: [
+        "Lekshmi temple necklace",
+        "Pearl hanging fringe",
+        "Matching stud earrings",
+        "Gold-tone finish",
+        "Festive & wedding wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold / Pearl",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "simple-palakka-chain-250",
+      name: "Simple Palakka Chain",
+      price: 250,
+      mrp: 250,
+      categoryId: "necklace-haram",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-simple-palakka-chain-250.jpg",
+      images: [
+        "product-simple-palakka-chain-250.jpg",
+        "product-simple-palakka-chain-250-2.jpg"
+      ],
+      description: "Simple gold-tone Palakka chain with green leaf pendants and matching stud earrings — a light traditional Kerala-style set for everyday and festive wear.",
+      highlights: [
+        "Simple Palakka chain",
+        "Green leaf pendants",
+        "Matching stud earrings",
+        "Gold-tone finish",
+        "Daily & festive wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Daily / Festival / Traditional",
+        Colour: "Gold / Green",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "navratna-necklace-pearl-hangings-365",
+      name: "Navratna Necklace with Pearl Hangings",
+      price: 365,
+      mrp: 365,
+      categoryId: "necklace-haram",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-navratna-necklace-pearl-hangings-365.jpg",
+      images: [
+        "product-navratna-necklace-pearl-hangings-365.jpg",
+        "product-navratna-necklace-pearl-hangings-365-2.jpg"
+      ],
+      description: "Gold-tone navratna choker necklace with multicolour oval stones, pearl hangings, and matching stud earrings — a vibrant traditional set for festive wear.",
+      highlights: [
+        "Navratna multicolour stone necklace",
+        "Pearl hanging drops",
+        "Matching stud earrings",
+        "Gold-tone traditional finish",
+        "Festive & wedding wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold / Multicolour / Pearl",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "golden-beads-chain-315",
+      name: "Golden Beads Chain",
+      price: 315,
+      mrp: 315,
+      categoryId: "necklace-haram",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-golden-beads-chain-315.jpg",
+      images: [
+        "product-golden-beads-chain-315.jpg",
+        "product-golden-beads-chain-315-2.jpg",
+        "product-golden-beads-chain-315-3.jpg"
+      ],
+      description: "Antique gold-tone beaded chain with a tiered Lakshmi temple pendant and matching stud earrings — a classic traditional set for festive occasions.",
+      highlights: [
+        "Golden beads chain",
+        "Tiered Lakshmi temple pendant",
+        "Matching stud earrings",
+        "Antique gold-tone finish",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "double-layer-pearl-chain-299",
+      name: "Double Layer Pearl Chain",
+      price: 299,
+      mrp: 299,
+      categoryId: "necklace-haram",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-double-layer-pearl-chain-299.jpg",
+      images: [
+        "product-double-layer-pearl-chain-299.jpg",
+        "product-double-layer-pearl-chain-299-2.jpg",
+        "product-double-layer-pearl-chain-299-3.jpg"
+      ],
+      description: "Double-layer pearl chain with a gold-tone floral pendant in pink and green stones, pearl hangings, and matching stud earrings — a soft traditional set for festive wear.",
+      highlights: [
+        "Double-layer pearl chain",
+        "Necklace with matching earrings",
+        "Pink & green stone pendant",
+        "Pearl hanging drops",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating / faux pearls",
+        Occasion: "Festival / Traditional / Party",
+        Colour: "Pearl / Gold / Pink / Green",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "premium-pink-green-stone-necklace",
+      name: "Premium Pink and Green Stone Necklace",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      premium: true,
+      categoryId: "necklace-haram",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-premium-pink-green-stone-necklace.jpg",
+      images: [
+        "product-premium-pink-green-stone-necklace.jpg",
+        "product-premium-pink-green-stone-necklace-2.jpg",
+        "product-premium-pink-green-stone-necklace-3.jpg"
+      ],
+      description: "Premium gold-tone necklace set with teardrop green stones, pink stone accents, a centre oval pendant with pearl hangings, and matching stud earrings — a rich festive look.",
+      highlights: [
+        "Premium necklace with matching earrings",
+        "Pink & green stone work",
+        "Centre pendant with pearl drops",
+        "Gold-tone finish",
+        "Festive & wedding wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold / Pink / Green / Pearl",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "attige-chain-399",
+      name: "Attige Chain",
+      price: 399,
+      mrp: 399,
+      categoryId: "necklace-haram",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-attige-chain-399.jpg",
+      images: [
+        "product-attige-chain-399.jpg",
+        "product-attige-chain-399-2.jpg",
+        "product-attige-chain-399-3.jpg"
+      ],
+      description: "Traditional gold-tone attige necklace with a floral stone pendant, red and green accents, pearl hangings, and matching jhumka earrings — a festive temple jewellery set.",
+      highlights: [
+        "Attige necklace with matching jhumkas",
+        "Floral stone pendant with pearl drops",
+        "Red & green stone accents",
+        "Gold-tone traditional finish",
+        "Festive & wedding wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold / Red / Green / Pearl / Clear",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "lekshmi-pendant-simple-chain-red",
+      name: "Lekshmi Pendant Simple Chain with Red Stone",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "necklace-haram",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-lekshmi-pendant-simple-chain-red.jpg",
+      images: [
+        "product-lekshmi-pendant-simple-chain-red.jpg",
+        "product-lekshmi-pendant-simple-chain-red-2.jpg",
+        "product-lekshmi-pendant-simple-chain-red-3.jpg"
+      ],
+      description: "Simple gold-tone chain with spaced beads and a Lekshmi temple pendant set with a rectangular red stone, plus matching stud earrings — a light traditional set for festive wear.",
+      highlights: [
+        "Necklace with matching earrings",
+        "Lekshmi pendant with red stone",
+        "Simple beaded chain",
+        "Gold-tone temple finish",
+        "Lightweight festive wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Traditional / Daily",
+        Colour: "Gold / Red",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "three-layer-pearl-chain",
+      name: "Three Layer Pearl Chain",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "necklace-haram",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-three-layer-pearl-chain.jpg",
+      images: [
+        "product-three-layer-pearl-chain.jpg"
+      ],
+      description: "Elegant three-layer gold-tone chain with alternating pink and green beads accented by small pearl spacers — a soft layered look for festive and everyday wear.",
+      highlights: [
+        "Three-layer chain design",
+        "Pink & green bead accents",
+        "Pearl spacer details",
+        "Gold-tone finish",
+        "Festive & daily wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Daily / Festival / Party",
+        Colour: "Gold / Pink / Green / Pearl",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "green-pendant-attige",
+      name: "Green Pendant Attige",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "necklace-haram",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-green-pendant-attige.jpg",
+      images: [
+        "product-green-pendant-attige.jpg",
+        "product-green-pendant-attige-2.jpg",
+        "product-green-pendant-attige-3.jpg"
+      ],
+      description: "Traditional gold-tone attige necklace with a round green pendant framed by pink stones, a woven chain, and matching green-stone jhumka earrings with pearl hangings.",
+      highlights: [
+        "Attige necklace with matching jhumkas",
+        "Round green pendant with pink halo",
+        "Woven gold-tone chain",
+        "Pearl hanging earrings",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold / Green / Pink / Pearl",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "lekshmi-pearl-pendant-necklace",
+      name: "Lekshmi Pearl Pendant Necklace",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "necklace-haram",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-lekshmi-pearl-pendant-necklace.jpg",
+      images: [
+        "product-lekshmi-pearl-pendant-necklace.jpg",
+        "product-lekshmi-pearl-pendant-necklace-2.jpg"
+      ],
+      description: "Antique gold-tone Lekshmi pendant necklace with peacock accents, red and green stones, pearl hangings, and matching earrings — a rich temple jewellery set for festive occasions.",
+      highlights: [
+        "Necklace with matching earrings",
+        "Lekshmi temple pendant",
+        "Pearl hanging drops",
+        "Red & green stone accents",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold / Red / Green / Pearl",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "lakshmi-coin-temple-set-440",
+      name: "Lakshmi Coin Temple Necklace Set",
+      price: 440,
+      mrp: 440,
+      categoryId: "necklace-haram",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-lakshmi-coin-temple-set-440.jpg",
+      images: [
+        "product-lakshmi-coin-temple-set-440.jpg",
+        "product-lakshmi-coin-temple-set-440-2.jpg"
+      ],
+      description: "Antique gold-tone temple necklace set with embossed Lakshmi coin pendants, red and green stone accents, and matching stud earrings — a classic festive set.",
+      highlights: [
+        "Necklace with matching earrings",
+        "Lakshmi coin temple pendants",
+        "Red & green stone accents",
+        "Antique gold-tone finish",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold / Red / Green",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "temple-pendant",
+      name: "Temple Pendant",
+      contactForPricing: true,
+      price: null,
+      mrp: null,
+      categoryId: "necklace-haram",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-temple-pendant.jpg",
+      images: [
+        "product-temple-pendant.jpg",
+        "product-temple-pendant-2.jpg"
+      ],
+      description: "Ornate antique gold-tone temple pendant necklace with a shrine-style centre motif, red and green stone accents, and pearl hangings — a statement traditional piece for festive occasions.",
+      highlights: [
+        "Temple-style pendant necklace",
+        "Antique gold-tone finish",
+        "Red & green stone accents",
+        "Pearl hanging drops",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold / Red / Green / Pearl",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "traditional-blue-pendant-chain-199",
+      name: "Traditional Blue Pendant Chain",
+      price: 199,
+      mrp: 199,
+      categoryId: "necklace-haram",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-traditional-blue-pendant-chain-199.jpg",
+      images: [
+        "product-traditional-blue-pendant-chain-199.jpg",
+        "product-traditional-blue-pendant-chain-199-2.jpg"
+      ],
+      description: "Traditional gold-tone pendant chain with a deep blue heart-shaped centre stone, textured ray border, and tiny blue stone accents — a classic temple-style necklace for festive wear.",
+      highlights: [
+        "Traditional blue pendant",
+        "Gold-tone snake chain",
+        "Heart-shaped centre stone",
+        "Temple jewellery look",
+        "Lightweight festive wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Traditional",
+        Colour: "Gold / Blue",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
     {
       id: "palakka-necklace-279",
       name: "Palakka Temple Necklace Set",
@@ -210,6 +863,78 @@ window.STORE = {
         "bestsellers",
         "popular",
         "trending"
+      ]
+    },
+    {
+      id: "bridal-jhumka-pink-green-345",
+      name: "Bridal Jhumka with Pink and Green Hangings",
+      price: 345,
+      mrp: 345,
+      categoryId: "earrings",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-bridal-jhumka-pink-green-345.jpg",
+      images: [
+        "product-bridal-jhumka-pink-green-345.jpg",
+        "product-bridal-jhumka-pink-green-345-2.jpg"
+      ],
+      description: "Antique gold-tone bridal jhumkas with Lakshmi motif tops, ornate filigree bells, and pink and green bead hangings — a festive statement pair for weddings and celebrations.",
+      highlights: [
+        "Bridal jhumka earrings",
+        "Lakshmi motif tops",
+        "Pink & green bead hangings",
+        "Antique gold-tone finish",
+        "Wedding & festive wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Wedding / Festival / Traditional",
+        Colour: "Gold / Pink / Green",
+        Type: "Jhumka Earrings",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "jhumka-309",
+      name: "Jhumka",
+      price: 309,
+      mrp: 309,
+      categoryId: "earrings",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-jhumka-309.jpg",
+      images: [
+        "product-jhumka-309.jpg",
+        "product-jhumka-309-2.jpg"
+      ],
+      description: "Antique gold-tone jhumka earrings with peacock accents, red and green stones, ornate filigree bells, and mint-green bead hangings — classic festive earrings.",
+      highlights: [
+        "Antique gold-tone jhumkas",
+        "Peacock motif accents",
+        "Red & green stone details",
+        "Mint bead hangings",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Traditional / Party",
+        Colour: "Gold / Red / Green",
+        Type: "Jhumka Earrings",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
       ]
     },
     {
@@ -386,6 +1111,111 @@ window.STORE = {
       ]
     },
     {
+      id: "stone-invisible-chain-150",
+      name: "Stone Invisible Chain",
+      price: 150,
+      mrp: 150,
+      categoryId: "invisible-chains",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-stone-invisible-chain-150.jpg",
+      images: [
+        "product-stone-invisible-chain-150.jpg",
+        "product-stone-invisible-chain-150-2.jpg"
+      ],
+      description: "Delicate invisible chain with a gold-tone fan pendant set with ruby-red stones, a centre emerald-green stone, and pearl drops — a barely-there festive look with rich colour.",
+      highlights: [
+        "Invisible chain with stone pendant",
+        "Ruby-red & emerald-green stones",
+        "Pearl drop accents",
+        "Gold-tone finish",
+        "Lightweight festive wear"
+      ],
+      specs: {
+        Material: "Invisible cord with alloy accents",
+        Occasion: "Daily / Festival",
+        Colour: "Gold / Red / Green / Pearl",
+        "Care Instructions": "Keep dry; wipe gently"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "lotus-pearl-hanging-239",
+      name: "Lotus Pearl Hanging",
+      price: 239,
+      mrp: 239,
+      categoryId: "invisible-chains",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-lotus-pearl-hanging-239.jpg",
+      images: [
+        "product-lotus-pearl-hanging-239.jpg",
+        "product-lotus-pearl-hanging-239-2.jpg"
+      ],
+      description: "Delicate invisible chain with a lotus pendant set in ruby-red and clear stones, a green centre stone, pearl hangings, and green bead accents — a soft festive look.",
+      highlights: [
+        "Invisible chain with lotus pendant",
+        "Pearl hanging drops",
+        "Ruby-red & green stone accents",
+        "Green bead side details",
+        "Lightweight festive wear"
+      ],
+      specs: {
+        Material: "Invisible cord with alloy accents",
+        Occasion: "Daily / Festival",
+        Colour: "Gold / Red / Green / Pearl",
+        "Care Instructions": "Keep dry; wipe gently"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "invisible-chain-199",
+      name: "Invisible Chain",
+      price: 199,
+      mrp: 199,
+      categoryId: "invisible-chains",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-invisible-chain-199.jpg",
+      images: [
+        "product-invisible-chain-199.jpg",
+        "product-invisible-chain-199-2.jpg"
+      ],
+      description: "Delicate invisible chain with gold-tone temple pendants set in red, green, and clear stones — a barely-there traditional look for festive and daily wear.",
+      highlights: [
+        "Invisible chain design",
+        "Temple motif stone pendants",
+        "Red, green & clear stones",
+        "Gold-tone finish",
+        "Lightweight festive wear"
+      ],
+      specs: {
+        Material: "Invisible cord with alloy accents",
+        Occasion: "Daily / Festival / Traditional",
+        Colour: "Gold / Red / Green / Clear",
+        "Care Instructions": "Keep dry; wipe gently"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
       id: "navaratna-bangles-359",
       name: "Navaratna Multicolor Bangle Set",
       price: 359,
@@ -393,7 +1223,7 @@ window.STORE = {
       categoryId: "bangles-bracelets",
       rating: 4.7,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-navaratna-bangles-359.jpg",
       images: [
         "product-navaratna-bangles-359.jpg"
@@ -459,7 +1289,7 @@ window.STORE = {
       categoryId: "bangles-bracelets",
       rating: 4.8,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-palaka-bangle-389.jpg",
       images: [
         "product-palaka-bangle-389.jpg"
@@ -1160,6 +1990,10 @@ window.isProductOutOfStock = function (product) {
   );
 };
 
+window.isPremiumProduct = function (product) {
+  return !!(product && product.premium);
+};
+
 /* ==== cart.js ==== */
 (function () {
   var CART_KEY = "multimart_cart_v1";
@@ -1855,6 +2689,16 @@ window.isProductOutOfStock = function (product) {
     var contactPrice = window.isContactForPricing
       ? isContactForPricing(product)
       : !!product.contactForPricing;
+    var premium = window.isPremiumProduct
+      ? isPremiumProduct(product)
+      : !!product.premium;
+    var badgeStack =
+      (premium
+        ? '<span class="product-badge product-badge-premium">Premium</span>'
+        : "") +
+      (oos
+        ? '<span class="product-badge product-badge-soldout">Sold out</span>'
+        : "");
     var actionBtn = oos
       ? '<button type="button" data-notify="' +
         product.id +
@@ -1916,8 +2760,10 @@ window.isProductOutOfStock = function (product) {
           })
           .join("") +
         "</div>" +
-        (oos
-          ? '<span class="absolute left-3 top-3 z-20 bg-stone-800 text-white text-[10px] font-semibold px-2 py-1 rounded uppercase tracking-wider">Sold out</span>'
+        (badgeStack
+          ? '<div class="absolute left-3 top-3 z-20 flex flex-col gap-1">' +
+            badgeStack +
+            "</div>"
           : "") +
         '<div class="absolute right-2 top-2 z-20 flex flex-col gap-2">' +
         '<button type="button" data-share="' +
@@ -1939,8 +2785,10 @@ window.isProductOutOfStock = function (product) {
         '" loading="lazy" decoding="async" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110' +
         (oos ? " opacity-80" : "") +
         '" />' +
-        (oos
-          ? '<span class="absolute left-3 top-3 bg-stone-800 text-white text-[10px] font-semibold px-2 py-1 rounded uppercase tracking-wider">Sold out</span>'
+        (badgeStack
+          ? '<div class="absolute left-3 top-3 z-20 flex flex-col gap-1">' +
+            badgeStack +
+            "</div>"
           : "") +
         '<div class="absolute right-2 top-2 flex flex-col gap-2 sm:opacity-0 sm:group-hover:opacity-100 sm:translate-x-4 sm:group-hover:translate-x-0 transition-all duration-300">' +
         '<button type="button" data-share="' +
@@ -2860,6 +3708,9 @@ requestAnimationFrame(updatePinnedCategory);
     var contactPrice = window.isContactForPricing
       ? isContactForPricing(product)
       : !!product.contactForPricing;
+    var premium = window.isPremiumProduct
+      ? isPremiumProduct(product)
+      : !!product.premium;
     var primaryAction = oos
       ? '<button type="button" id="btn-notify" class="fk-btn fk-btn-notify fk-btn-icon">' +
         UI.notifySvg("w-5 h-5") +
@@ -2985,6 +3836,9 @@ requestAnimationFrame(updatePinnedCategory);
         : '<span class="text-3xl font-bold text-slate-900">' +
           formatINR(product.price) +
           "</span>") +
+      (premium
+        ? '<span class="premium-status-badge">Premium</span>'
+        : "") +
       (oos
         ? '<span class="oos-status-badge">Sold out</span>'
         : "") +
