@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Orabyher — Menamkulam, Kazhakootam, Trivandrum. Call +91 94478 36797 or WhatsApp +91 96865 16174." />
+    <script>
+  (function () {
+    var K = "orabyher-sw-migrate-v4";
+    try { if (localStorage.getItem(K)) return; localStorage.setItem(K, "1"); } catch (e) { return; }
+    var reload = function () { location.reload(); };
+    var jobs = [];
+    if ("serviceWorker" in navigator) {
+      jobs.push(navigator.serviceWorker.getRegistrations().then(function (regs) {
+        return Promise.all(regs.map(function (r) { return r.unregister(); }));
+      }));
+    }
+    if (window.caches) {
+      jobs.push(caches.keys().then(function (keys) {
+        return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+      }));
+    }
+    Promise.all(jobs).then(reload).catch(reload);
+  })();
+  </script>
+<meta name="description" content="Contact Orabyher — Menamkulam, Kazhakootam, Trivandrum. Call +91 94478 36797 or WhatsApp +91 96865 16174." />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Orabyher" />
   <meta property="og:title" content="Contact | Orabyher" />
@@ -26,7 +45,7 @@
   <meta name="apple-mobile-web-app-title" content="Orabyher" />
   <link rel="manifest" href="manifest.webmanifest" />
   <title>Contact | Orabyher</title>
-  <link rel="stylesheet" href="site.css" />
+  <link rel="stylesheet" href="site.css?v=89c90890cc" />
 </head>
 <body class="bg-cream">
   <div id="page-loader" class="page-loader" aria-hidden="true">
@@ -132,6 +151,6 @@
     </div>
   </footer>
 
-  <script src="app.js" defer></script>
+  <script src="app.js?v=89c90890cc" defer></script>
 </body>
 </html>

@@ -2,15 +2,40 @@
  * Cloudflare Worker — serves static assets and injects product OG tags
  * so shared product links show that product's image in WhatsApp / social previews.
  */
+function withCacheHeaders(response, cacheControl) {
+  const headers = new Headers(response.headers);
+  headers.set("Cache-Control", cacheControl);
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers: headers,
+  });
+}
+
 export default {
   async fetch(request, env) {
     const response = await env.ASSETS.fetch(request);
+    const requestUrl = new URL(request.url);
+    const pathname = requestUrl.pathname;
     const contentType = response.headers.get("content-type") || "";
+
+    // Mutable app files: never store at browser/CDN (prevents multi-refresh stale views)
+    if (
+      pathname.endsWith("/sw.js") ||
+      pathname.endsWith("/pwa.js") ||
+      /\.(?:js|css|webmanifest|json)$/i.test(pathname)
+    ) {
+      return withCacheHeaders(response, "no-store");
+    }
+
     if (!contentType.includes("text/html")) {
+      // Product images can stay cached longer
+      if (/\.(?:png|jpg|jpeg|webp|gif|svg|woff2?)$/i.test(pathname)) {
+        return withCacheHeaders(response, "public, max-age=604800, stale-while-revalidate=86400");
+      }
       return response;
     }
 
-    const requestUrl = new URL(request.url);
     const origin = requestUrl.origin;
     let html = await response.text();
 
@@ -95,6 +120,7 @@ export default {
 
     const headers = new Headers(response.headers);
     headers.set("content-type", "text/html; charset=utf-8");
+    headers.set("Cache-Control", "no-store");
     return new Response(html, {
       status: response.status,
       statusText: response.statusText,
