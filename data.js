@@ -101,7 +101,7 @@ window.STORE = {
         "popular",
         "new"
       ],
-      inStock: true
+      inStock: false
     },
     {
       id: "simple-chain-199",
@@ -134,7 +134,7 @@ window.STORE = {
         "popular",
         "trending"
       ],
-      inStock: true
+      inStock: false
     },
     {
       id: "long-haram-399",
@@ -215,7 +215,7 @@ window.STORE = {
       categoryId: "earrings",
       rating: 4.8,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-temple-jhumkas-380.jpg",
       images: [
         "product-temple-jhumkas-380.jpg",
@@ -252,7 +252,7 @@ window.STORE = {
       categoryId: "earrings",
       rating: 4.6,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-green-stud-earring-199.jpg",
       images: [
         "product-green-stud-earring-199.jpg",
@@ -287,7 +287,7 @@ window.STORE = {
       categoryId: "earrings",
       rating: 4.6,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-blue-hanging-earring-220.jpg",
       images: [
         "product-blue-hanging-earring-220.jpg"
@@ -320,7 +320,7 @@ window.STORE = {
       categoryId: "earrings",
       rating: 4.7,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-blue-statement-earrings-269.jpg",
       images: [
         "product-blue-statement-earrings-269.jpg"
@@ -433,7 +433,7 @@ window.STORE = {
         "Pearl drop accents",
         "Pink stone detailing",
         "Lightweight comfort",
-        "Currently out of stock"
+        "Currently sold out"
       ],
       specs: {
         Material: "Alloy with gold plating",
@@ -560,7 +560,7 @@ window.STORE = {
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-green-striped-kasavu-sari.jpg",
       images: [
         "product-green-striped-kasavu-sari.jpg",
@@ -868,7 +868,7 @@ window.STORE = {
       categoryId: "set-mundu",
       rating: 4.9,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-blue-flower-golden-kasavu-set-mundu.jpg",
       images: [
         "product-blue-flower-golden-kasavu-set-mundu.jpg",

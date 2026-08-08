@@ -158,10 +158,152 @@ body {
   }
 }
 
-/* Mobile category strip — horizontal + sticky under nav */
+/* Category carousel — horizontal scroll + pins under nav */
 .category-section {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.category-pin-sentinel {
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.category-sticky-bar {
+  position: relative;
+  z-index: 40;
+  background: #fff;
+}
+
+.category-sticky-bar.is-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: var(--site-header-height, 72px);
+  width: 100%;
+  z-index: 45;
+  padding: 0.4rem 0 0.45rem;
+  border-bottom: 1px solid #f1f5f9;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+}
+
+/* When pinned, only keep the carousel strip under nav */
+.category-sticky-bar.is-fixed .category-head {
+  display: none;
+}
+
+.category-sticky-bar.is-fixed .category-grid {
+  gap: 0.5rem !important;
+  padding-bottom: 0.15rem !important;
+}
+
+.category-sticky-bar.is-fixed .category-card {
+  width: 4.75rem;
+  height: 4.75rem !important;
+  border-radius: 0.75rem;
+}
+
+.category-sticky-bar.is-fixed .category-card-label {
+  padding: 0.35rem 0.4rem !important;
+}
+
+.category-sticky-bar.is-fixed .category-card-label h3 {
+  font-size: 0.62rem !important;
+}
+
+.category-sticky-bar.is-fixed .category-card-explore {
+  display: none;
+}
+
+.category-grid {
+  display: flex !important;
+  grid-template-columns: none !important;
+  gap: 0.75rem !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 0;
+  overscroll-behavior-x: contain;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0.35rem !important;
+  margin: 0 !important;
+  max-width: none !important;
+  width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(136, 19, 55, 0.35) transparent;
+}
+
+.category-grid::-webkit-scrollbar {
+  height: 4px;
+}
+
+.category-grid::-webkit-scrollbar-thumb {
+  background: rgba(136, 19, 55, 0.35);
+  border-radius: 999px;
+}
+
+.category-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.category-card {
+  flex: 0 0 auto;
+  width: 8.5rem;
+  height: 8.5rem !important;
+  border-radius: 1rem;
+  scroll-snap-align: start;
+}
+
+.category-card-label {
+  padding: 0.7rem 0.8rem !important;
+}
+
+.category-card-label h3 {
+  font-size: 0.85rem !important;
+  line-height: 1.2;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+@media (min-width: 768px) {
+  .category-grid {
+    gap: 1rem !important;
+  }
+
+  .category-card {
+    width: 11.5rem;
+    height: 11.5rem !important;
+    border-radius: 1.15rem;
+  }
+
+  .category-card-label {
+    padding: 0.9rem 1rem !important;
+  }
+
+  .category-card-label h3 {
+    font-size: 1rem !important;
+  }
+
+  .category-sticky-bar.is-fixed {
+    padding: 0.45rem 0 0.5rem;
+  }
+
+  .category-sticky-bar.is-fixed .category-card {
+    width: 5.5rem;
+    height: 5.5rem !important;
+    border-radius: 0.85rem;
+  }
+
+  .category-sticky-bar.is-fixed .category-card-label {
+    padding: 0.4rem 0.45rem !important;
+  }
+
+  .category-sticky-bar.is-fixed .category-card-label h3 {
+    font-size: 0.68rem !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -170,28 +312,8 @@ body {
     padding-bottom: 0;
   }
 
-  .category-pin-sentinel {
-    height: 0;
-    margin: 0;
-    padding: 0;
-  }
-
   .category-sticky-bar {
-    position: relative;
-    z-index: 40;
-    background: #fff;
     padding: 0.65rem 0 0.75rem;
-  }
-
-  .category-sticky-bar.is-fixed {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: var(--site-header-height, 72px);
-    width: 100%;
-    z-index: 45;
-    border-bottom: 1px solid #f1f5f9;
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
   }
 
   .category-head {
@@ -199,16 +321,7 @@ body {
   }
 
   .category-grid {
-    display: flex !important;
-    grid-template-columns: none !important;
     gap: 0.65rem !important;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-    margin: 0 !important;
-    max-width: none !important;
     scrollbar-width: none;
   }
 
@@ -217,11 +330,8 @@ body {
   }
 
   .category-card {
-    flex: 0 0 auto;
     width: 7.25rem;
     height: 7.25rem !important;
-    border-radius: 1rem;
-    scroll-snap-align: start;
   }
 
   .category-card-label {
@@ -230,9 +340,6 @@ body {
 
   .category-card-label h3 {
     font-size: 0.72rem !important;
-    line-height: 1.2;
-    margin: 0 !important;
-    transform: none !important;
   }
 
   .category-card-explore {

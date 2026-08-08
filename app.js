@@ -106,7 +106,7 @@ window.STORE = {
         "popular",
         "new"
       ],
-      inStock: true
+      inStock: false
     },
     {
       id: "simple-chain-199",
@@ -139,7 +139,7 @@ window.STORE = {
         "popular",
         "trending"
       ],
-      inStock: true
+      inStock: false
     },
     {
       id: "long-haram-399",
@@ -220,7 +220,7 @@ window.STORE = {
       categoryId: "earrings",
       rating: 4.8,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-temple-jhumkas-380.jpg",
       images: [
         "product-temple-jhumkas-380.jpg",
@@ -257,7 +257,7 @@ window.STORE = {
       categoryId: "earrings",
       rating: 4.6,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-green-stud-earring-199.jpg",
       images: [
         "product-green-stud-earring-199.jpg",
@@ -292,7 +292,7 @@ window.STORE = {
       categoryId: "earrings",
       rating: 4.6,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-blue-hanging-earring-220.jpg",
       images: [
         "product-blue-hanging-earring-220.jpg"
@@ -325,7 +325,7 @@ window.STORE = {
       categoryId: "earrings",
       rating: 4.7,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-blue-statement-earrings-269.jpg",
       images: [
         "product-blue-statement-earrings-269.jpg"
@@ -438,7 +438,7 @@ window.STORE = {
         "Pearl drop accents",
         "Pink stone detailing",
         "Lightweight comfort",
-        "Currently out of stock"
+        "Currently sold out"
       ],
       specs: {
         Material: "Alloy with gold plating",
@@ -565,7 +565,7 @@ window.STORE = {
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-green-striped-kasavu-sari.jpg",
       images: [
         "product-green-striped-kasavu-sari.jpg",
@@ -873,7 +873,7 @@ window.STORE = {
       categoryId: "set-mundu",
       rating: 4.9,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-blue-flower-golden-kasavu-set-mundu.jpg",
       images: [
         "product-blue-flower-golden-kasavu-set-mundu.jpg",
@@ -1202,7 +1202,7 @@ window.isProductOutOfStock = function (product) {
         ? isProductOutOfStock(product)
         : product.inStock === false
     ) {
-      showToast("This product is out of stock");
+      showToast("This product is sold out");
       return;
     }
     var items = readCart();
@@ -1304,7 +1304,7 @@ window.isProductOutOfStock = function (product) {
           ? formatProductPrice(product)
           : formatINR(product.price)) +
         "*",
-      "Status: Out of stock",
+      "Status: Sold out",
       "Link: " + pageUrl,
     ].join("\n");
   }
@@ -1867,7 +1867,7 @@ window.isProductOutOfStock = function (product) {
         whatsappSvg() +
         "</button>";
     var cartBtn = oos
-      ? '<span class="oos-pill">Out of stock</span>'
+      ? '<span class="oos-pill">Sold out</span>'
       : '<button type="button" data-add-cart="' +
         product.id +
         '" class="product-card-cart product-card-action" aria-label="Add to cart">' +
@@ -2116,15 +2116,15 @@ window.isProductOutOfStock = function (product) {
         return (
           '<a href="category.html?id=' +
           cat.id +
-          '" class="category-card group relative h-64 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">' +
+          '" class="category-card group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">' +
           '<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors z-10"></div>' +
           '<img src="' +
           cat.image +
           '" alt="' +
           cat.name +
           '" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />' +
-          '<div class="category-card-label absolute bottom-0 left-0 p-6 z-20">' +
-          '<h3 class="text-white text-xl font-bold mb-1 translate-y-2 group-hover:translate-y-0 transition-transform">' +
+          '<div class="category-card-label absolute bottom-0 left-0 z-20">' +
+          '<h3 class="text-white font-bold mb-1">' +
           cat.name +
           "</h3>" +
           '<span class="category-card-explore text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Explore</span>' +
@@ -2633,23 +2633,19 @@ function syncHeaderHeight() {
 function updatePinnedCategory() {
   if (!categoryBar || !categorySentinel) return;
 
-  // Desktop keeps the normal grid — no pin
-  if (window.innerWidth >= 768) {
-    categoryBar.classList.remove("is-fixed");
-    categorySentinel.style.height = "0px";
-    return;
-  }
-
   var headerH = syncHeaderHeight();
   var sentinelTop = categorySentinel.getBoundingClientRect().top;
   var shouldFix = sentinelTop <= headerH;
 
   if (shouldFix) {
     if (!categoryBar.classList.contains("is-fixed")) {
-      categorySentinel.style.height = categoryBar.offsetHeight + "px";
+      // Add fixed first so head hides, then measure the compact strip height
       categoryBar.classList.add("is-fixed");
+      categoryBar.style.top = headerH + "px";
+      categorySentinel.style.height = categoryBar.offsetHeight + "px";
+    } else {
+      categoryBar.style.top = headerH + "px";
     }
-    categoryBar.style.top = headerH + "px";
   } else {
     categoryBar.classList.remove("is-fixed");
     categoryBar.style.top = "";
@@ -2874,7 +2870,7 @@ requestAnimationFrame(updatePinnedCategory);
     var cartAction = oos
       ? '<button type="button" id="btn-add-cart" class="fk-btn fk-btn-cart fk-btn-icon fk-btn-disabled" disabled aria-disabled="true">' +
         UI.cartSvg("w-5 h-5") +
-        "<span>Out of Stock</span></button>"
+        "<span>Sold out</span></button>"
       : '<button type="button" id="btn-add-cart" class="fk-btn fk-btn-cart fk-btn-icon">' +
         UI.cartSvg("w-5 h-5") +
         "<span>Add to Cart</span></button>";
@@ -2990,7 +2986,7 @@ requestAnimationFrame(updatePinnedCategory);
           formatINR(product.price) +
           "</span>") +
       (oos
-        ? '<span class="oos-status-badge">Out of stock</span>'
+        ? '<span class="oos-status-badge">Sold out</span>'
         : "") +
       "</div>" +
       (contactPrice

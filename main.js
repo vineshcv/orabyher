@@ -137,23 +137,19 @@ function syncHeaderHeight() {
 function updatePinnedCategory() {
   if (!categoryBar || !categorySentinel) return;
 
-  // Desktop keeps the normal grid — no pin
-  if (window.innerWidth >= 768) {
-    categoryBar.classList.remove("is-fixed");
-    categorySentinel.style.height = "0px";
-    return;
-  }
-
   var headerH = syncHeaderHeight();
   var sentinelTop = categorySentinel.getBoundingClientRect().top;
   var shouldFix = sentinelTop <= headerH;
 
   if (shouldFix) {
     if (!categoryBar.classList.contains("is-fixed")) {
-      categorySentinel.style.height = categoryBar.offsetHeight + "px";
+      // Add fixed first so head hides, then measure the compact strip height
       categoryBar.classList.add("is-fixed");
+      categoryBar.style.top = headerH + "px";
+      categorySentinel.style.height = categoryBar.offsetHeight + "px";
+    } else {
+      categoryBar.style.top = headerH + "px";
     }
-    categoryBar.style.top = headerH + "px";
   } else {
     categoryBar.classList.remove("is-fixed");
     categoryBar.style.top = "";

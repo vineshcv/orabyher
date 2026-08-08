@@ -39,7 +39,7 @@
         ? isProductOutOfStock(product)
         : product.inStock === false
     ) {
-      showToast("This product is out of stock");
+      showToast("This product is sold out");
       return;
     }
     var items = readCart();
@@ -141,7 +141,7 @@
           ? formatProductPrice(product)
           : formatINR(product.price)) +
         "*",
-      "Status: Out of stock",
+      "Status: Sold out",
       "Link: " + pageUrl,
     ].join("\n");
   }

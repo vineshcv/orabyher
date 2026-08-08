@@ -35,7 +35,7 @@
     var cartAction = oos
       ? '<button type="button" id="btn-add-cart" class="fk-btn fk-btn-cart fk-btn-icon fk-btn-disabled" disabled aria-disabled="true">' +
         UI.cartSvg("w-5 h-5") +
-        "<span>Out of Stock</span></button>"
+        "<span>Sold out</span></button>"
       : '<button type="button" id="btn-add-cart" class="fk-btn fk-btn-cart fk-btn-icon">' +
         UI.cartSvg("w-5 h-5") +
         "<span>Add to Cart</span></button>";
@@ -151,7 +151,7 @@
           formatINR(product.price) +
           "</span>") +
       (oos
-        ? '<span class="oos-status-badge">Out of stock</span>'
+        ? '<span class="oos-status-badge">Sold out</span>'
         : "") +
       "</div>" +
       (contactPrice
