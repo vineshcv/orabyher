@@ -829,8 +829,7 @@ window.STORE = {
     {
       id: "peacock-embroidery-saree-handloom",
       name: "Peacock Embroidery Saree (Handloom Cotton)",
-      contactForPricing: true,
-      price: null,
+      price: 899,
       mrp: null,
       categoryId: "saree",
       rating: 4.9,
@@ -1959,7 +1958,7 @@ window.isProductOutOfStock = function (product) {
 
 /* ==== loader.js ==== */
 (function () {
-  var LOADER_MIN_MS = 1200;
+  var LOADER_MIN_MS = 900;
 
   function ensureLoader() {
     var existing = document.getElementById("page-loader");
@@ -1971,7 +1970,7 @@ window.isProductOutOfStock = function (product) {
     loader.setAttribute("aria-hidden", "true");
     loader.innerHTML =
       '<div class="page-loader-inner">' +
-      '<img src="logo.png" alt="Multimart" class="page-loader-logo" />' +
+      '<img src="logo.png" alt="Orabyher" class="page-loader-logo" />' +
       '<div class="page-loader-ring"></div>' +
       '<p class="page-loader-text">Loading</p>' +
       "</div>";
@@ -1981,12 +1980,14 @@ window.isProductOutOfStock = function (product) {
 
   function hideLoader() {
     var loader = document.getElementById("page-loader");
-    if (!loader) return;
-    loader.classList.add("is-done");
-    setTimeout(function () {
-      if (loader.parentNode) loader.parentNode.removeChild(loader);
-      document.documentElement.classList.remove("is-loading");
-    }, 500);
+    if (loader) {
+      loader.classList.add("is-done");
+      setTimeout(function () {
+        if (loader.parentNode) loader.parentNode.removeChild(loader);
+      }, 450);
+    }
+    document.documentElement.classList.remove("is-loading");
+    document.documentElement.classList.remove("is-booting");
   }
 
   document.documentElement.classList.add("is-loading");

@@ -824,8 +824,7 @@ window.STORE = {
     {
       id: "peacock-embroidery-saree-handloom",
       name: "Peacock Embroidery Saree (Handloom Cotton)",
-      contactForPricing: true,
-      price: null,
+      price: 899,
       mrp: null,
       categoryId: "saree",
       rating: 4.9,
