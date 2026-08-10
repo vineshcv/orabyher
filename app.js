@@ -2143,6 +2143,115 @@ window.STORE = {
         "popular",
         "bestsellers"
       ]
+    },
+
+    {
+      id: "simple-anklet-chain-250",
+      name: "Simple Anklet Chain",
+      price: 250,
+      mrp: 250,
+      categoryId: "anklets",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-simple-anklet-chain-250.jpg",
+      images: [
+        "product-simple-anklet-chain-250.jpg"
+      ],
+      description: "Delicate gold-tone anklet chain with evenly spaced polished beads, an adjustable extension, and tiny ghungroo bells with a heart charm — a simple everyday pair.",
+      highlights: [
+        "Simple bead accent chain",
+        "Adjustable extension length",
+        "Ghungroo bells & heart charm",
+        "Gold-tone finish",
+        "Lightweight everyday wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Daily / Casual / Traditional",
+        Colour: "Gold",
+        Type: "Anklet",
+        Set: "Pair of anklets",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "lotus-anklet-chain-299",
+      name: "Lotus Anklet Chain",
+      price: 299,
+      mrp: 299,
+      categoryId: "anklets",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-lotus-anklet-chain-299.jpg",
+      images: [
+        "product-lotus-anklet-chain-299.jpg"
+      ],
+      description: "Gold-tone anklet chain with spaced beads and a colourful lotus charm in pink and green, finished with traditional ghungroo bells — a festive pair with soft traditional charm.",
+      highlights: [
+        "Lotus charm centre",
+        "Pink & green colour accents",
+        "Beaded gold chain",
+        "Ghungroo bell hangings",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Traditional / Daily",
+        Colour: "Gold / Pink / Green",
+        Type: "Anklet",
+        Set: "Pair of anklets",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "design-anklet-chain-330",
+      name: "Design Anklet Chain",
+      price: 330,
+      mrp: 330,
+      categoryId: "anklets",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-design-anklet-chain-330.jpg",
+      images: [
+        "product-design-anklet-chain-330.jpg"
+      ],
+      description: "Designed gold-tone anklet chain with a circular flower pendant — pink centre stone, clear crystal halo, and maroon petal stones — finished with classic ghungroo bells.",
+      highlights: [
+        "Flower design pendant",
+        "Pink, clear & maroon stones",
+        "Fine gold snake chain",
+        "Ghungroo bell hangings",
+        "Statement festive anklet"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold / Pink / Maroon / Clear",
+        Type: "Anklet",
+        Set: "Pair of anklets",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
     }
   ]
 };

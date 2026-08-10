@@ -414,6 +414,27 @@
       "image": "product-floral-bugadi-v1-199.jpg",
       "description": "Floral bugadi earrings with a ruby-pink centre stone, green and clear accents, ornate gold detailing, and three pearl drops \u2014 a colourful traditional pair for festive occasions.",
       "price": 199
+    },
+    {
+      "id": "simple-anklet-chain-250",
+      "name": "Simple Anklet Chain",
+      "image": "product-simple-anklet-chain-250.jpg",
+      "description": "Delicate gold-tone anklet chain with evenly spaced polished beads, an adjustable extension, and tiny ghungroo bells with a heart charm \u2014 a simple everyday pair.",
+      "price": 250
+    },
+    {
+      "id": "lotus-anklet-chain-299",
+      "name": "Lotus Anklet Chain",
+      "image": "product-lotus-anklet-chain-299.jpg",
+      "description": "Gold-tone anklet chain with spaced beads and a colourful lotus charm in pink and green, finished with traditional ghungroo bells \u2014 a festive pair with soft traditional charm.",
+      "price": 299
+    },
+    {
+      "id": "design-anklet-chain-330",
+      "name": "Design Anklet Chain",
+      "image": "product-design-anklet-chain-330.jpg",
+      "description": "Designed gold-tone anklet chain with a circular flower pendant \u2014 pink centre stone, clear crystal halo, and maroon petal stones \u2014 finished with classic ghungroo bells.",
+      "price": 330
     }
   ]
 }
