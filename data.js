@@ -36,6 +36,16 @@ window.STORE = {
       id: "hair-accessories",
       name: "Hair Accessories",
       image: "category_icons-hair-accessories.jpg"
+    },
+    {
+      id: "bugadi",
+      name: "Bugadi",
+      image: "category_icons-bugadi.jpg"
+    },
+    {
+      id: "anklets",
+      name: "Anklets",
+      image: "category_icons-anklets.jpg"
     }
   ],
   products: [
@@ -1912,10 +1922,225 @@ window.STORE = {
         "popular",
         "bestsellers"
       ]
+    },
+    {
+      id: "bird-bugadi-199",
+      name: "Bird Bugadi",
+      price: 199,
+      mrp: 199,
+      categoryId: "bugadi",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-bird-bugadi-199.jpg",
+      images: [
+        "product-bird-bugadi-199.jpg"
+      ],
+      description: "Gold-tone bird-shaped bugadi earrings with a pink stone head, green teardrop body, sparkling white stone accents, and pearl drops — a playful traditional pair for the upper ear.",
+      highlights: [
+        "Bird motif bugadi pair",
+        "Pink, green & clear stone accents",
+        "Pearl drop hangings",
+        "Gold-tone finish",
+        "Traditional upper-ear wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Traditional / Daily",
+        Colour: "Gold / Pink / Green / Pearl",
+        Type: "Bugadi Earrings",
+        Set: "Pair of earrings",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "chandra-bugadi-199",
+      name: "Chandra Bugadi",
+      price: 199,
+      mrp: 199,
+      categoryId: "bugadi",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-chandra-bugadi-199.jpg",
+      images: [
+        "product-chandra-bugadi-199.jpg"
+      ],
+      description: "Crescent moon (chandra) bugadi earrings in gold tone with a green centre stone, clear stone accents, and dangling pearl clusters — classic Maharashtrian-style upper-ear jewellery.",
+      highlights: [
+        "Crescent moon chandra design",
+        "Green & clear stone accents",
+        "Pearl cluster hangings",
+        "Gold-tone finish",
+        "Traditional bugadi style"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Traditional / Wedding",
+        Colour: "Gold / Green / Clear / Pearl",
+        Type: "Bugadi Earrings",
+        Set: "Pair of earrings",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "matte-finish-bugadi-199",
+      name: "Matte Finish Bugadi",
+      price: 199,
+      mrp: 199,
+      categoryId: "bugadi",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-matte-finish-bugadi-199.jpg",
+      images: [
+        "product-matte-finish-bugadi-199.jpg"
+      ],
+      description: "Matte gold-tone bugadi earrings with ornate scrollwork, pink and green stone accents, and a fringe of seed pearl drops — an antique-finish pair for festive styling.",
+      highlights: [
+        "Matte / antique gold finish",
+        "Ornate scrollwork design",
+        "Pink & green stone accents",
+        "Seed pearl hangings",
+        "Traditional bugadi style"
+      ],
+      specs: {
+        Material: "Alloy with matte gold plating",
+        Occasion: "Festival / Traditional / Wedding",
+        Colour: "Matte Gold / Pink / Green / Pearl",
+        Type: "Bugadi Earrings",
+        Set: "Pair of earrings",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "floral-bugadi-199",
+      name: "Floral Bugadi",
+      price: 199,
+      mrp: 199,
+      categoryId: "bugadi",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-floral-bugadi-199.jpg",
+      images: [
+        "product-floral-bugadi-199.jpg"
+      ],
+      description: "Floral bugadi earrings with a green teardrop centre, pink petal stones, a clear-stone crescent base, and three pearl drops — delicate traditional jewellery for the upper ear.",
+      highlights: [
+        "Floral motif with pink petals",
+        "Green centre stone",
+        "Clear-stone crescent accent",
+        "Pearl drop hangings",
+        "Gold-tone finish"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Traditional / Daily",
+        Colour: "Gold / Pink / Green / Pearl",
+        Type: "Bugadi Earrings",
+        Set: "Pair of earrings",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "floral-bugadi-v4-199",
+      name: "Floral Bugadi V4",
+      price: 199,
+      mrp: 199,
+      categoryId: "bugadi",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-floral-bugadi-v4-199.jpg",
+      images: [
+        "product-floral-bugadi-v4-199.jpg"
+      ],
+      description: "Minimal floral bugadi earrings on a curved gold wire with a pink centre stone framed by clear crystal petals and a square crystal accent — light everyday traditional wear.",
+      highlights: [
+        "Floral cluster with pink centre",
+        "Clear crystal petal accents",
+        "Curved gold bugadi wire",
+        "Lightweight design",
+        "Everyday & festive wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Daily / Festival / Traditional",
+        Colour: "Gold / Pink / Clear",
+        Type: "Bugadi Earrings",
+        Set: "Pair of earrings",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "floral-bugadi-v1-199",
+      name: "Floral Bugadi V1",
+      price: 199,
+      mrp: 199,
+      categoryId: "bugadi",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-floral-bugadi-v1-199.jpg",
+      images: [
+        "product-floral-bugadi-v1-199.jpg"
+      ],
+      description: "Floral bugadi earrings with a ruby-pink centre stone, green and clear accents, ornate gold detailing, and three pearl drops — a colourful traditional pair for festive occasions.",
+      highlights: [
+        "Floral multi-stone design",
+        "Ruby-pink centre stone",
+        "Green & clear accents",
+        "Pearl drop hangings",
+        "Gold-tone finish"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Traditional / Wedding",
+        Colour: "Gold / Pink / Green / Pearl",
+        Type: "Bugadi Earrings",
+        Set: "Pair of earrings",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
     }
   ]
 };
-
 
 window.getProductById = function (id) {
   return STORE.products.find(function (p) {
