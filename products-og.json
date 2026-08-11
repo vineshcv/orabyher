@@ -1,6 +1,20 @@
 {
   "products": [
     {
+      "id": "coin-floral-necklace-369",
+      "name": "Coin Floral Necklace",
+      "image": "product-coin-floral-necklace-369.jpg",
+      "description": "Antique gold-tone coin floral necklace with embossed temple coins, maroon stone flower accents, a clustered red-stone centre pendant with bead hangings, and matching floral coin earrings \u2014 a rich traditional festive set.",
+      "price": 369
+    },
+    {
+      "id": "pearl-lotus-pendant-chain-279",
+      "name": "Single Layer Pearl Chain with Lotus Pendant",
+      "image": "product-pearl-lotus-pendant-chain-279.jpg",
+      "description": "Single-layer pearl chain with an antique gold-tone crescent pendant featuring a red lotus motif and peacock accents, finished with matching lotus bugadi earrings \u2014 a soft traditional set for festive wear.",
+      "price": 279
+    },
+    {
       "id": "premium-lekshmi-mid-chain-520",
       "name": "Premium Lekshmi Mid Chain",
       "image": "product-premium-lekshmi-mid-chain-520.jpg",

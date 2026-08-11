@@ -50,6 +50,84 @@ window.STORE = {
   ],
   products: [
     {
+      id: "coin-floral-necklace-369",
+      name: "Coin Floral Necklace",
+      price: 369,
+      mrp: 369,
+      categoryId: "necklace-haram",
+      rating: 4.9,
+      reviews: 0,
+      inStock: true,
+      image: "product-coin-floral-necklace-369.jpg",
+      images: [
+        "product-coin-floral-necklace-369.jpg",
+        "product-coin-floral-necklace-369-2.jpg",
+        "product-coin-floral-necklace-369-3.jpg"
+      ],
+      description: "Antique gold-tone coin floral necklace with embossed temple coins, maroon stone flower accents, a clustered red-stone centre pendant with bead hangings, and matching floral coin earrings — a rich traditional festive set.",
+      highlights: [
+        "Coin / kasu mala style necklace",
+        "Floral maroon stone accents",
+        "Centre pendant with bead drops",
+        "Matching floral coin earrings",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating",
+        Occasion: "Festival / Wedding / Traditional",
+        Colour: "Gold / Maroon / Red",
+        Type: "Necklace Set",
+        Set: "Necklace with earrings",
+        "Care Instructions": "Keep dry; wipe gently; avoid perfume"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
+      id: "pearl-lotus-pendant-chain-279",
+      name: "Single Layer Pearl Chain with Lotus Pendant",
+      price: 279,
+      mrp: 279,
+      categoryId: "necklace-haram",
+      rating: 4.8,
+      reviews: 0,
+      inStock: true,
+      image: "product-pearl-lotus-pendant-chain-279.jpg",
+      images: [
+        "product-pearl-lotus-pendant-chain-279.jpg",
+        "product-pearl-lotus-pendant-chain-279-2.jpg",
+        "product-pearl-lotus-pendant-chain-279-3.jpg",
+        "product-pearl-lotus-pendant-chain-279-4.jpg",
+        "product-pearl-lotus-pendant-chain-279-5.jpg"
+      ],
+      description: "Single-layer pearl chain with an antique gold-tone crescent pendant featuring a red lotus motif and peacock accents, finished with matching lotus bugadi earrings — a soft traditional set for festive wear.",
+      highlights: [
+        "Single-layer pearl chain",
+        "Red lotus crescent pendant",
+        "Antique gold-tone finish",
+        "Matching lotus bugadi earrings",
+        "Festive & traditional wear"
+      ],
+      specs: {
+        Material: "Alloy with gold plating / Pearls",
+        Occasion: "Festival / Traditional / Wedding",
+        Colour: "Gold / Pearl / Red",
+        Type: "Necklace Set",
+        Set: "Necklace with earrings",
+        "Care Instructions": "Keep dry; wipe gently; keep pearls dry"
+      },
+      sections: [
+        "new",
+        "trending",
+        "popular",
+        "bestsellers"
+      ]
+    },
+    {
       id: "premium-hair-clip-349",
       name: "Premium Hair Clip",
       price: 349,
