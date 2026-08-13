@@ -531,7 +531,7 @@ window.STORE = {
       categoryId: "necklace-haram",
       rating: 4.8,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-lekshmi-pendant-simple-chain-red.jpg",
       images: [
         "product-lekshmi-pendant-simple-chain-red.jpg",
@@ -950,7 +950,7 @@ window.STORE = {
       categoryId: "earrings",
       rating: 4.9,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-bridal-jhumka-pink-green-345.jpg",
       images: [
         "product-bridal-jhumka-pink-green-345.jpg",
@@ -1400,7 +1400,7 @@ window.STORE = {
       categoryId: "saree",
       rating: 4.8,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-orange-black-check-saree-1299.jpg",
       images: [
         "product-orange-black-check-saree-1299.jpg"
@@ -1434,7 +1434,7 @@ window.STORE = {
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-lotus-cotton-saree.jpg",
       images: [
         "product-lotus-cotton-saree.jpg",
@@ -1550,7 +1550,7 @@ window.STORE = {
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-orange-black-kasavu-saree.jpg",
       images: [
         "product-orange-black-kasavu-saree.jpg",
@@ -1665,7 +1665,7 @@ window.STORE = {
       categoryId: "saree",
       rating: 4.9,
       reviews: 0,
-      inStock: true,
+      inStock: false,
       image: "product-pink-golden-kasavu-saree.jpg",
       images: [
         "product-pink-golden-kasavu-saree.jpg",
