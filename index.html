@@ -2,244 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-    <style id="critical-boot">
-    html.is-booting, html.is-loading,
-    html.is-booting body, html.is-loading body {
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORAbyher</title>
+  <style>
+    html, body {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
       overflow: hidden;
-      background: #050505;
+      background: #fff;
     }
-    #page-loader {
+    iframe {
       position: fixed;
       inset: 0;
-      z-index: 99999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(circle at 50% 40%, #2a0a14 0%, #050505 70%);
-    }
-    #page-loader .page-loader-logo {
-      width: 120px;
-      max-width: 42vw;
-      height: auto;
-    }
-    html.is-booting #page-loader .page-loader-ring,
-    html.is-booting #page-loader .page-loader-text {
-      display: none;
-    }
-    .icon-btn svg,
-    svg.nav-home-icon {
-      width: 20px !important;
-      height: 20px !important;
-      max-width: 20px;
-      max-height: 20px;
-    }
-    .site-logo {
-      height: 42px;
-      width: auto;
-    }
-    html.is-booting body > header,
-    html.is-booting body > main,
-    html.is-booting body > footer,
-    html.is-loading body > header,
-    html.is-loading body > main,
-    html.is-loading body > footer {
-      visibility: hidden !important;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
     }
   </style>
-  <script>document.documentElement.classList.add("is-booting");</script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-  (function () {
-    var K = "orabyher-sw-migrate-v4";
-    try { if (localStorage.getItem(K)) return; localStorage.setItem(K, "1"); } catch (e) { return; }
-    var reload = function () { location.reload(); };
-    var jobs = [];
-    if ("serviceWorker" in navigator) {
-      jobs.push(navigator.serviceWorker.getRegistrations().then(function (regs) {
-        return Promise.all(regs.map(function (r) { return r.unregister(); }));
-      }));
-    }
-    if (window.caches) {
-      jobs.push(caches.keys().then(function (keys) {
-        return Promise.all(keys.map(function (k) { return caches.delete(k); }));
-      }));
-    }
-    Promise.all(jobs).then(reload).catch(reload);
-  })();
-  </script>
-<meta name="description" content="Orabyher — heritage jewellery crafted with timeless care. Shop temple jewellery, haarams, earrings and more in INR." />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Orabyher" />
-  <meta property="og:title" content="Orabyher | Heritage Jewellery" />
-  <meta property="og:description" content="Orabyher — heritage jewellery crafted with timeless care. Shop temple jewellery, haarams, earrings and more in INR." />
-  <meta property="og:image" content="https://shop.orabyher.workers.dev/og-image.jpg" />
-  <meta property="og:image:width" content="800" />
-  <meta property="og:image:height" content="800" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:alt" content="Orabyher logo" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Orabyher | Heritage Jewellery" />
-  <meta name="twitter:description" content="Orabyher — heritage jewellery crafted with timeless care. Shop temple jewellery, haarams, earrings and more in INR." />
-  <meta name="twitter:image" content="https://shop.orabyher.workers.dev/og-image.jpg" />
-  <link rel="icon" href="logo.png" type="image/png" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <meta name="theme-color" content="#881337" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="Orabyher" />
-  <link rel="manifest" href="manifest.webmanifest" />
-  <title>Orabyher | Heritage Jewellery</title>
-  <link rel="stylesheet" href="site.css?v=36f872b019" />
-  <meta property="og:url" content="https://shop.orabyher.workers.dev/" />
 </head>
 <body>
-  <div id="page-loader" class="page-loader" aria-hidden="true">
-    <div class="page-loader-inner">
-      <img src="logo.png" alt="Multimart" class="page-loader-logo" />
-      <div class="page-loader-ring"></div>
-      <p class="page-loader-text">Loading</p>
-    </div>
-  </div>
-
-  <header id="site-header" class="absolute top-0 left-0 w-full z-50 transition-all duration-500 site-header-dark">
-    <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between">
-        <a href="index.html" class="flex items-center gap-2">
-          <img src="logo.png" alt="Orabyher" class="site-logo w-auto object-contain" />
-        </a>
-                <nav class="desktop-nav flex items-center">
-          <a href="index.html" class="nav-link nav-link-home" aria-label="Home">
-            <svg class="nav-home-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg>
-            <span>Home</span>
-          </a>
-          <a href="shop.html" class="nav-link">Shop</a>
-          <a href="customers.html" class="nav-link">Our Customers</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
-        <a href="cart.html" class="icon-btn relative text-white/90 hover:text-accent transition-colors" aria-label="Cart">
-          <svg width="20" height="20" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-          <span data-cart-count class="cart-badge hidden">0</span>
-        </a>
-      </div>
-    </div>
-  </header>
-  <main class="bg-slate-50 min-h-screen">
-    <section class="hero-section overflow-hidden relative bg-[#050505] group">
-      <div class="absolute inset-0 pointer-events-none overflow-hidden hidden lg:block">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(136,19,55,0.15),transparent_70%)]"></div>
-        <div class="glow-pulse absolute top-1/2 left-1/2 w-[800px] h-[800px] bg-accent/20 rounded-full blur-[150px]"></div>
-        <div class="sparkle absolute z-10 text-accent/40" style="top:15%;left:20%"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"/></svg></div>
-        <div class="sparkle absolute z-10 text-accent/40" style="top:70%;left:80%;animation-delay:1.5s"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"/></svg></div>
-      </div>
-      <div class="hero-side-labels" aria-hidden="true">
-        <span>Rings</span>
-        <span>Necklaces</span>
-        <span>Earrings</span>
-      </div>
-
-      <!-- Mobile: full-bleed image behind text -->
-      <div id="hero-slides-mobile" class="hero-slides-mobile lg:hidden" aria-hidden="true"></div>
-
-      <div class="container mx-auto px-4 h-full relative z-10">
-        <div class="hero-inner flex flex-col lg:flex-row items-center gap-6 lg:gap-8 h-full">
-          <div class="lg:w-1/2 relative z-20 flex flex-col items-center lg:items-start text-center lg:text-left hero-copy">
-            <span class="text-accent text-xs tracking-[0.8em] uppercase mb-3 lg:mb-6 block">Collection 2026</span>
-            <h1 id="hero-title" class="hero-title text-3xl lg:text-[80px] font-light text-white leading-[1.1] mb-0 lg:mb-0 font-serif tracking-tight"></h1>
-          </div>
-          <div class="hidden lg:flex lg:w-1/2 w-full relative items-center justify-center min-h-[500px]">
-            <div class="relative w-full max-w-lg">
-              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div class="halo-spin absolute w-[400px] h-[400px] border border-accent/10 rounded-full"></div>
-                <div class="halo-spin-rev absolute w-[480px] h-[480px] border border-accent/5 rounded-full border-dashed"></div>
-                <div class="halo-pulse absolute w-[350px] h-[350px] border border-accent/20 rounded-full"></div>
-              </div>
-              <div id="hero-slides" class="relative z-10 h-[550px]"></div>
-              <button id="hero-prev" class="absolute left-0 top-1/2 -translate-y-1/2 z-30 w-12 h-12 text-accent opacity-0 group-hover:opacity-100 transition-all" aria-label="Previous"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg></button>
-              <button id="hero-next" class="absolute right-0 top-1/2 -translate-y-1/2 z-30 w-12 h-12 text-accent opacity-0 group-hover:opacity-100 transition-all" aria-label="Next"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="shop" class="category-section bg-white">
-      <div class="category-pin-sentinel" aria-hidden="true"></div>
-      <div class="category-sticky-bar" id="category-sticky-bar">
-        <div class="container mx-auto px-4 category-head">
-          <div class="flex items-end justify-between mb-6 border-b border-primary/10 pb-6">
-            <div>
-              <span class="text-accent uppercase tracking-[0.4em] text-[10px] font-medium mb-2 block">Curated Collections</span>
-              <h2 class="text-3xl md:text-4xl font-light text-primary font-serif italic tracking-tight">Shop by Category</h2>
-            </div>
-            <a href="shop.html" class="text-primary font-medium text-xs uppercase tracking-[0.2em] hover:text-accent transition-colors">Explore All</a>
-          </div>
-        </div>
-        <div class="container mx-auto px-4">
-          <div id="category-grid" class="category-grid" aria-label="Shop by category"></div>
-        </div>
-      </div>
-    </section>
-
-    <div id="home-category-sections"></div>
-
-    <section class="py-12 relative overflow-hidden bg-[#0b1f0b]">
-      <div class="container mx-auto px-4">
-        <div class="onam-sale-banner rounded-[40px] overflow-hidden">
-          <div class="onam-sale-inner">
-            <div class="onam-sale-copy">
-              <span class="onam-sale-eyebrow">Happy Onam</span>
-              <h2 class="onam-sale-title">Onam Sale is Live!</h2>
-              <p class="onam-sale-text">Celebrate Onam with festive jewellery picks — shop the collection now.</p>
-              <a href="shop.html" class="onam-sale-cta">Shop Now</a>
-            </div>
-            <div class="onam-sale-art-wrap">
-              <div class="onam-sale-art-glow" aria-hidden="true"></div>
-              <img src="onam-sale-art.png" alt="Onam celebration — Kathakali and Pookalam" class="onam-sale-art" loading="lazy" decoding="async" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container mx-auto px-4 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div>
-          <a href="index.html" class="inline-block mb-5 footer-logo-link"><img src="logo.png" alt="Orabyher" class="footer-logo w-auto object-contain" /></a>
-          <p class="site-footer-muted">Orabyher — heritage jewellery crafted with timeless care.</p>
-        </div>
-        <div>
-          <span class="site-footer-label">Explore</span>
-                    <nav class="flex flex-col gap-3 mt-4">
-            <a href="index.html" class="site-footer-link">Home</a>
-            <a href="shop.html" class="site-footer-link">Shop</a>
-            <a href="customers.html" class="site-footer-link">Our Customers</a>
-            <a href="contact.html" class="site-footer-link">Contact</a>
-            <a href="cart.html" class="site-footer-link">Cart</a>
-          </nav>
-        </div>
-        <div>
-          <span class="site-footer-label">Contact</span>
-          <div class="flex flex-col gap-3 mt-4 site-footer-text">
-            <p>Menamkulam, Kazhakootam<br />Trivandrum 695301</p>
-            <a href="tel:+919447836797" class="site-footer-link">+91 94478 36797</a>
-            <a href="https://wa.me/919686516174" target="_blank" rel="noopener" class="site-footer-link">+91 96865 16174</a>
-            <a href="mailto:orabyher@gmail.com" class="site-footer-link">orabyher@gmail.com</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="site-footer-bar">
-      <div class="container mx-auto px-4 py-5 flex flex-col md:flex-row justify-between items-center gap-3">
-        <p class="site-footer-copy">&copy; 2026 Orabyher. All rights reserved.</p>
-        <p class="site-footer-copy">Designed and developed by <a href="https://azoresinteractive.com" target="_blank" rel="noopener" class="site-footer-credit">Azores Interactive</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="app.js?v=36f872b019" defer></script>
+  <iframe
+    src="https://orabyher.azorescloud.com/"
+    title="ORAbyher"
+    allow="payment *; fullscreen *"
+  ></iframe>
 </body>
 </html>
